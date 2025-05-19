@@ -160,10 +160,10 @@ proxy-groups:
   - name: 🌍 MEOO直播
     type: select
     proxies:
-      - 🎯 全球直连
       - 🚀 节点选择
       - ♻️ 自动选择
       - ♻️ 手动选择
+      - 🎯 全球直连
   - name: 🌍 BIGO直播
     type: select
     proxies:
