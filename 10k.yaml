@@ -1,0 +1,311 @@
+mixed-port: 7897
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9097'
+unified-delay: true
+ipv6: true
+profile:
+    store-selected: true
+tun:
+    mtu: 1500
+dns:
+    enable: true
+    ipv6: true
+    use-system-hosts: false
+    listen: '127.0.0.1:5335'
+    default-nameserver: [180.76.76.76, 182.254.118.118, 8.8.8.8, 180.184.2.2]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    fake-ip-filter: ['*.lan', 'stun.*.*.*', 'stun.*.*', time.windows.com, time.nist.gov, time.apple.com, time.asia.apple.com, '*.ntp.org.cn', '*.openwrt.pool.ntp.org', time1.cloud.tencent.com, time.ustc.edu.cn, pool.ntp.org, ntp.ubuntu.com, ntp.aliyun.com, ntp1.aliyun.com, ntp2.aliyun.com, ntp3.aliyun.com, ntp4.aliyun.com, ntp5.aliyun.com, ntp6.aliyun.com, ntp7.aliyun.com, time1.aliyun.com, time2.aliyun.com, time3.aliyun.com, time4.aliyun.com, time5.aliyun.com, time6.aliyun.com, time7.aliyun.com, '*.time.edu.cn', time1.apple.com, time2.apple.com, time3.apple.com, time4.apple.com, time5.apple.com, time6.apple.com, time7.apple.com, time1.google.com, time2.google.com, time3.google.com, time4.google.com, music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, '*.msftconnecttest.com', '*.msftncsi.com', localhost.ptlogin2.qq.com, '*.*.*.srv.nintendo.net', '*.*.stun.playstation.net', 'xbox.*.*.microsoft.com', '*.ipv6.microsoft.com', '*.*.xboxlive.com', speedtest.cros.wr.pvp.net]
+    nameserver: [180.76.76.76, 119.29.29.29, 180.184.1.1, 223.5.5.5, 8.8.8.8, 'https://223.6.6.6/dns-query#h3=true', 'https://dns.alidns.com/dns-query', 'https://cloudflare-dns.com/dns-query', 'https://doh.pub/dns-query']
+    fallback: ['https://000000.dns.nextdns.io/dns-query', 'https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query', 'https://ada.openbld.net/dns-query', 'https://cloudflare-dns.com/dns-query', 'https://dns.google/dns-query']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32, 127.0.0.1/32], domain: [+.google.com, +.facebook.com, +.twitter.com, +.youtube.com, +.xn--ngstr-lra8j.com, +.google.cn, +.googleapis.cn, +.googleapis.com, +.gvt1.com] }
+proxies:
+    - { name: 🌏自动最优(hy2)-网址vp0.org, type: hysteria2, server: best.networklinkpro.net, port: 25230, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇺🇸5美国波特兰-全网优化(hy2), type: hysteria2, server: 5us.networklinkpro.net, port: 25660, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇺🇸6美国圣何塞集群-全网优化(hy2), type: hysteria2, server: 6us.networklinkpro.net, port: 21134, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇺🇸16美国凤凰城集群-联通优化(hy2), type: hysteria2, server: 16us.networklinkpro.net, port: 24844, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇺🇸38美国洛杉矶-全网优化(hy2), type: hysteria2, server: 38us.networklinkpro.net, port: 24874, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇰🇷8韩国首尔-全网优化(hy2), type: hysteria2, server: 8kr.networklinkpro.net, port: 23236, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇩🇪11德国-全网优化(hy2), type: hysteria2, server: 11de.networklinkpro.net, port: 25792, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇬🇧12英国-全网优化(hy2), type: hysteria2, server: 12uk.networklinkpro.net, port: 22283, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇮🇳13印度孟买-电信/联通(hy2), type: hysteria2, server: 13in.networklinkpro.net, port: 21916, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇸🇬14新加坡集群-全网优化(hy2), type: hysteria2, server: 14sg.networklinkpro.net, port: 23939, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇸🇬15新加坡集群-联通/移动(hy2), type: hysteria2, server: 15sg.networklinkpro.net, port: 23960, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇷🇺17俄罗斯-电信/联通(hy2), type: hysteria2, server: 17ru.networklinkpro.net, port: 22596, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇯🇵9日本大版集群-电信/移动(hy2), type: hysteria2, server: 9jp.networklinkpro.net, port: 24614, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇯🇵18日本东京集群-联通/移动(hy2), type: hysteria2, server: 18jp.networklinkpro.net, port: 22664, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇯🇵19日本东京-联通/移动(hy2), type: hysteria2, server: 19jp.networklinkpro.net, port: 25531, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇦🇺20澳洲-电信/移动(hy2), type: hysteria2, server: 20au.networklinkpro.net, port: 24908, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇧🇷22巴西-联通/移动(hy2), type: hysteria2, server: 22br.networklinkpro.net, port: 22848, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇳🇱26荷兰-全网优化(hy2), type: hysteria2, server: 26nl.networklinkpro.net, port: 21345, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇫🇷27法国-全网优化(hy2), type: hysteria2, server: 27fr.networklinkpro.net, port: 24177, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇨🇱29智利-全网优化(hy2), type: hysteria2, server: 29chi.networklinkpro.net, port: 24157, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇮🇹30意大利-全网优化(hy2), type: hysteria2, server: 30it.networklinkpro.net, port: 22226, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇸🇪31瑞典-电信/移动(hy2), type: hysteria2, server: 31se.networklinkpro.net, port: 25140, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇿🇦32南非-约翰内斯堡(hy2), type: hysteria2, server: 32za.networklinkpro.net, port: 24340, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇨🇦33加拿大-全网优化(hy2), type: hysteria2, server: 33ca.networklinkpro.net, port: 23574, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇨🇭34瑞士-全网优化(hy2), type: hysteria2, server: 34ch.networklinkpro.net, port: 23676, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇪🇸36西班牙-电信/联通(hy2), type: hysteria2, server: 36es.networklinkpro.net, port: 22886, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🇭🇰1香港集群-电信/联通(hy2)(限速30M), type: hysteria2, server: 1hk.networklinkpro.net, port: 21230, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, up: 50, down: 100, skip-cert-verify: true }
+    - { name: 🇭🇰2香港-全网优化(hy2), type: hysteria2, server: 2hk.networklinkpro.net, port: 25722, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, up: 50, down: 100, skip-cert-verify: true }
+    - { name: 🇨🇳4台湾-电信/联通(hy2), type: hysteria2, server: 4tw.networklinkpro.net, port: 22688, ports: 21000-26000, password: 539087e9-be0e-4232-beb7-dac2dd367d60, skip-cert-verify: true }
+    - { name: 🌎自动最优(新协议)-网址vp0.org, type: hysteria, server: best.networklinkpro.net, port: 7243, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: false, skip-cert-verify: true }
+    - { name: 🇯🇵19日本东京-联通/移动(新协议), type: hysteria, server: 19jp.networklinkpro.net, port: 5962, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇺🇸5美国集群-专线(trojan), type: trojan, server: dnsmart.vp-cdn.mob.networklinkpro.com, port: 15405, password: 539087e9-be0e-4232-beb7-dac2dd367d60, udp: true, skip-cert-verify: true, network: ws }
+    - { name: 🇺🇸6美国圣何塞集群-全网优化(新协议), type: hysteria, server: 6us.networklinkpro.net, port: 7700, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇺🇸6美国圣何塞集群-专线(trojan), type: trojan, server: dnsmart.vp-cdn.mob.networklinkpro.com, port: 15406, password: 539087e9-be0e-4232-beb7-dac2dd367d60, udp: true, skip-cert-verify: true, network: ws }
+    - { name: 🇺🇸16美国凤凰城集群-联通优化(新协议), type: hysteria, server: 16us.networklinkpro.net, port: 9901, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇺🇸38美国洛杉矶-全网优化(新协议), type: hysteria, server: 38us.networklinkpro.net, port: 9873, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: false, skip-cert-verify: true }
+    - { name: 🇯🇵9日本大版集群-专线(trojan), type: trojan, server: dnsmart.vp-cdn.mob.networklinkpro.com, port: 15409, password: 539087e9-be0e-4232-beb7-dac2dd367d60, udp: true, skip-cert-verify: true, network: ws }
+    - { name: 🇩🇪11德国-ChatGPT(新协议), type: hysteria, server: 11de.networklinkpro.net, port: 5387, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: false, skip-cert-verify: true }
+    - { name: 🇬🇧12英国-ChatGPT(新协议), type: hysteria, server: 12uk.networklinkpro.net, port: 5696, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇮🇳13印度孟买-电信/联通(新协议), type: hysteria, server: 13in.networklinkpro.net, port: 7020, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇷🇺17俄罗斯-电信/联通(新协议), type: hysteria, server: 17ru.networklinkpro.net, port: 5952, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: false, skip-cert-verify: true }
+    - { name: 🇧🇷22巴西-ChatGPT(新协议), type: hysteria, server: 22br.networklinkpro.net, port: 8667, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇳🇱26荷兰-全网优化(新协议), type: hysteria, server: 26nl.networklinkpro.net, port: 7108, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇫🇷27法国-ChatGPT(新协议), type: hysteria, server: 27fr.networklinkpro.net, port: 9698, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: false, skip-cert-verify: true }
+    - { name: 🇨🇱29智利-ChatGPT(新协议), type: hysteria, server: 29chi.networklinkpro.net, port: 6991, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇮🇹30意大利-ChatGPT(新协议), type: hysteria, server: 30it.networklinkpro.net, port: 6535, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: false, skip-cert-verify: true }
+    - { name: 🇸🇪31瑞典-电信/移动(新协议), type: hysteria, server: 31se.networklinkpro.net, port: 9855, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇿🇦32南非-约翰内斯堡(新协议), type: hysteria, server: 32za.networklinkpro.net, port: 5186, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: false, skip-cert-verify: true }
+    - { name: 🇨🇦33加拿大-ChatGPT(新协议), type: hysteria, server: 33ca.networklinkpro.net, port: 5069, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: false, skip-cert-verify: true }
+    - { name: 🇪🇸36西班牙-电信/联通(新协议), type: hysteria, server: 36es.networklinkpro.net, port: 9692, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: false, skip-cert-verify: true }
+    - { name: 🇭🇰1香港集群-电信/联通(新协议)(限速30M), type: hysteria, server: 1hk.networklinkpro.net, port: 6868, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇭🇰2香港集群-全网优化(新协议)(限速30M), type: hysteria, server: 2hk.networklinkpro.net, port: 9206, ports: 5000-10000, auth_str: 539087e9-be0e-4232-beb7-dac2dd367d60, alpn: [h3], protocol: udp, up: 50, down: 100, fast-open: true, disable_mtu_discovery: true, skip-cert-verify: true }
+    - { name: 🇭🇰1香港集群-专线(trojan), type: trojan, server: dnsmart.vp-cdn.mob.networklinkpro.com, port: 15401, password: 539087e9-be0e-4232-beb7-dac2dd367d60, udp: true, skip-cert-verify: true, network: ws }
+    - { name: 🇭🇰3香港-专线(trojan), type: trojan, server: dnsmart.vp-cdn.mob.networklinkpro.com, port: 15403, password: 539087e9-be0e-4232-beb7-dac2dd367d60, udp: true, skip-cert-verify: true, network: ws }
+rule-providers:
+    Netflix: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
+    Disney: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
+    Spotify: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/spotify.yaml', interval: 86400, path: ./ruleset/spotify.yml }
+    Meoo: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
+    IPAIR: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml', interval: 86400, path: ./ruleset/ipair.yaml }
+    代理: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
+    TIKTOK: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tiktok.yaml', interval: 86400, path: ./ruleset/tiktok.yaml }
+    YOUTUBE: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/youtube.yaml', interval: 86400, path: ./ruleset/youtube.yaml }
+    Telegram: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/telegram.yaml', interval: 86400, path: ./ruleset/telegram.yaml }
+    Twitter: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/twitter.yaml', interval: 86400, path: ./ruleset/twitter.yaml }
+    bigo代理: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml', interval: 86400, path: ./ruleset/bigo_proxy.yaml }
+    bigo游戏: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
+    bigo直连: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
+    bigo登录: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
+    wechat: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/wechat.yaml', interval: 86400, path: ./ruleset/wechat.yaml }
+    tencent: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tencent.yaml', interval: 86400, path: ./ruleset/tencent.yaml }
+    apple: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/apple.yaml', interval: 86400, path: ./ruleset/apple.yaml }
+    直连: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct1.yml }
+    直连1: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directa.yaml', interval: 86400, path: ./ruleset/directa.yml }
+    直连2: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directb.yaml', interval: 86400, path: ./ruleset/directb.yml }
+    直连3: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directc.yaml', interval: 86400, path: ./ruleset/directc.yml }
+    黑名单: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject1.yml }
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - ♻️ 手动选择
+      - DIRECT
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🌏自动最优(hy2)-网址vp0.org
+      - 🇺🇸5美国波特兰-全网优化(hy2)
+      - 🇺🇸6美国圣何塞集群-全网优化(hy2)
+      - 🇺🇸16美国凤凰城集群-联通优化(hy2)
+      - 🇺🇸38美国洛杉矶-全网优化(hy2)
+      - 🇰🇷8韩国首尔-全网优化(hy2)
+      - 🇩🇪11德国-全网优化(hy2)
+      - 🇬🇧12英国-全网优化(hy2)
+      - 🇮🇳13印度孟买-电信/联通(hy2)
+      - 🇸🇬14新加坡集群-全网优化(hy2)
+      - 🇸🇬15新加坡集群-联通/移动(hy2)
+      - 🇯🇵9日本大版集群-电信/移动(hy2)
+      - 🇯🇵18日本东京集群-联通/移动(hy2)
+      - 🇯🇵19日本东京-联通/移动(hy2)
+      - 🇦🇺20澳洲-电信/移动(hy2)
+      - 🇧🇷22巴西-联通/移动(hy2)
+      - 🇳🇱26荷兰-全网优化(hy2)
+      - 🇫🇷27法国-全网优化(hy2)
+      - 🇨🇱29智利-全网优化(hy2)
+      - 🇮🇹30意大利-全网优化(hy2)
+      - 🇸🇪31瑞典-电信/移动(hy2)
+      - 🇿🇦32南非-约翰内斯堡(hy2)
+      - 🇨🇦33加拿大-全网优化(hy2)
+      - 🇨🇭34瑞士-全网优化(hy2)
+      - 🇪🇸36西班牙-电信/联通(hy2)
+      - 🌎自动最优(新协议)-网址vp0.org
+      - 🇯🇵19日本东京-联通/移动(新协议)
+      - 🇺🇸5美国集群-专线(trojan)
+      - 🇺🇸6美国圣何塞集群-全网优化(新协议)
+      - 🇺🇸6美国圣何塞集群-专线(trojan)
+      - 🇺🇸16美国凤凰城集群-联通优化(新协议)
+      - 🇺🇸38美国洛杉矶-全网优化(新协议)
+      - 🇯🇵9日本大版集群-专线(trojan)
+      - 🇩🇪11德国-ChatGPT(新协议)
+      - 🇬🇧12英国-ChatGPT(新协议)
+      - 🇮🇳13印度孟买-电信/联通(新协议)
+      - 🇧🇷22巴西-ChatGPT(新协议)
+      - 🇳🇱26荷兰-全网优化(新协议)
+      - 🇫🇷27法国-ChatGPT(新协议)
+      - 🇨🇱29智利-ChatGPT(新协议)
+      - 🇮🇹30意大利-ChatGPT(新协议)
+      - 🇸🇪31瑞典-电信/移动(新协议)
+      - 🇿🇦32南非-约翰内斯堡(新协议)
+      - 🇨🇦33加拿大-ChatGPT(新协议)
+      - 🇪🇸36西班牙-电信/联通(新协议)
+  - name: 🌍 MEOO直播
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 手动选择
+  - name: 🌍 BIGO直播
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 手动选择
+      - 🎯 全球直连
+  - name: 🌍 BIGO游戏
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 手动选择
+  - name: 🌍 BIGO登录
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 手动选择
+      - 🎯 全球直连
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 手动选择
+      - 🎯 全球直连
+  - name: 🌍 IPAIR直播
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 手动选择
+      - 🎯 全球直连
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 手动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - ♻️ 手动选择
+  - name: ♻️ 手动选择
+    type: select
+    proxies:
+      - 🌏自动最优(hy2)-网址vp0.org
+      - 🇺🇸5美国波特兰-全网优化(hy2)
+      - 🇺🇸6美国圣何塞集群-全网优化(hy2)
+      - 🇺🇸16美国凤凰城集群-联通优化(hy2)
+      - 🇺🇸38美国洛杉矶-全网优化(hy2)
+      - 🇰🇷8韩国首尔-全网优化(hy2)
+      - 🇩🇪11德国-全网优化(hy2)
+      - 🇬🇧12英国-全网优化(hy2)
+      - 🇮🇳13印度孟买-电信/联通(hy2)
+      - 🇸🇬14新加坡集群-全网优化(hy2)
+      - 🇸🇬15新加坡集群-联通/移动(hy2)
+      - 🇯🇵9日本大版集群-电信/移动(hy2)
+      - 🇯🇵18日本东京集群-联通/移动(hy2)
+      - 🇯🇵19日本东京-联通/移动(hy2)
+      - 🇦🇺20澳洲-电信/移动(hy2)
+      - 🇧🇷22巴西-联通/移动(hy2)
+      - 🇳🇱26荷兰-全网优化(hy2)
+      - 🇫🇷27法国-全网优化(hy2)
+      - 🇨🇱29智利-全网优化(hy2)
+      - 🇮🇹30意大利-全网优化(hy2)
+      - 🇸🇪31瑞典-电信/移动(hy2)
+      - 🇿🇦32南非-约翰内斯堡(hy2)
+      - 🇨🇦33加拿大-全网优化(hy2)
+      - 🇨🇭34瑞士-全网优化(hy2)
+      - 🇪🇸36西班牙-电信/联通(hy2)
+      - 🌎自动最优(新协议)-网址vp0.org
+      - 🇯🇵19日本东京-联通/移动(新协议)
+      - 🇺🇸5美国集群-专线(trojan)
+      - 🇺🇸6美国圣何塞集群-全网优化(新协议)
+      - 🇺🇸6美国圣何塞集群-专线(trojan)
+      - 🇺🇸16美国凤凰城集群-联通优化(新协议)
+      - 🇺🇸38美国洛杉矶-全网优化(新协议)
+      - 🇯🇵9日本大版集群-专线(trojan)
+      - 🇩🇪11德国-ChatGPT(新协议)
+      - 🇬🇧12英国-ChatGPT(新协议)
+      - 🇮🇳13印度孟买-电信/联通(新协议)
+      - 🇧🇷22巴西-ChatGPT(新协议)
+      - 🇳🇱26荷兰-全网优化(新协议)
+      - 🇫🇷27法国-ChatGPT(新协议)
+      - 🇨🇱29智利-ChatGPT(新协议)
+      - 🇮🇹30意大利-ChatGPT(新协议)
+      - 🇸🇪31瑞典-电信/移动(新协议)
+      - 🇿🇦32南非-约翰内斯堡(新协议)
+      - 🇨🇦33加拿大-ChatGPT(新协议)
+      - 🇪🇸36西班牙-电信/联通(新协议)
+rules:
+    - 'RULE-SET,Netflix,🌍 国外媒体'
+    - 'RULE-SET,Disney,🌍 国外媒体'
+    - 'RULE-SET,Spotify,🌍 国外媒体'
+    - 'RULE-SET,Meoo,🌍 MEOO直播'
+    - 'RULE-SET,TIKTOK,🌍 国外媒体'
+    - 'RULE-SET,YOUTUBE,🌍 国外媒体'
+    - 'RULE-SET,Telegram,🌍 国外媒体'
+    - 'RULE-SET,Twitter,🌍 国外媒体'
+    - 'RULE-SET,bigo代理,🌍 BIGO直播'
+    - 'RULE-SET,bigo游戏,🌍 BIGO游戏'
+    - 'RULE-SET,bigo登录,🌍 BIGO登录'
+    - 'RULE-SET,wechat,🎯 全球直连'
+    - 'RULE-SET,tencent,🎯 全球直连'
+    - 'RULE-SET,bigo直连,🎯 全球直连'
+    - 'RULE-SET,IPAIR,🌍 IPAIR直播'
+    - 'RULE-SET,apple,🎯 全球直连'
+    - 'RULE-SET,直连,🎯 全球直连'
+    - 'RULE-SET,直连1,🎯 全球直连'
+    - 'RULE-SET,直连2,🎯 全球直连'
+    - 'RULE-SET,直连3,🎯 全球直连'
+    - 'RULE-SET,黑名单,🛑 全球拦截'
+    - 'RULE-SET,代理,🚀 节点选择'
+    - 'DOMAIN,local.adguard.org,🎯 全球直连'
+    - 'DOMAIN-SUFFIX,local,🎯 全球直连'
+    - 'IP-CIDR,127.0.0.0/8,🎯 全球直连'
+    - 'IP-CIDR,172.16.0.0/12,🎯 全球直连'
+    - 'IP-CIDR,192.168.0.0/16,🎯 全球直连'
+    - 'IP-CIDR,10.0.0.0/8,🎯 全球直连'
+    - 'IP-CIDR,17.0.0.0/8,🎯 全球直连'
+    - 'IP-CIDR,100.64.0.0/10,🎯 全球直连'
+    - 'IP-CIDR,224.0.0.0/4,🎯 全球直连'
+    - 'IP-CIDR,203.0.113.0/24,🎯 全球直连'
+    - 'IP-CIDR,192.0.2.0/24,🎯 全球直连'
+    - 'IP-CIDR6,fe80::/10,🎯 全球直连'
+    - 'GEOIP,CN,🎯 全球直连'
+    - 'GEOIP,LAN,🎯 全球直连'
+    - 'MATCH,🐟 漏网之鱼'
