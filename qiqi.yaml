@@ -1,0 +1,252 @@
+mixed-port: 7890
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+  - {name: 【琪琪】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】HongKong03, type: ss, server: qc456987.qeayr.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】HongKong04, type: ss, server: qc456987.qeayr.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】HongKong05, type: ss, server: s20002625.qeayr.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】HongKong06, type: ss, server: s20002625.qeayr.cn, port: 46815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】Taiwan01, type: ss, server: cyusd123.qeayr.cn, port: 14786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】Taiwan02, type: ss, server: cyusd123.qeayr.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】Taiwan03, type: ss, server: qc456987.qeayr.cn, port: 24789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】Taiwan04, type: ss, server: qc456987.qeayr.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】TaiwanIEPL01, type: ss, server: apiyhyzsj.gweuc.cn, port: 26615, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】TaiwanIEPL02, type: ss, server: apiyhyzsj.gweuc.cn, port: 26616, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】HongKongIEPL01, type: ss, server: apiyhyzsj.gweuc.cn, port: 26613, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【琪琪】HongKongIEPL02, type: ss, server: apiyhyzsj.gweuc.cn, port: 26614, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+rule-providers:
+    Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
+    Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
+    Spotify: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/spotify.yaml', interval: 86400, path: ./ruleset/spotify.yml }
+    Meoo: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
+    IPAIR: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml', interval: 86400, path: ./ruleset/ipair.yaml }
+    代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
+    TIKTOK: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tiktok.yaml', interval: 86400, path: ./ruleset/tiktok.yaml }
+    YOUTUBE: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/youtube.yaml', interval: 86400, path: ./ruleset/youtube.yaml }
+    Telegram: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/telegram.yaml', interval: 86400, path: ./ruleset/telegram.yaml }
+    Twitter: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/twitter.yaml', interval: 86400, path: ./ruleset/twitter.yaml }
+    bigo代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml', interval: 86400, path: ./ruleset/bigo_proxy.yaml }
+    bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
+    bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
+    bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
+    wechat: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/wechat.yaml', interval: 86400, path: ./ruleset/wechat.yaml }
+    tencent: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tencent.yaml', interval: 86400, path: ./ruleset/tencent.yaml }
+    apple: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/apple.yaml', interval: 86400, path: ./ruleset/apple.yaml }
+    直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct1.yml }
+    直连1: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directa.yaml', interval: 86400, path: ./ruleset/directa.yml }
+    直连2: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directb.yaml', interval: 86400, path: ./ruleset/directb.yml }
+    直连3: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directc.yaml', interval: 86400, path: ./ruleset/directc.yml }
+    黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject1.yml }
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - ♻️ 流量光自动
+      - ♻️ 流量光手动
+      - 【琪琪】HongKong01
+      - 【琪琪】HongKong02
+      - 【琪琪】HongKong03
+      - 【琪琪】HongKong04
+      - 【琪琪】HongKong05
+      - 【琪琪】HongKong06
+      - 【琪琪】Taiwan01
+      - 【琪琪】Taiwan02
+      - 【琪琪】Taiwan03
+      - 【琪琪】Taiwan04
+      - 【琪琪】Taiwan05
+      - 【琪琪】Taiwan06
+      - 【琪琪】TaiwanIEPL01
+      - 【琪琪】TaiwanIEPL02
+      - 【琪琪】HongKongIEPL01
+      - 【琪琪】HongKongIEPL02
+      - DIRECT
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 【琪琪】HongKong01
+      - 【琪琪】HongKong02
+      - 【琪琪】HongKong03
+      - 【琪琪】HongKong04
+      - 【琪琪】HongKong05
+      - 【琪琪】HongKong06
+      - 【琪琪】Taiwan01
+      - 【琪琪】Taiwan02
+      - 【琪琪】Taiwan03
+      - 【琪琪】Taiwan04
+      - 【琪琪】Taiwan05
+      - 【琪琪】Taiwan06
+      - 【琪琪】TaiwanIEPL01
+      - 【琪琪】TaiwanIEPL02
+      - 【琪琪】HongKongIEPL01
+      - 【琪琪】HongKongIEPL02
+  - name: ♻️ 流量光手动
+    type: select
+    proxies:
+      - 【琪琪】HongKong01
+      - 【琪琪】HongKong02
+      - 【琪琪】HongKong03
+      - 【琪琪】HongKong04
+      - 【琪琪】HongKong05
+      - 【琪琪】HongKong06
+      - 【琪琪】Taiwan01
+      - 【琪琪】Taiwan02
+      - 【琪琪】Taiwan03
+      - 【琪琪】Taiwan04
+      - 【琪琪】Taiwan05
+      - 【琪琪】Taiwan06
+      - 【琪琪】TaiwanIEPL01
+      - 【琪琪】TaiwanIEPL02
+      - 【琪琪】HongKongIEPL01
+      - 【琪琪】HongKongIEPL02
+  - name: 🌍 MEOO直播
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 流量光手动
+      - ♻️ 流量光自动
+      - 🎯 全球直连
+  - name: 🌍 BIGO直播
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 流量光手动
+      - ♻️ 流量光自动
+      - 🎯 全球直连
+  - name: 🌍 BIGO游戏
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 流量光手动
+      - ♻️ 流量光自动
+      - 🎯 全球直连
+  - name: 🌍 BIGO登录
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - ♻️ 流量光手动
+      - ♻️ 流量光自动
+  - name: 🌍 BIGO其他
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 流量光手动
+      - ♻️ 流量光自动
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 流量光手动
+      - ♻️ 流量光自动
+      - 🎯 全球直连
+  - name: 🌍 IPAIR直播
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 流量光手动
+      - ♻️ 流量光自动
+      - 🎯 全球直连
+  - name: ♻️ 流量光自动
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 【琪琪】HongKong01
+      - 【琪琪】HongKong02
+      - 【琪琪】HongKong03
+      - 【琪琪】HongKong04
+      - 【琪琪】HongKong05
+      - 【琪琪】HongKong06
+      - 【琪琪】Taiwan01
+      - 【琪琪】Taiwan02
+      - 【琪琪】Taiwan03
+      - 【琪琪】Taiwan04
+      - 【琪琪】Taiwan05
+      - 【琪琪】Taiwan06
+      - 【琪琪】TaiwanIEPL01
+      - 【琪琪】TaiwanIEPL02
+      - 【琪琪】HongKongIEPL01
+      - 【琪琪】HongKongIEPL02
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ♻️ 流量光手动
+      - ♻️ 流量光自动
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - ♻️ 流量光手动
+      - ♻️ 流量光自动
+rules:
+    - 'RULE-SET,Netflix,🌍 国外媒体'
+    - 'RULE-SET,Disney,🌍 国外媒体'
+    - 'RULE-SET,Spotify,🌍 国外媒体'
+    - 'RULE-SET,Meoo,🌍 MEOO直播'
+    - 'RULE-SET,TIKTOK,🌍 国外媒体'
+    - 'RULE-SET,YOUTUBE,🌍 国外媒体'
+    - 'RULE-SET,Telegram,🌍 国外媒体'
+    - 'RULE-SET,Twitter,🌍 国外媒体'
+    - 'RULE-SET,bigo代理,🌍 BIGO直播'
+    - 'RULE-SET,bigo游戏,🌍 BIGO游戏'
+    - 'RULE-SET,bigo登录,🌍 BIGO登录'
+    - 'RULE-SET,wechat,🎯 全球直连'
+    - 'RULE-SET,tencent,🎯 全球直连'
+    - 'RULE-SET,bigo直连,🎯 全球直连'
+    - 'RULE-SET,IPAIR,🌍 IPAIR直播'
+    - 'RULE-SET,apple,🎯 全球直连'
+    - 'RULE-SET,直连,🎯 全球直连'
+    - 'RULE-SET,直连1,🎯 全球直连'
+    - 'RULE-SET,直连2,🎯 全球直连'
+    - 'RULE-SET,直连3,🎯 全球直连'
+    - 'RULE-SET,黑名单,🛑 全球拦截'
+    - 'RULE-SET,代理,🚀 节点选择'
+    - 'DOMAIN,local.adguard.org,🎯 全球直连'
+    - 'DOMAIN-SUFFIX,local,🎯 全球直连'
+    - 'IP-CIDR,127.0.0.0/8,🎯 全球直连'
+    - 'IP-CIDR,172.16.0.0/12,🎯 全球直连'
+    - 'IP-CIDR,192.168.0.0/16,🎯 全球直连'
+    - 'IP-CIDR,10.0.0.0/8,🎯 全球直连'
+    - 'IP-CIDR,17.0.0.0/8,🎯 全球直连'
+    - 'IP-CIDR,100.64.0.0/10,🎯 全球直连'
+    - 'IP-CIDR,224.0.0.0/4,🎯 全球直连'
+    - 'IP-CIDR,203.0.113.0/24,🎯 全球直连'
+    - 'IP-CIDR,192.0.2.0/24,🎯 全球直连'
+    - 'IP-CIDR6,fe80::/10,🎯 全球直连'
+    - 'GEOIP,CN,🎯 全球直连'
+    - 'GEOIP,LAN,🎯 全球直连'
+    - 'MATCH,🐟 漏网之鱼'
