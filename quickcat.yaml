@@ -51,28 +51,28 @@ proxies:
     - { name: 美国05, type: ss, server: us05.x.quickcht3.club, port: 52675, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
     - { name: 美国06, type: ss, server: us06.x.quickcht3.club, port: 52676, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
 rule-providers:
-    Netflix: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
-    Disney: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
-    Spotify: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/spotify.yaml', interval: 86400, path: ./ruleset/spotify.yml }
-    Meoo: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
-    IPAIR: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml', interval: 86400, path: ./ruleset/ipair.yaml }
-    代理: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
-    TIKTOK: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tiktok.yaml', interval: 86400, path: ./ruleset/tiktok.yaml }
-    YOUTUBE: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/youtube.yaml', interval: 86400, path: ./ruleset/youtube.yaml }
-    Telegram: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/telegram.yaml', interval: 86400, path: ./ruleset/telegram.yaml }
-    Twitter: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/twitter.yaml', interval: 86400, path: ./ruleset/twitter.yaml }
-    bigo代理: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml', interval: 86400, path: ./ruleset/bigo_proxy.yaml }
-    bigo游戏: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
-    bigo直连: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
-    bigo登录: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
-    wechat: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/wechat.yaml', interval: 86400, path: ./ruleset/wechat.yaml }
-    tencent: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tencent.yaml', interval: 86400, path: ./ruleset/tencent.yaml }
-    apple: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/apple.yaml', interval: 86400, path: ./ruleset/apple.yaml }
-    直连: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct1.yml }
-    直连1: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directa.yaml', interval: 86400, path: ./ruleset/directa.yml }
-    直连2: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directb.yaml', interval: 86400, path: ./ruleset/directb.yml }
-    直连3: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directc.yaml', interval: 86400, path: ./ruleset/directc.yml }
-    黑名单: { type: http, behavior: classical, url: 'https://ghfast.top/https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject1.yml }
+    Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
+    Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
+    Spotify: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/spotify.yaml', interval: 86400, path: ./ruleset/spotify.yml }
+    Meoo: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
+    IPAIR: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml', interval: 86400, path: ./ruleset/ipair.yaml }
+    代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
+    TIKTOK: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tiktok.yaml', interval: 86400, path: ./ruleset/tiktok.yaml }
+    YOUTUBE: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/youtube.yaml', interval: 86400, path: ./ruleset/youtube.yaml }
+    Telegram: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/telegram.yaml', interval: 86400, path: ./ruleset/telegram.yaml }
+    Twitter: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/twitter.yaml', interval: 86400, path: ./ruleset/twitter.yaml }
+    bigo代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml', interval: 86400, path: ./ruleset/bigo_proxy.yaml }
+    bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
+    bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
+    bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
+    wechat: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/wechat.yaml', interval: 86400, path: ./ruleset/wechat.yaml }
+    tencent: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tencent.yaml', interval: 86400, path: ./ruleset/tencent.yaml }
+    apple: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/apple.yaml', interval: 86400, path: ./ruleset/apple.yaml }
+    直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct1.yml }
+    直连1: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directa.yaml', interval: 86400, path: ./ruleset/directa.yml }
+    直连2: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directb.yaml', interval: 86400, path: ./ruleset/directb.yml }
+    直连3: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directc.yaml', interval: 86400, path: ./ruleset/directc.yml }
+    黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject1.yml }
 proxy-groups:
   - name: 🚀 节点选择
     type: select
