@@ -4,38 +4,18 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 【叶伴花】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】HongKong03, type: ss, server: qc456987.qeayr.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】HongKong04, type: ss, server: qc456987.qeayr.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】HongKong05, type: ss, server: s20002625.qeayr.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】HongKong06, type: ss, server: s20002625.qeayr.cn, port: 46815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】Taiwan01, type: ss, server: cyusd123.qeayr.cn, port: 14786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】Taiwan02, type: ss, server: cyusd123.qeayr.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】Taiwan03, type: ss, server: qc456987.qeayr.cn, port: 24789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】Taiwan04, type: ss, server: qc456987.qeayr.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】TaiwanIEPL01, type: ss, server: apiyhyzsj.gweuc.cn, port: 26615, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】TaiwanIEPL02, type: ss, server: apiyhyzsj.gweuc.cn, port: 26616, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】HongKongIEPL01, type: ss, server: apiyhyzsj.gweuc.cn, port: 26613, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【叶伴花】HongKongIEPL02, type: ss, server: apiyhyzsj.gweuc.cn, port: 26614, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【流量光】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
+  - {name: 【流量光】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
+  - {name: 【流量光】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
   - {name: 【流量光】HongKong03, type: ss, server: qc456987.qeayr.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
   - {name: 【流量光】HongKong04, type: ss, server: qc456987.qeayr.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong05, type: ss, server: s20002625.qeayr.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong06, type: ss, server: s20002625.qeayr.cn, port: 46815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan01, type: ss, server: cyusd123.qeayr.cn, port: 14786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan02, type: ss, server: cyusd123.qeayr.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
+  - {name: 【流量光】HongKong05, type: ss, server: s20002625.qeayr.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
+  - {name: 【流量光】HongKong06, type: ss, server: s20002625.qeayr.cn, port: 46815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
+  - {name: 【流量光】Taiwan01, type: ss, server: cyusd123.qeayr.cn, port: 14786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
+  - {name: 【流量光】Taiwan02, type: ss, server: cyusd123.qeayr.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
   - {name: 【流量光】Taiwan03, type: ss, server: qc456987.qeayr.cn, port: 24789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
   - {name: 【流量光】Taiwan04, type: ss, server: qc456987.qeayr.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】TaiwanIEPL01, type: ss, server: apiyhyzsj.gweuc.cn, port: 26615, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】TaiwanIEPL02, type: ss, server: apiyhyzsj.gweuc.cn, port: 26616, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKongIEPL01, type: ss, server: apiyhyzsj.gweuc.cn, port: 26613, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKongIEPL02, type: ss, server: apiyhyzsj.gweuc.cn, port: 26614, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
+  - {name: 【流量光】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
+  - {name: 【流量光】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
     Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
@@ -78,26 +58,6 @@ proxy-groups:
       - 【流量光】Taiwan04
       - 【流量光】Taiwan05
       - 【流量光】Taiwan06
-      - 【叶伴花】HongKong01
-      - 【叶伴花】HongKong02
-      - 【叶伴花】HongKong03
-      - 【叶伴花】HongKong04
-      - 【叶伴花】HongKong05
-      - 【叶伴花】HongKong06
-      - 【叶伴花】Taiwan01
-      - 【叶伴花】Taiwan02
-      - 【叶伴花】Taiwan03
-      - 【叶伴花】Taiwan04
-      - 【叶伴花】Taiwan05
-      - 【叶伴花】Taiwan06
-      - 【叶伴花】TaiwanIEPL01
-      - 【叶伴花】TaiwanIEPL02
-      - 【叶伴花】HongKongIEPL01
-      - 【叶伴花】HongKongIEPL02
-      - 【流量光】TaiwanIEPL01
-      - 【流量光】TaiwanIEPL02
-      - 【流量光】HongKongIEPL01
-      - 【流量光】HongKongIEPL02
       - DIRECT
   - name: ♻️ 自动选择
     type: url-test
@@ -117,26 +77,6 @@ proxy-groups:
       - 【流量光】Taiwan04
       - 【流量光】Taiwan05
       - 【流量光】Taiwan06
-      - 【叶伴花】HongKong01
-      - 【叶伴花】HongKong02
-      - 【叶伴花】HongKong03
-      - 【叶伴花】HongKong04
-      - 【叶伴花】HongKong05
-      - 【叶伴花】HongKong06
-      - 【叶伴花】Taiwan01
-      - 【叶伴花】Taiwan02
-      - 【叶伴花】Taiwan03
-      - 【叶伴花】Taiwan04
-      - 【叶伴花】Taiwan05
-      - 【叶伴花】Taiwan06
-      - 【叶伴花】TaiwanIEPL01
-      - 【叶伴花】TaiwanIEPL02
-      - 【叶伴花】HongKongIEPL01
-      - 【叶伴花】HongKongIEPL02
-      - 【流量光】TaiwanIEPL01
-      - 【流量光】TaiwanIEPL02
-      - 【流量光】HongKongIEPL01
-      - 【流量光】HongKongIEPL02
   - name: ♻️ 流量光手动
     type: select
     proxies:
@@ -152,26 +92,6 @@ proxy-groups:
       - 【流量光】Taiwan04
       - 【流量光】Taiwan05
       - 【流量光】Taiwan06
-      - 【叶伴花】HongKong01
-      - 【叶伴花】HongKong02
-      - 【叶伴花】HongKong03
-      - 【叶伴花】HongKong04
-      - 【叶伴花】HongKong05
-      - 【叶伴花】HongKong06
-      - 【叶伴花】Taiwan01
-      - 【叶伴花】Taiwan02
-      - 【叶伴花】Taiwan03
-      - 【叶伴花】Taiwan04
-      - 【叶伴花】Taiwan05
-      - 【叶伴花】Taiwan06
-      - 【叶伴花】TaiwanIEPL01
-      - 【叶伴花】TaiwanIEPL02
-      - 【叶伴花】HongKongIEPL01
-      - 【叶伴花】HongKongIEPL02
-      - 【流量光】TaiwanIEPL01
-      - 【流量光】TaiwanIEPL02
-      - 【流量光】HongKongIEPL01
-      - 【流量光】HongKongIEPL02
   - name: 🌍 MEOO直播
     type: select
     proxies:
@@ -246,26 +166,6 @@ proxy-groups:
       - 【流量光】Taiwan04
       - 【流量光】Taiwan05
       - 【流量光】Taiwan06
-      - 【叶伴花】HongKong01
-      - 【叶伴花】HongKong02
-      - 【叶伴花】HongKong03
-      - 【叶伴花】HongKong04
-      - 【叶伴花】HongKong05
-      - 【叶伴花】HongKong06
-      - 【叶伴花】Taiwan01
-      - 【叶伴花】Taiwan02
-      - 【叶伴花】Taiwan03
-      - 【叶伴花】Taiwan04
-      - 【叶伴花】Taiwan05
-      - 【叶伴花】Taiwan06
-      - 【叶伴花】TaiwanIEPL01
-      - 【叶伴花】TaiwanIEPL02
-      - 【叶伴花】HongKongIEPL01
-      - 【叶伴花】HongKongIEPL02
-      - 【流量光】TaiwanIEPL01
-      - 【流量光】TaiwanIEPL02
-      - 【流量光】HongKongIEPL01
-      - 【流量光】HongKongIEPL02
   - name: 🎯 全球直连
     type: select
     proxies:
