@@ -4,8 +4,8 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 【流量光】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【流量光】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
+  - {name: 【流量光】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
   - {name: 【流量光】HongKong03, type: ss, server: qc456987.qeayr.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
   - {name: 【流量光】HongKong04, type: ss, server: qc456987.qeayr.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
   - {name: 【流量光】HongKong05, type: ss, server: s20002625.qeayr.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
