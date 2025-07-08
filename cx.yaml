@@ -16,6 +16,19 @@ proxies:
   - {name: 【流量光】Taiwan04, type: ss, server: qc456987.qeayr.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
   - {name: 【流量光】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
   - {name: 【流量光】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
+  - {name: 【光速机场】香港1, type: ss, server: gy11.gsulink.top, port: 38696, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】台湾1, type: ss, server: gy11.gsulink.top, port: 19713, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】新加坡1, type: ss, server: gy11.gsulink.top, port: 13976, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】日本1, type: ss, server: gy11.gsulink.top, port: 55384, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】美国A-1, type: ss, server: gy11.gsulink.top, port: 48624, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】美国B-1, type: ss, server: gy11.gsulink.top, port: 13026, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】美国C-1, type: ss, server: gy11.gsulink.top, port: 12599, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】巴西1, type: ss, server: gy11.gsulink.top, port: 59341, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】墨西哥1, type: ss, server: gy11.gsulink.top, port: 57327, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】韩国1, type: ss, server: gy11.gsulink.top, port: 40017, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】冰岛1, type: ss, server: gy11.gsulink.top, port: 20612, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】土耳其1, type: ss, server: gy11.gsulink.top, port: 22165, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】马来西亚1, type: ss, server: gy11.gsulink.top, port: 19447, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
     Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
@@ -31,14 +44,8 @@ rule-providers:
     bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
     bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
     bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
-    wechat: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/wechat.yaml', interval: 86400, path: ./ruleset/wechat.yaml }
-    tencent: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tencent.yaml', interval: 86400, path: ./ruleset/tencent.yaml }
-    apple: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/apple.yaml', interval: 86400, path: ./ruleset/apple.yaml }
-    直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct1.yml }
-    直连1: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directa.yaml', interval: 86400, path: ./ruleset/directa.yml }
-    直连2: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directb.yaml', interval: 86400, path: ./ruleset/directb.yml }
-    直连3: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directc.yaml', interval: 86400, path: ./ruleset/directc.yml }
-    黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject1.yml }
+    直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct.yaml }
+    黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -58,6 +65,19 @@ proxy-groups:
       - 【流量光】Taiwan04
       - 【流量光】Taiwan05
       - 【流量光】Taiwan06
+      - 【光速机场】香港1
+      - 【光速机场】台湾1
+      - 【光速机场】新加坡1
+      - 【光速机场】日本1
+      - 【光速机场】美国A-1
+      - 【光速机场】美国B-1
+      - 【光速机场】美国C-1
+      - 【光速机场】巴西1
+      - 【光速机场】墨西哥1
+      - 【光速机场】韩国1
+      - 【光速机场】冰岛1
+      - 【光速机场】土耳其1
+      - 【光速机场】马来西亚1
       - DIRECT
   - name: ♻️ 自动选择
     type: url-test
@@ -77,6 +97,19 @@ proxy-groups:
       - 【流量光】Taiwan04
       - 【流量光】Taiwan05
       - 【流量光】Taiwan06
+      - 【光速机场】香港1
+      - 【光速机场】台湾1
+      - 【光速机场】新加坡1
+      - 【光速机场】日本1
+      - 【光速机场】美国A-1
+      - 【光速机场】美国B-1
+      - 【光速机场】美国C-1
+      - 【光速机场】巴西1
+      - 【光速机场】墨西哥1
+      - 【光速机场】韩国1
+      - 【光速机场】冰岛1
+      - 【光速机场】土耳其1
+      - 【光速机场】马来西亚1
   - name: ♻️ 流量光手动
     type: select
     proxies:
@@ -92,6 +125,19 @@ proxy-groups:
       - 【流量光】Taiwan04
       - 【流量光】Taiwan05
       - 【流量光】Taiwan06
+      - 【光速机场】香港1
+      - 【光速机场】台湾1
+      - 【光速机场】新加坡1
+      - 【光速机场】日本1
+      - 【光速机场】美国A-1
+      - 【光速机场】美国B-1
+      - 【光速机场】美国C-1
+      - 【光速机场】巴西1
+      - 【光速机场】墨西哥1
+      - 【光速机场】韩国1
+      - 【光速机场】冰岛1
+      - 【光速机场】土耳其1
+      - 【光速机场】马来西亚1
   - name: 🌍 MEOO直播
     type: select
     proxies:
@@ -166,6 +212,19 @@ proxy-groups:
       - 【流量光】Taiwan04
       - 【流量光】Taiwan05
       - 【流量光】Taiwan06
+      - 【光速机场】香港1
+      - 【光速机场】台湾1
+      - 【光速机场】新加坡1
+      - 【光速机场】日本1
+      - 【光速机场】美国A-1
+      - 【光速机场】美国B-1
+      - 【光速机场】美国C-1
+      - 【光速机场】巴西1
+      - 【光速机场】墨西哥1
+      - 【光速机场】韩国1
+      - 【光速机场】冰岛1
+      - 【光速机场】土耳其1
+      - 【光速机场】马来西亚1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -204,15 +263,9 @@ rules:
     - 'RULE-SET,bigo代理,🌍 BIGO直播'
     - 'RULE-SET,bigo游戏,🌍 BIGO游戏'
     - 'RULE-SET,bigo登录,🌍 BIGO登录'
-    - 'RULE-SET,wechat,🎯 全球直连'
-    - 'RULE-SET,tencent,🎯 全球直连'
     - 'RULE-SET,bigo直连,🎯 全球直连'
     - 'RULE-SET,IPAIR,🌍 IPAIR直播'
-    - 'RULE-SET,apple,🎯 全球直连'
     - 'RULE-SET,直连,🎯 全球直连'
-    - 'RULE-SET,直连1,🎯 全球直连'
-    - 'RULE-SET,直连2,🎯 全球直连'
-    - 'RULE-SET,直连3,🎯 全球直连'
     - 'RULE-SET,黑名单,🛑 全球拦截'
     - 'RULE-SET,代理,🚀 节点选择'
     - 'DOMAIN,local.adguard.org,🎯 全球直连'
