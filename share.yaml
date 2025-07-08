@@ -4,18 +4,18 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 【流量光】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【流量光】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【流量光】HongKong03, type: ss, server: qc456987.qeayr.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong04, type: ss, server: qc456987.qeayr.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong05, type: ss, server: s20002625.qeayr.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
-  - {name: 【流量光】HongKong06, type: ss, server: s20002625.qeayr.cn, port: 46815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
-  - {name: 【流量光】Taiwan01, type: ss, server: cyusd123.qeayr.cn, port: 14786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【流量光】Taiwan02, type: ss, server: cyusd123.qeayr.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【流量光】Taiwan03, type: ss, server: qc456987.qeayr.cn, port: 24789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan04, type: ss, server: qc456987.qeayr.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
-  - {name: 【流量光】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
+  - {name: 【流量光】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】HongKong03, type: ss, server: qc456987.qeayr.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】HongKong04, type: ss, server: qc456987.qeayr.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】HongKong05, type: ss, server: s20002625.qeayr.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】HongKong06, type: ss, server: s20002625.qeayr.cn, port: 46815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】Taiwan01, type: ss, server: cyusd123.qeayr.cn, port: 14786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】Taiwan02, type: ss, server: cyusd123.qeayr.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】Taiwan03, type: ss, server: qc456987.qeayr.cn, port: 24789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】Taiwan04, type: ss, server: qc456987.qeayr.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
     Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
@@ -31,14 +31,8 @@ rule-providers:
     bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
     bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
     bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
-    wechat: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/wechat.yaml', interval: 86400, path: ./ruleset/wechat.yaml }
-    tencent: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tencent.yaml', interval: 86400, path: ./ruleset/tencent.yaml }
-    apple: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/apple.yaml', interval: 86400, path: ./ruleset/apple.yaml }
-    直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct1.yml }
-    直连1: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directa.yaml', interval: 86400, path: ./ruleset/directa.yml }
-    直连2: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directb.yaml', interval: 86400, path: ./ruleset/directb.yml }
-    直连3: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directc.yaml', interval: 86400, path: ./ruleset/directc.yml }
-    黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject1.yml }
+    直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct.yaml }
+    黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -204,15 +198,9 @@ rules:
     - 'RULE-SET,bigo代理,🌍 BIGO直播'
     - 'RULE-SET,bigo游戏,🌍 BIGO游戏'
     - 'RULE-SET,bigo登录,🌍 BIGO登录'
-    - 'RULE-SET,wechat,🎯 全球直连'
-    - 'RULE-SET,tencent,🎯 全球直连'
     - 'RULE-SET,bigo直连,🎯 全球直连'
     - 'RULE-SET,IPAIR,🌍 IPAIR直播'
-    - 'RULE-SET,apple,🎯 全球直连'
     - 'RULE-SET,直连,🎯 全球直连'
-    - 'RULE-SET,直连1,🎯 全球直连'
-    - 'RULE-SET,直连2,🎯 全球直连'
-    - 'RULE-SET,直连3,🎯 全球直连'
     - 'RULE-SET,黑名单,🛑 全球拦截'
     - 'RULE-SET,代理,🚀 节点选择'
     - 'DOMAIN,local.adguard.org,🎯 全球直连'
