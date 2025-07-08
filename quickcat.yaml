@@ -4,52 +4,52 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-    - { name: 香港01, type: ss, server: hk01.x.quickcht3.club, port: 52611, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 香港02, type: ss, server: hk02.x.quickcht3.club, port: 52612, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 香港03, type: ss, server: hk03.x.quickcht3.club, port: 52613, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 香港04, type: ss, server: hk04.x.quickcht3.club, port: 52614, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 香港05, type: ss, server: hk05.x.quickcht3.club, port: 52615, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 香港06, type: ss, server: hk06.x.quickcht3.club, port: 52616, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 台湾01, type: ss, server: tw01.x.quickcht3.club, port: 52661, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 台湾02, type: ss, server: tw02.x.quickcht3.club, port: 52662, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 台湾03, type: ss, server: tw03.x.quickcht3.club, port: 52663, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 台湾04, type: ss, server: tw04.x.quickcht3.club, port: 52664, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 台湾05, type: ss, server: tw05.x.quickcht3.club, port: 52665, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 台湾06, type: ss, server: tw06.x.quickcht3.club, port: 52666, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 日本02, type: ss, server: jp02.x.quickcht3.club, port: 52622, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 日本01, type: ss, server: jp01.x.quickcht3.club, port: 52621, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 日本03, type: ss, server: jp03.x.quickcht3.club, port: 52623, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 日本04, type: ss, server: jp04.x.quickcht3.club, port: 52624, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 日本05, type: ss, server: jp05.x.quickcht3.club, port: 52625, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 日本06, type: ss, server: jp06.x.quickcht3.club, port: 52626, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 新加坡01, type: ss, server: sg01.x.quickcht3.club, port: 52631, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 新加坡02, type: ss, server: sg02.x.quickcht3.club, port: 52632, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 新加坡03, type: ss, server: sg03.x.quickcht3.club, port: 52633, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 新加坡04, type: ss, server: sg04.x.quickcht3.club, port: 52634, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 新加坡05, type: ss, server: sg05.x.quickcht3.club, port: 52635, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 新加坡06, type: ss, server: sg06.x.quickcht3.club, port: 52636, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 韩国01, type: ss, server: kr01.x.quickcht3.club, port: 52601, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 韩国02, type: ss, server: kr02.x.quickcht3.club, port: 52602, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 韩国03, type: ss, server: kr03.x.quickcht3.club, port: 52603, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 韩国04, type: ss, server: kr04.x.quickcht3.club, port: 52604, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 韩国05, type: ss, server: kr05.x.quickcht3.club, port: 52605, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 韩国06, type: ss, server: kr06.x.quickcht3.club, port: 52604, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 印度01, type: ss, server: in01.x.quickcht3.club, port: 52651, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 印度02, type: ss, server: in02.x.quickcht3.club, port: 52652, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 土耳其01, type: ss, server: tur01.x.quickcht3.club, port: 52655, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 土耳其02, type: ss, server: tur02.x.quickcht3.club, port: 52657, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 英国01, type: ss, server: uk01.x.quickcht3.club, port: 52641, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 英国02, type: ss, server: uk02.x.quickcht3.club, port: 52642, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 英国03, type: ss, server: uk03.x.quickcht3.club, port: 52643, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 英国04, type: ss, server: uk04.x.quickcht3.club, port: 52644, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 英国05, type: ss, server: uk05.x.quickcht3.club, port: 52645, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 英国06, type: ss, server: uk06.x.quickcht3.club, port: 52646, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 美国01, type: ss, server: us01.x.quickcht3.club, port: 52671, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 美国02, type: ss, server: us02.x.quickcht3.club, port: 52672, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 美国03, type: ss, server: us03.x.quickcht3.club, port: 52673, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 美国04, type: ss, server: us04.x.quickcht3.club, port: 52674, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 美国05, type: ss, server: us05.x.quickcht3.club, port: 52675, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
-    - { name: 美国06, type: ss, server: us06.x.quickcht3.club, port: 52676, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 香港01, type: ss, server: hk01.x.kuaimaonodebgp.com, port: 52611, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 香港02, type: ss, server: hk02.x.kuaimaonodebgp.com, port: 52612, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 香港03, type: ss, server: hk03.x.kuaimaonodebgp.com, port: 52613, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 香港04, type: ss, server: hk04.x.kuaimaonodebgp.com, port: 52614, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 香港05, type: ss, server: hk05.x.kuaimaonodebgp.com, port: 52615, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 香港06, type: ss, server: hk06.x.kuaimaonodebgp.com, port: 52616, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 台湾01, type: ss, server: tw01.x.kuaimaonodebgp.com, port: 52661, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 台湾02, type: ss, server: tw02.x.kuaimaonodebgp.com, port: 52662, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 台湾03, type: ss, server: tw03.x.kuaimaonodebgp.com, port: 52663, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 台湾04, type: ss, server: tw04.x.kuaimaonodebgp.com, port: 52664, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 台湾05, type: ss, server: tw05.x.kuaimaonodebgp.com, port: 52665, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 台湾06, type: ss, server: tw06.x.kuaimaonodebgp.com, port: 52666, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 日本02, type: ss, server: jp02.x.kuaimaonodebgp.com, port: 52622, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 日本01, type: ss, server: jp01.x.kuaimaonodebgp.com, port: 52621, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 日本03, type: ss, server: jp03.x.kuaimaonodebgp.com, port: 52623, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 日本04, type: ss, server: jp04.x.kuaimaonodebgp.com, port: 52624, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 日本05, type: ss, server: jp05.x.kuaimaonodebgp.com, port: 52625, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 日本06, type: ss, server: jp06.x.kuaimaonodebgp.com, port: 52626, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 新加坡01, type: ss, server: sg01.x.kuaimaonodebgp.com, port: 52631, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 新加坡02, type: ss, server: sg02.x.kuaimaonodebgp.com, port: 52632, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 新加坡03, type: ss, server: sg03.x.kuaimaonodebgp.com, port: 52633, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 新加坡04, type: ss, server: sg04.x.kuaimaonodebgp.com, port: 52634, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 新加坡05, type: ss, server: sg05.x.kuaimaonodebgp.com, port: 52635, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 新加坡06, type: ss, server: sg06.x.kuaimaonodebgp.com, port: 52636, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 韩国01, type: ss, server: kr01.x.kuaimaonodebgp.com, port: 52601, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 韩国02, type: ss, server: kr02.x.kuaimaonodebgp.com, port: 52602, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 韩国03, type: ss, server: kr03.x.kuaimaonodebgp.com, port: 52603, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 韩国04, type: ss, server: kr04.x.kuaimaonodebgp.com, port: 52604, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 韩国05, type: ss, server: kr05.x.kuaimaonodebgp.com, port: 52605, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 韩国06, type: ss, server: kr06.x.kuaimaonodebgp.com, port: 52604, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 印度01, type: ss, server: in01.x.kuaimaonodebgp.com, port: 52651, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 印度02, type: ss, server: in02.x.kuaimaonodebgp.com, port: 52652, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 土耳其01, type: ss, server: tur01.x.kuaimaonodebgp.com, port: 52655, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 土耳其02, type: ss, server: tur02.x.kuaimaonodebgp.com, port: 52657, cipher: aes-128-gcm, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 英国01, type: ss, server: uk01.x.kuaimaonodebgp.com, port: 52641, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 英国02, type: ss, server: uk02.x.kuaimaonodebgp.com, port: 52642, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 英国03, type: ss, server: uk03.x.kuaimaonodebgp.com, port: 52643, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 英国04, type: ss, server: uk04.x.kuaimaonodebgp.com, port: 52644, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 英国05, type: ss, server: uk05.x.kuaimaonodebgp.com, port: 52645, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 英国06, type: ss, server: uk06.x.kuaimaonodebgp.com, port: 52646, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 美国01, type: ss, server: us01.x.kuaimaonodebgp.com, port: 52671, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 美国02, type: ss, server: us02.x.kuaimaonodebgp.com, port: 52672, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 美国03, type: ss, server: us03.x.kuaimaonodebgp.com, port: 52673, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 美国04, type: ss, server: us04.x.kuaimaonodebgp.com, port: 52674, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 美国05, type: ss, server: us05.x.kuaimaonodebgp.com, port: 52675, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
+    - { name: 美国06, type: ss, server: us06.x.kuaimaonodebgp.com, port: 52676, cipher: chacha20-ietf-poly1305, password: cf6358e1-aa20-48d7-9de8-551fab3964a3, udp: true }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
     Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
@@ -65,14 +65,8 @@ rule-providers:
     bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
     bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
     bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
-    wechat: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/wechat.yaml', interval: 86400, path: ./ruleset/wechat.yaml }
-    tencent: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tencent.yaml', interval: 86400, path: ./ruleset/tencent.yaml }
-    apple: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/apple.yaml', interval: 86400, path: ./ruleset/apple.yaml }
-    直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct1.yml }
-    直连1: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directa.yaml', interval: 86400, path: ./ruleset/directa.yml }
-    直连2: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directb.yaml', interval: 86400, path: ./ruleset/directb.yml }
-    直连3: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/directc.yaml', interval: 86400, path: ./ruleset/directc.yml }
-    黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject1.yml }
+    直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct.yaml }
+    黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -467,15 +461,9 @@ rules:
     - 'RULE-SET,bigo代理,🌍 BIGO直播'
     - 'RULE-SET,bigo游戏,🌍 BIGO游戏'
     - 'RULE-SET,bigo登录,🌍 BIGO登录'
-    - 'RULE-SET,wechat,🎯 全球直连'
-    - 'RULE-SET,tencent,🎯 全球直连'
     - 'RULE-SET,bigo直连,🎯 全球直连'
     - 'RULE-SET,IPAIR,🌍 IPAIR直播'
-    - 'RULE-SET,apple,🎯 全球直连'
     - 'RULE-SET,直连,🎯 全球直连'
-    - 'RULE-SET,直连1,🎯 全球直连'
-    - 'RULE-SET,直连2,🎯 全球直连'
-    - 'RULE-SET,直连3,🎯 全球直连'
     - 'RULE-SET,黑名单,🛑 全球拦截'
     - 'RULE-SET,代理,🚀 节点选择'
     - 'DOMAIN,local.adguard.org,🎯 全球直连'
