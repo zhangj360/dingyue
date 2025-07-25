@@ -1,0 +1,442 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+ipv6: false
+profile:
+    store-selected: true
+    tracing: false
+    store-fake-ip: false
+unified-delay: true
+hosts:
+    dnslog.cn: 47.244.138.18
+    
+dns:
+    enable: true
+    ipv6: false
+    listen: '0.0.0.0:1053'
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    default-nameserver: [223.5.5.5]
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fake-ip-filter: ['*.lan', localhost.ptlogin2.qq.com, dns.msftncsi.com, '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com']
+    fallback: [1.1.1.1, 8.8.8.8]
+    fallback-filter: { geoip: true, geoip-code: CN, ipcidr: [240.0.0.0/4] }
+proxies:
+  - {name: 【SSRDOG】HongKong丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨02, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16002', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨03, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16003', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨04, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16004', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨05, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16005', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨06, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16006', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨07, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16007', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨08, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16008', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨09, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16009', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨10, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16010', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨11, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16011', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨12, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16012', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨13, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16013', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨14, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16014', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】HongKong丨15, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '16015', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Taiwan丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '17001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Taiwan丨02, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '17002', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Taiwan丨03, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '17003', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Taiwan丨04, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '17004', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Taiwan丨05, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '17005', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Taiwan丨06, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '17006', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Taiwan丨07, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '17007', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Taiwan丨08, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '17008', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Taiwan丨09, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '17009', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Taiwan丨10, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '17010', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Singapore丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '18001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Singapore丨02, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '18002', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Singapore丨03, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '18003', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Singapore丨04, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '18004', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Singapore丨05, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '18005', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Singapore丨06, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '18006', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Singapore丨07, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '18007', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Singapore丨08, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '18008', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Singapore丨09, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '18009', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Singapore丨10, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '18010', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Japan丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '19001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Japan丨02, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '19002', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Japan丨03, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '19003', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Japan丨04, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '19004', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Japan丨05, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '19005', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Japan丨06, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '19006', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Japan丨07, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '19007', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Japan丨08, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '19008', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Japan丨09, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '19009', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Japan丨10, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '19010', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】UnitedStates丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '20001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】UnitedStates丨02, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '20002', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】UnitedStates丨03, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '20003', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】UnitedStates丨04, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '20004', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】UnitedStates丨05, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '20005', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】UnitedStates丨06, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '20006', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】UnitedStates丨07, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '20007', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】UnitedStates丨08, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '20008', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】UnitedStates丨09, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '20009', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】UnitedStates丨10, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '20010', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】SouthKorea丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '21001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Canada丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '22002', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】GreatBritain丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '23001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Turkey丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '24001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】India丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '25001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Netherlands丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '26001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】France | 01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '27001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Germany | 01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '28001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Vietnam | 01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '29001', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Malaysia丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '29010', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Thailand丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '29015', cipher: aes-256-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【SSRDOG】Philippines丨01, type: ss, server: sluy6p1tcgsltb3aup.8jh7tgvamqp.useraa.userdog.sbs, port: '29020', cipher: aes-128-gcm, password: 1cf39b48-f8cf-4c96-a017-f621b29c0e5c, udp: true }
+  - {name: 【流量光】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true}
+  - {name: 【流量光】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true}
+  - {name: 【流量光】HongKong03, type: ss, server: qc456987.qeayr.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true}
+  - {name: 【流量光】HongKong04, type: ss, server: qc456987.qeayr.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true}
+  - {name: 【流量光】HongKong05, type: ss, server: s20002625.qeayr.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true}
+  - {name: 【流量光】HongKong06, type: ss, server: s20002625.qeayr.cn, port: 46815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true}
+  - {name: 【流量光】Taiwan01, type: ss, server: cyusd123.qeayr.cn, port: 14786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true}
+  - {name: 【流量光】Taiwan02, type: ss, server: cyusd123.qeayr.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true}
+  - {name: 【流量光】Taiwan03, type: ss, server: qc456987.qeayr.cn, port: 24789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true}
+  - {name: 【流量光】Taiwan04, type: ss, server: qc456987.qeayr.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true}
+  - {name: 【流量光】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true}
+  - {name: 【流量光】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true}
+  - {name: 【渔云】香港01, type: trojan, server: yuyu.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】香港02, type: trojan, server: yuyu.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】香港03, type: trojan, server: yuyu.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】香港04, type: trojan, server: yuyu.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】香港IPV6, type: trojan, server: ipv6.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】台湾01, type: trojan, server: yuyu.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】台湾02, type: trojan, server: yuyu.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】台湾03, type: trojan, server: yuyu.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】台湾04, type: trojan, server: yuyu.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】台湾IPV6, type: trojan, server: ipv6.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】日本01, type: trojan, server: yuyu.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】日本02, type: trojan, server: yuyu.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】日本03, type: trojan, server: yuyu.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】日本04, type: trojan, server: yuyu.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】日本IPV6, type: trojan, server: ipv6.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】新加坡01, type: trojan, server: yuyu.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】新加坡02, type: trojan, server: yuyu.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】新加坡03, type: trojan, server: yuyu.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】新加坡04, type: trojan, server: yuyu.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】新加坡IPV6, type: trojan, server: ipv6.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】美国01, type: trojan, server: yuyu.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】美国02, type: trojan, server: yuyu.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】美国01-, type: trojan, server: yuyu.sffyn.com, port: 29525, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】美国02-, type: trojan, server: yuyu.sffyn.com, port: 29525, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】美国IPV6, type: trojan, server: ipv6.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】韩国-首尔01, type: trojan, server: yuyu.sffyn.com, port: 42569, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】韩国-春川, type: trojan, server: yuyu.sffyn.com, port: 31080, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】澳大利亚01, type: trojan, server: yuyu.sffyn.com, port: 48389, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】墨西哥01, type: trojan, server: yuyu.sffyn.com, port: 45837, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】以色列01, type: trojan, server: yuyu.sffyn.com, port: 27436, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】南非01, type: trojan, server: yuyu.sffyn.com, port: 24109, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】阿联酋01, type: trojan, server: yuyu.sffyn.com, port: 34281, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】德国, type: trojan, server: yuyu.sffyn.com, port: 17107, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】泰国-原生, type: trojan, server: yuyu.sffyn.com, port: 23284, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】印度01, type: trojan, server: yuyu.sffyn.com, port: 58771, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】加拿大01, type: trojan, server: yuyu.sffyn.com, port: 13475, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】法国01, type: trojan, server: yuyu.sffyn.com, port: 12286, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】荷兰01, type: trojan, server: yuyu.sffyn.com, port: 14119, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】西班牙01, type: trojan, server: yuyu.sffyn.com, port: 59719, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】瑞士01, type: trojan, server: yuyu.sffyn.com, port: 41717, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】英国01, type: trojan, server: yuyu.sffyn.com, port: 57447, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】沙特阿拉伯01, type: trojan, server: yuyu.sffyn.com, port: 38492, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】巴西01, type: trojan, server: yuyu.sffyn.com, port: 41715, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】智利01, type: trojan, server: yuyu.sffyn.com, port: 30293, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【渔云】哥伦比亚01, type: trojan, server: yuyu.sffyn.com, port: 33081, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, sni: mhlnf.cn, skip-cert-verify: true, network: tcp }
+  - {name: 【快猫】香港01, type: ss, server: hk01.x.kuaimaonodebgp.com, port: 52611, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】香港02, type: ss, server: hk02.x.kuaimaonodebgp.com, port: 52612, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】香港03, type: ss, server: hk03.x.kuaimaonodebgp.com, port: 52613, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】香港04, type: ss, server: hk04.x.kuaimaonodebgp.com, port: 52614, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】香港05, type: ss, server: hk05.x.kuaimaonodebgp.com, port: 52615, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】香港06, type: ss, server: hk06.x.kuaimaonodebgp.com, port: 52616, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】台湾01, type: ss, server: tw01.x.kuaimaonodebgp.com, port: 52661, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】台湾02, type: ss, server: tw02.x.kuaimaonodebgp.com, port: 52662, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】台湾03, type: ss, server: tw03.x.kuaimaonodebgp.com, port: 52663, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】台湾04, type: ss, server: tw04.x.kuaimaonodebgp.com, port: 52664, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】台湾05, type: ss, server: tw05.x.kuaimaonodebgp.com, port: 52665, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】台湾06, type: ss, server: tw06.x.kuaimaonodebgp.com, port: 52666, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】日本02, type: ss, server: jp02.x.kuaimaonodebgp.com, port: 52622, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】日本01, type: ss, server: jp01.x.kuaimaonodebgp.com, port: 52621, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】日本03, type: ss, server: jp03.x.kuaimaonodebgp.com, port: 52623, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】日本04, type: ss, server: jp04.x.kuaimaonodebgp.com, port: 52624, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】日本05, type: ss, server: jp05.x.kuaimaonodebgp.com, port: 52625, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】日本06, type: ss, server: jp06.x.kuaimaonodebgp.com, port: 52626, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】新加坡01, type: ss, server: sg01.x.kuaimaonodebgp.com, port: 52631, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】新加坡02, type: ss, server: sg02.x.kuaimaonodebgp.com, port: 52632, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】新加坡03, type: ss, server: sg03.x.kuaimaonodebgp.com, port: 52633, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】新加坡04, type: ss, server: sg04.x.kuaimaonodebgp.com, port: 52634, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】新加坡05, type: ss, server: sg05.x.kuaimaonodebgp.com, port: 52635, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】新加坡06, type: ss, server: sg06.x.kuaimaonodebgp.com, port: 52636, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】韩国01, type: ss, server: kr01.x.kuaimaonodebgp.com, port: 52601, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】韩国02, type: ss, server: kr02.x.kuaimaonodebgp.com, port: 52602, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】韩国03, type: ss, server: kr03.x.kuaimaonodebgp.com, port: 52603, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】韩国04, type: ss, server: kr04.x.kuaimaonodebgp.com, port: 52604, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】韩国05, type: ss, server: kr05.x.kuaimaonodebgp.com, port: 52605, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】韩国06, type: ss, server: kr06.x.kuaimaonodebgp.com, port: 52604, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】印度01, type: ss, server: in01.x.kuaimaonodebgp.com, port: 52651, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】印度02, type: ss, server: in02.x.kuaimaonodebgp.com, port: 52652, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】土耳其01, type: ss, server: tur01.x.kuaimaonodebgp.com, port: 52655, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】土耳其02, type: ss, server: tur02.x.kuaimaonodebgp.com, port: 52657, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】英国01, type: ss, server: uk01.x.kuaimaonodebgp.com, port: 52641, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】英国02, type: ss, server: uk02.x.kuaimaonodebgp.com, port: 52642, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】英国03, type: ss, server: uk03.x.kuaimaonodebgp.com, port: 52643, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】英国04, type: ss, server: uk04.x.kuaimaonodebgp.com, port: 52644, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】英国05, type: ss, server: uk05.x.kuaimaonodebgp.com, port: 52645, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】英国06, type: ss, server: uk06.x.kuaimaonodebgp.com, port: 52646, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】美国01, type: ss, server: us01.x.kuaimaonodebgp.com, port: 52671, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】美国02, type: ss, server: us02.x.kuaimaonodebgp.com, port: 52672, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】美国03, type: ss, server: us03.x.kuaimaonodebgp.com, port: 52673, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】美国04, type: ss, server: us04.x.kuaimaonodebgp.com, port: 52674, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】美国05, type: ss, server: us05.x.kuaimaonodebgp.com, port: 52675, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【快猫】美国06, type: ss, server: us06.x.kuaimaonodebgp.com, port: 52676, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
+  - {name: 【光速机场】香港1, type: ss, server: gy11.gsulink.top, port: 38696, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】台湾1, type: ss, server: gy11.gsulink.top, port: 19713, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】新加坡1, type: ss, server: gy11.gsulink.top, port: 13976, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】日本1, type: ss, server: gy11.gsulink.top, port: 55384, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】美国A-1, type: ss, server: gy11.gsulink.top, port: 48624, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】美国B-1, type: ss, server: gy11.gsulink.top, port: 13026, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】美国C-1, type: ss, server: gy11.gsulink.top, port: 12599, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】巴西1, type: ss, server: gy11.gsulink.top, port: 59341, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】墨西哥1, type: ss, server: gy11.gsulink.top, port: 57327, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】韩国1, type: ss, server: gy11.gsulink.top, port: 40017, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】冰岛1, type: ss, server: gy11.gsulink.top, port: 20612, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】土耳其1, type: ss, server: gy11.gsulink.top, port: 22165, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】马来西亚1, type: ss, server: gy11.gsulink.top, port: 19447, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【宝可梦】新加坡01直连, server: sg01.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】新加坡02直连, server: sg02.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】新加坡03直连, server: sg02.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】日本01直连, server: jp01.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】日本02直连, server: jp01.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】日本03直连, server: jp01.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: sg01.poke-mon.xyz, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】日本樱花04, server: jp04.poke-mon.xyz, port: 443, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】日本樱花05, server: jp04.poke-mon.xyz, port: 443, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】日本三网06, server: jp03.poke-mon.xyz, port: 443, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】日本三网07, server: jp03.poke-mon.xyz, port: 443, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】日本三网08, server: jp03.poke-mon.xyz, port: 443, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】香港01直连, server: hk02.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】香港02直连, server: hk02.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】香港03直连, server: hk02.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】美国01直连, server: us01.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】美国02直连, server: us01.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】英国01直连, server: uk01.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】英国02直连, server: uk01.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】澳大利亚直连, server: aodaliya.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: aodaliya.poke-mon.xyz, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】德国直连, server: deguo.poke-mon.xyz, port: 20000, ports: 20000-50000, mport: 20000-50000, udp: true, skip-cert-verify: true, sni: www.bing.com, type: hysteria2, password: d1c18391-debb-48af-9777-821736c383f8 }
+  - {name: 【宝可梦】新加坡01专线, type: ss, server: sssg01.521pokemon.com, port: 55011, cipher: 2022-blake3-aes-128-gcm, password: 'YmE5ZWFhOGM5YTU3OTc2MQ==:Mjg5MWQ3YjItNWM0Ny00Mg==', udp: true }
+  - {name: 【宝可梦】新加坡02专线, type: ss, server: sssg02.521pokemon.com, port: 55012, cipher: 2022-blake3-aes-128-gcm, password: 'YmE5ZWFhOGM5YTU3OTc2MQ==:Mjg5MWQ3YjItNWM0Ny00Mg==', udp: true }
+  - {name: 【宝可梦】新加坡03专线, type: ss, server: sssg03.521pokemon.com, port: 55013, cipher: 2022-blake3-aes-128-gcm, password: 'YmE5ZWFhOGM5YTU3OTc2MQ==:Mjg5MWQ3YjItNWM0Ny00Mg==', udp: true }
+  - {name: 【宝可梦】新加坡04超速, type: trojan, server: sssg04.521pokemon.com, port: 55015, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】新加坡05超速, type: trojan, server: sssg04.521pokemon.com, port: 55015, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】新加坡06超速, type: trojan, server: sssg04.521pokemon.com, port: 55015, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】日本01专线, type: ss, server: ssjp01.521pokemon.com, port: 54025, cipher: 2022-blake3-aes-128-gcm, password: 'NGM1NzQyOGFkNWEyMTZjNA==:Mjg5MWQ3YjItNWM0Ny00Mg==', udp: true }
+  - {name: 【宝可梦】日本02专线, type: ss, server: ssjp02.521pokemon.com, port: 54026, cipher: 2022-blake3-aes-128-gcm, password: 'NGM1NzQyOGFkNWEyMTZjNA==:Mjg5MWQ3YjItNWM0Ny00Mg==', udp: true }
+  - {name: 【宝可梦】日本03专线, type: ss, server: ssjp03.521pokemon.com, port: 54027, cipher: 2022-blake3-aes-128-gcm, password: 'NGM1NzQyOGFkNWEyMTZjNA==:Mjg5MWQ3YjItNWM0Ny00Mg==', udp: true }
+  - {name: 【宝可梦】日本04超速, type: trojan, server: ssjp05.521pokemon.com, port: 54032, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】日本05超速, type: trojan, server: ssjp05.521pokemon.com, port: 54032, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】日本06超速, type: trojan, server: ssjp05.521pokemon.com, port: 54032, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】韩国01专线, type: ss, server: sskr01.521pokemon.com, port: 59107, cipher: 2022-blake3-aes-128-gcm, password: 'NzhjYmI3OWQ0OTA5OWQ3ZQ==:ZDFjMTgzOTEtZGViYi00OA==', udp: true }
+  - {name: 【宝可梦】韩国02专线, type: ss, server: sskr02.521pokemon.com, port: 59108, cipher: 2022-blake3-aes-128-gcm, password: 'NzhjYmI3OWQ0OTA5OWQ3ZQ==:ZDFjMTgzOTEtZGViYi00OA==', udp: true }
+  - {name: 【宝可梦】韩国03专线, type: ss, server: sskr03.521pokemon.com, port: 59109, cipher: 2022-blake3-aes-128-gcm, password: 'NzhjYmI3OWQ0OTA5OWQ3ZQ==:ZDFjMTgzOTEtZGViYi00OA==', udp: true }
+  - {name: 【宝可梦】韩国04超速, type: trojan, server: sskr04.521pokemon.com, port: 59110, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】韩国05超速, type: trojan, server: sskr04.521pokemon.com, port: 59110, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】韩国06超速, type: trojan, server: sskr04.521pokemon.com, port: 59110, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】美国01专线, type: ss, server: ssus01.521pokemon.com, port: 56011, cipher: 2022-blake3-aes-128-gcm, password: 'MTA2ZTcwNDVjZjU1ZmQzNw==:Mjg5MWQ3YjItNWM0Ny00Mg==', udp: true }
+  - {name: 【宝可梦】美国02专线, type: ss, server: ssus02.521pokemon.com, port: 56014, cipher: 2022-blake3-aes-128-gcm, password: 'MTA2ZTcwNDVjZjU1ZmQzNw==:Mjg5MWQ3YjItNWM0Ny00Mg==', udp: true }
+  - {name: 【宝可梦】美国03专线, type: ss, server: ssus03.521pokemon.com, port: 56013, cipher: 2022-blake3-aes-128-gcm, password: 'MTA2ZTcwNDVjZjU1ZmQzNw==:Mjg5MWQ3YjItNWM0Ny00Mg==', udp: true }
+  - {name: 【宝可梦】美国04超速, type: trojan, server: ssus04.521pokemon.com, port: 56015, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】美国05超速, type: trojan, server: ssus04.521pokemon.com, port: 56015, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【宝可梦】美国06超速, type: trojan, server: ssus04.521pokemon.com, port: 56015, password: d1c18391-debb-48af-9777-821736c383f8, udp: true, sni: itunes.apple.com, skip-cert-verify: true }
+  - {name: 【十元】美国1, server: us1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us1.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】美国2, server: us2.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us2.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】美国3, server: us3.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us3.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】美国4, server: us4.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us4.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】美国5, server: us5.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us5.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】美国6, server: us6.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us6.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】香港1, server: hk1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: hk1.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】日本1, server: jp1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: jp1.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】加拿大1, server: ca1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: ca1.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】法国1, server: fr1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: fr1.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】意大利1, server: it1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: it1.1010991.xyz, type: hysteria2, password: dbce05d6-ca33-42fc-8059-34498b660088 }
+  - {name: 【十元】美国21, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-us2-FMFtdrS3HI.1095830.xyz } } }
+  - {name: 【十元】美国22, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-us2-FMFtdrS3HI.1095830.xyz } } }
+  - {name: 【十元】美国23, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-us2-FMFtdrS3HI.1095830.xyz } } }
+  - {name: 【十元】美国24, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-us2-FMFtdrS3HI.1095830.xyz } } }
+  - {name: 【十元】美国25, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-us2-FMFtdrS3HI.1095830.xyz } } }
+  - {name: 【十元】香港11, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-hk1-FMFtdrS3HI.1095829.xyz } } }
+  - {name: 【十元】香港12, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-hk1-FMFtdrS3HI.1095829.xyz } } }
+  - {name: 【十元】香港13, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-hk1-FMFtdrS3HI.1095829.xyz } } }
+  - {name: 【十元】香港14, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-hk1-FMFtdrS3HI.1095829.xyz } } }
+  - {name: 【十元】香港15, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-hk1-FMFtdrS3HI.1095829.xyz } } }
+  - {name: 【十元】日本11, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp1-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元】日本12, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp1-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元】日本13, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp1-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元】日本14, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp1-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元】日本15, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp1-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元】日本21, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp2-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元】日本22, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp2-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元】日本23, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp2-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元】日本24, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp2-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元】日本25, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp2-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元】新加坡11, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg1-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元】新加坡12, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg1-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元】新加坡13, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg1-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元】新加坡14, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg1-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元】新加坡15, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg1-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元】新加坡21, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg2-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元】新加坡22, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg2-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元】新加坡23, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg2-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元】新加坡24, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg2-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元】新加坡25, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg2-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元】德国11, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-de1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元】德国12, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-de1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元】德国13, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-de1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元】德国14, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-de1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元】德国15, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-de1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元】意大利11, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-it1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元】意大利12, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-it1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元】意大利13, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-it1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元】意大利14, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-it1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元】意大利15, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: dbce05d6-ca33-42fc-8059-34498b660088, udp: true, network: ws, ws-opts: { headers: { Host: syyn-it1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元2】美国1, server: us1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us1.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】美国2, server: us2.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us2.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】美国3, server: us3.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us3.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】美国4, server: us4.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us4.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】美国5, server: us5.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us5.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】美国6, server: us6.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: us6.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】香港1, server: hk1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: hk1.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】日本1, server: jp1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: jp1.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】加拿大1, server: ca1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: ca1.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】法国1, server: fr1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: fr1.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】意大利1, server: it1.1010991.xyz, port: 3001, udp: true, skip-cert-verify: false, sni: it1.1010991.xyz, type: hysteria2, password: c588c501-9643-4bdc-a36c-1c1400718ceb }
+  - {name: 【十元2】美国21, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-us2-FMFtdrS3HI.1095830.xyz } } }
+  - {name: 【十元2】美国22, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-us2-FMFtdrS3HI.1095830.xyz } } }
+  - {name: 【十元2】美国23, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-us2-FMFtdrS3HI.1095830.xyz } } }
+  - {name: 【十元2】美国24, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-us2-FMFtdrS3HI.1095830.xyz } } }
+  - {name: 【十元2】美国25, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-us2-FMFtdrS3HI.1095830.xyz } } }
+  - {name: 【十元2】香港11, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-hk1-FMFtdrS3HI.1095829.xyz } } }
+  - {name: 【十元2】香港12, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-hk1-FMFtdrS3HI.1095829.xyz } } }
+  - {name: 【十元2】香港13, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-hk1-FMFtdrS3HI.1095829.xyz } } }
+  - {name: 【十元2】香港14, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-hk1-FMFtdrS3HI.1095829.xyz } } }
+  - {name: 【十元2】香港15, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-hk1-FMFtdrS3HI.1095829.xyz } } }
+  - {name: 【十元2】日本11, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp1-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元2】日本12, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp1-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元2】日本13, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp1-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元2】日本14, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp1-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元2】日本15, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp1-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元2】日本21, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp2-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元2】日本22, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp2-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元2】日本23, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp2-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元2】日本24, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp2-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元2】日本25, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-jp2-FMFtdrS3HI.1095828.xyz } } }
+  - {name: 【十元2】新加坡11, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg1-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元2】新加坡12, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg1-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元2】新加坡13, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg1-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元2】新加坡14, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg1-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元2】新加坡15, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg1-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元2】新加坡21, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg2-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元2】新加坡22, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg2-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元2】新加坡23, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg2-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元2】新加坡24, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg2-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元2】新加坡25, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-sg2-FMFtdrS3HI.1095827.xyz } } }
+  - {name: 【十元2】德国11, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-de1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元2】德国12, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-de1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元2】德国13, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-de1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元2】德国14, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-de1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元2】德国15, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-de1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元2】意大利11, type: vless, server: zz1.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-it1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元2】意大利12, type: vless, server: zz2.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-it1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元2】意大利13, type: vless, server: zz3.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-it1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元2】意大利14, type: vless, server: zz4.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-it1-FMFtdrS3HI.1095826.xyz } } }
+  - {name: 【十元2】意大利15, type: vless, server: zz5.1010991.xyz, port: 2052, uuid: c588c501-9643-4bdc-a36c-1c1400718ceb, udp: true, network: ws, ws-opts: { headers: { Host: syyn-it1-FMFtdrS3HI.1095826.xyz } } }
+proxy-groups:
+  - {name: 自动选择, type: url-test, proxies: [快猫手动, 流量光手动, 渔云手动, 光速机场手动, 宝可梦手动, 十元手动, 十元2手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, 宝可梦自动, 十元自动, 十元2自动, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 马来西亚, 印度, 土耳其, 其他], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 国外媒体, type: select, proxies: [自动选择, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, 宝可梦手动, 十元手动, 十元2手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, 宝可梦自动, 十元自动, 十元2自动, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 马来西亚, 印度, 土耳其, 其他, DIRECT] }
+  - {name: BIGOLIVE, type: select, proxies: [自动选择, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, 宝可梦手动, 十元手动, 十元2手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, 宝可梦自动, 十元自动, 十元2自动, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 马来西亚, 印度, 土耳其, 其他, DIRECT] }
+  - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, 宝可梦手动, 十元手动, 十元2手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, 宝可梦自动, 十元自动, 十元2自动, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 马来西亚, 印度, 土耳其, 其他] }
+  - {name: Meoo, type: select, proxies: [自动选择, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, 宝可梦手动, 十元手动, 十元2手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, 宝可梦自动, 十元自动, 十元2自动, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 马来西亚, 印度, 土耳其, 其他, DIRECT] }
+  - {name: IPAIR, type: select, proxies: [自动选择, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, 宝可梦手动, 十元手动, 十元2手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, 宝可梦自动, 十元自动, 十元2自动, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 马来西亚, 印度, 土耳其, 其他, DIRECT] }
+  - {name: 国内直连, type: select, proxies: [DIRECT, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, 宝可梦手动, 十元手动, 十元2手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, 宝可梦自动, 十元自动, 十元2自动, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 马来西亚, 印度, 土耳其, 其他] }
+  - {name: SSRDOG手动, type: select, proxies: [【SSRDOG】HongKong丨01, 【SSRDOG】HongKong丨02, 【SSRDOG】HongKong丨03, 【SSRDOG】HongKong丨04, 【SSRDOG】HongKong丨05, 【SSRDOG】HongKong丨06, 【SSRDOG】HongKong丨07, 【SSRDOG】HongKong丨08, 【SSRDOG】HongKong丨09, 【SSRDOG】HongKong丨10, 【SSRDOG】HongKong丨11, 【SSRDOG】HongKong丨12, 【SSRDOG】HongKong丨13, 【SSRDOG】HongKong丨14, 【SSRDOG】HongKong丨15, 【SSRDOG】Taiwan丨01, 【SSRDOG】Taiwan丨02, 【SSRDOG】Taiwan丨03, 【SSRDOG】Taiwan丨04, 【SSRDOG】Taiwan丨05, 【SSRDOG】Taiwan丨06, 【SSRDOG】Taiwan丨07, 【SSRDOG】Taiwan丨08, 【SSRDOG】Taiwan丨09, 【SSRDOG】Taiwan丨10, 【SSRDOG】Singapore丨01, 【SSRDOG】Singapore丨02, 【SSRDOG】Singapore丨03, 【SSRDOG】Singapore丨04, 【SSRDOG】Singapore丨05, 【SSRDOG】Singapore丨06, 【SSRDOG】Singapore丨07, 【SSRDOG】Singapore丨08, 【SSRDOG】Singapore丨09, 【SSRDOG】Singapore丨10, 【SSRDOG】Japan丨01, 【SSRDOG】Japan丨02, 【SSRDOG】Japan丨03, 【SSRDOG】Japan丨04, 【SSRDOG】Japan丨05, 【SSRDOG】Japan丨06, 【SSRDOG】Japan丨07, 【SSRDOG】Japan丨08, 【SSRDOG】Japan丨09, 【SSRDOG】Japan丨10, 【SSRDOG】UnitedStates丨01, 【SSRDOG】UnitedStates丨02, 【SSRDOG】UnitedStates丨03, 【SSRDOG】UnitedStates丨04, 【SSRDOG】UnitedStates丨05, 【SSRDOG】UnitedStates丨06, 【SSRDOG】UnitedStates丨07, 【SSRDOG】UnitedStates丨08, 【SSRDOG】UnitedStates丨09, 【SSRDOG】UnitedStates丨10, 【SSRDOG】SouthKorea丨01, 【SSRDOG】Canada丨01, 【SSRDOG】GreatBritain丨01, 【SSRDOG】Turkey丨01, 【SSRDOG】India丨01, 【SSRDOG】Netherlands丨01, 【SSRDOG】France | 01, 【SSRDOG】Germany | 01, 【SSRDOG】Vietnam | 01, 【SSRDOG】Malaysia丨01, 【SSRDOG】Thailand丨01, 【SSRDOG】Philippines丨01]}
+  - {name: 快猫手动, type: select, proxies: [【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【快猫】美国01, 【快猫】美国02, 【快猫】美国03, 【快猫】美国04, 【快猫】美国05, 【快猫】美国06, 【快猫】英国01, 【快猫】英国02, 【快猫】英国03, 【快猫】英国04, 【快猫】英国05, 【快猫】英国06, 【快猫】韩国01, 【快猫】韩国02, 【快猫】韩国03, 【快猫】韩国04, 【快猫】韩国05, 【快猫】韩国06, 【快猫】印度01, 【快猫】印度02, 【快猫】土耳其01, 【快猫】土耳其02]}
+  - {name: 流量光手动, type: select, proxies: [【流量光】HongKong01, 【流量光】HongKong02, 【流量光】HongKong03, 【流量光】HongKong04, 【流量光】HongKong05, 【流量光】HongKong06, 【流量光】Taiwan01, 【流量光】Taiwan02, 【流量光】Taiwan03, 【流量光】Taiwan04, 【流量光】Taiwan05, 【流量光】Taiwan06]}
+  - {name: 渔云手动, type: select, proxies: [【渔云】香港01, 【渔云】香港02, 【渔云】香港03, 【渔云】香港04, 【渔云】香港IPV6, 【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6, 【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6, 【渔云】美国01, 【渔云】美国02, 【渔云】美国01-, 【渔云】美国02-, 【渔云】美国IPV6, 【渔云】韩国-首尔01, 【渔云】韩国-春川, 【渔云】澳大利亚01, 【渔云】墨西哥01, 【渔云】以色列01, 【渔云】南非01, 【渔云】阿联酋01, 【渔云】德国, 【渔云】泰国-原生, 【渔云】印度01, 【渔云】加拿大01, 【渔云】法国01, 【渔云】荷兰01, 【渔云】西班牙01, 【渔云】瑞士01, 【渔云】英国01, 【渔云】沙特阿拉伯01, 【渔云】巴西01, 【渔云】智利01, 【渔云】哥伦比亚01]}
+  - {name: 光速机场手动, type: select, proxies: [【光速机场】香港1, 【光速机场】台湾1, 【光速机场】新加坡1, 【光速机场】日本1, 【光速机场】美国A-1, 【光速机场】美国B-1, 【光速机场】美国C-1, 【光速机场】巴西1, 【光速机场】冰岛1, 【光速机场】墨西哥1, 【光速机场】韩国1, 【光速机场】土耳其1, 【光速机场】马来西亚1]}
+  - {name: 宝可梦手动, type: select, proxies: [【宝可梦】新加坡01直连, 【宝可梦】新加坡02直连, 【宝可梦】新加坡03直连, 【宝可梦】日本01直连, 【宝可梦】日本02直连, 【宝可梦】日本03直连, 【宝可梦】日本樱花04, 【宝可梦】日本樱花05, 【宝可梦】日本三网06, 【宝可梦】日本三网07, 【宝可梦】日本三网08, 【宝可梦】香港01直连, 【宝可梦】香港02直连, 【宝可梦】香港03直连, 【宝可梦】美国01直连, 【宝可梦】美国02直连, 【宝可梦】英国01直连, 【宝可梦】英国02直连, 【宝可梦】澳大利亚直连, 【宝可梦】德国直连, 【宝可梦】新加坡01专线, 【宝可梦】新加坡02专线, 【宝可梦】新加坡03专线, 【宝可梦】新加坡04超速, 【宝可梦】新加坡05超速, 【宝可梦】新加坡06超速, 【宝可梦】日本01专线, 【宝可梦】日本02专线, 【宝可梦】日本03专线, 【宝可梦】日本04超速, 【宝可梦】日本05超速, 【宝可梦】日本06超速, 【宝可梦】韩国01专线, 【宝可梦】韩国02专线, 【宝可梦】韩国03专线, 【宝可梦】韩国04超速, 【宝可梦】韩国05超速, 【宝可梦】韩国06超速, 【宝可梦】美国01专线, 【宝可梦】美国02专线, 【宝可梦】美国03专线, 【宝可梦】美国04超速, 【宝可梦】美国05超速, 【宝可梦】美国06超速]}  
+  - {name: 十元手动, type: select, proxies: [【十元】美国21, 【十元】美国22, 【十元】美国23, 【十元】美国24, 【十元】美国25, 【十元】香港11, 【十元】香港12, 【十元】香港13, 【十元】香港14, 【十元】香港15, 【十元】新加坡11, 【十元】新加坡12, 【十元】新加坡13, 【十元】新加坡14, 【十元】新加坡15, 【十元】新加坡21, 【十元】新加坡22, 【十元】新加坡23, 【十元】新加坡24, 【十元】新加坡25, 【十元】日本11, 【十元】日本12, 【十元】日本13, 【十元】日本14, 【十元】日本15, 【十元】日本21, 【十元】日本22, 【十元】日本23, 【十元】日本24, 【十元】日本25, 【十元】德国11, 【十元】德国12, 【十元】德国13, 【十元】德国14, 【十元】德国15, 【十元】意大利11, 【十元】意大利12, 【十元】意大利13, 【十元】意大利14, 【十元】意大利15, 【十元】美国1, 【十元】美国2, 【十元】美国3, 【十元】美国4, 【十元】美国5, 【十元】美国6]}  
+  - {name: 十元2手动, type: select, proxies: [【十元2】美国21, 【十元2】美国22, 【十元2】美国23, 【十元2】美国24, 【十元2】美国25, 【十元2】香港11, 【十元2】香港12, 【十元2】香港13, 【十元2】香港14, 【十元2】香港15, 【十元2】新加坡11, 【十元2】新加坡12, 【十元2】新加坡13, 【十元2】新加坡14, 【十元2】新加坡15, 【十元2】新加坡21, 【十元2】新加坡22, 【十元2】新加坡23, 【十元2】新加坡24, 【十元2】新加坡25, 【十元2】日本11, 【十元2】日本12, 【十元2】日本13, 【十元2】日本14, 【十元2】日本15, 【十元2】日本21, 【十元2】日本22, 【十元2】日本23, 【十元2】日本24, 【十元2】日本25, 【十元2】德国11, 【十元2】德国12, 【十元2】德国13, 【十元2】德国14, 【十元2】德国15, 【十元2】意大利11, 【十元2】意大利12, 【十元2】意大利13, 【十元2】意大利14, 【十元2】意大利15, 【十元2】美国1, 【十元2】美国2, 【十元2】美国3, 【十元2】美国4, 【十元2】美国5, 【十元2】美国6]}  
+  - {name: SSRDOG自动, type: url-test, proxies: [【SSRDOG】HongKong丨01, 【SSRDOG】HongKong丨02, 【SSRDOG】HongKong丨03, 【SSRDOG】HongKong丨04, 【SSRDOG】HongKong丨05, 【SSRDOG】HongKong丨06, 【SSRDOG】HongKong丨07, 【SSRDOG】HongKong丨08, 【SSRDOG】HongKong丨09, 【SSRDOG】HongKong丨10, 【SSRDOG】HongKong丨11, 【SSRDOG】HongKong丨12, 【SSRDOG】HongKong丨13, 【SSRDOG】HongKong丨14, 【SSRDOG】HongKong丨15, 【SSRDOG】Taiwan丨01, 【SSRDOG】Taiwan丨02, 【SSRDOG】Taiwan丨03, 【SSRDOG】Taiwan丨04, 【SSRDOG】Taiwan丨05, 【SSRDOG】Taiwan丨06, 【SSRDOG】Taiwan丨07, 【SSRDOG】Taiwan丨08, 【SSRDOG】Taiwan丨09, 【SSRDOG】Taiwan丨10, 【SSRDOG】Singapore丨01, 【SSRDOG】Singapore丨02, 【SSRDOG】Singapore丨03, 【SSRDOG】Singapore丨04, 【SSRDOG】Singapore丨05, 【SSRDOG】Singapore丨06, 【SSRDOG】Singapore丨07, 【SSRDOG】Singapore丨08, 【SSRDOG】Singapore丨09, 【SSRDOG】Singapore丨10, 【SSRDOG】Japan丨01, 【SSRDOG】Japan丨02, 【SSRDOG】Japan丨03, 【SSRDOG】Japan丨04, 【SSRDOG】Japan丨05, 【SSRDOG】Japan丨06, 【SSRDOG】Japan丨07, 【SSRDOG】Japan丨08, 【SSRDOG】Japan丨09, 【SSRDOG】Japan丨10, 【SSRDOG】UnitedStates丨01, 【SSRDOG】UnitedStates丨02, 【SSRDOG】UnitedStates丨03, 【SSRDOG】UnitedStates丨04, 【SSRDOG】UnitedStates丨05, 【SSRDOG】UnitedStates丨06, 【SSRDOG】UnitedStates丨07, 【SSRDOG】UnitedStates丨08, 【SSRDOG】UnitedStates丨09, 【SSRDOG】UnitedStates丨10, 【SSRDOG】SouthKorea丨01, 【SSRDOG】Canada丨01, 【SSRDOG】GreatBritain丨01, 【SSRDOG】Turkey丨01, 【SSRDOG】India丨01, 【SSRDOG】Netherlands丨01, 【SSRDOG】France | 01, 【SSRDOG】Germany | 01, 【SSRDOG】Vietnam | 01, 【SSRDOG】Malaysia丨01, 【SSRDOG】Thailand丨01, 【SSRDOG】Philippines丨01], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 快猫自动, type: url-test, proxies: [【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【快猫】美国01, 【快猫】美国02, 【快猫】美国03, 【快猫】美国04, 【快猫】美国05, 【快猫】美国06, 【快猫】英国01, 【快猫】英国02, 【快猫】英国03, 【快猫】英国04, 【快猫】英国05, 【快猫】英国06, 【快猫】韩国01, 【快猫】韩国02, 【快猫】韩国03, 【快猫】韩国04, 【快猫】韩国05, 【快猫】韩国06, 【快猫】印度01, 【快猫】印度02, 【快猫】土耳其01, 【快猫】土耳其02], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 流量光自动, type: url-test, proxies: [【流量光】HongKong01, 【流量光】HongKong02, 【流量光】HongKong03, 【流量光】HongKong04, 【流量光】HongKong05, 【流量光】HongKong06, 【流量光】Taiwan01, 【流量光】Taiwan02, 【流量光】Taiwan03, 【流量光】Taiwan04, 【流量光】Taiwan05, 【流量光】Taiwan06], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 渔云自动, type: url-test, proxies: [【渔云】香港01, 【渔云】香港02, 【渔云】香港03, 【渔云】香港04, 【渔云】香港IPV6, 【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6, 【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6, 【渔云】美国01, 【渔云】美国02, 【渔云】美国01-, 【渔云】美国02-, 【渔云】美国IPV6, 【渔云】韩国-首尔01, 【渔云】韩国-春川, 【渔云】澳大利亚01, 【渔云】墨西哥01, 【渔云】以色列01, 【渔云】南非01, 【渔云】阿联酋01, 【渔云】德国, 【渔云】泰国-原生, 【渔云】印度01, 【渔云】加拿大01, 【渔云】法国01, 【渔云】荷兰01, 【渔云】西班牙01, 【渔云】瑞士01, 【渔云】英国01, 【渔云】沙特阿拉伯01, 【渔云】巴西01, 【渔云】智利01, 【渔云】哥伦比亚01], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 光速机场自动, type: url-test, proxies: [【光速机场】香港1, 【光速机场】台湾1, 【光速机场】新加坡1, 【光速机场】日本1, 【光速机场】美国A-1, 【光速机场】美国B-1, 【光速机场】美国C-1, 【光速机场】巴西1, 【光速机场】冰岛1, 【光速机场】墨西哥1, 【光速机场】韩国1, 【光速机场】土耳其1, 【光速机场】马来西亚1], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 宝可梦自动, type: url-test, proxies: [【宝可梦】新加坡01直连, 【宝可梦】新加坡02直连, 【宝可梦】新加坡03直连, 【宝可梦】日本01直连, 【宝可梦】日本02直连, 【宝可梦】日本03直连, 【宝可梦】日本樱花04, 【宝可梦】日本樱花05, 【宝可梦】日本三网06, 【宝可梦】日本三网07, 【宝可梦】日本三网08, 【宝可梦】香港01直连, 【宝可梦】香港02直连, 【宝可梦】香港03直连, 【宝可梦】美国01直连, 【宝可梦】美国02直连, 【宝可梦】英国01直连, 【宝可梦】英国02直连, 【宝可梦】澳大利亚直连, 【宝可梦】德国直连, 【宝可梦】新加坡01专线, 【宝可梦】新加坡02专线, 【宝可梦】新加坡03专线, 【宝可梦】新加坡04超速, 【宝可梦】新加坡05超速, 【宝可梦】新加坡06超速, 【宝可梦】日本01专线, 【宝可梦】日本02专线, 【宝可梦】日本03专线, 【宝可梦】日本04超速, 【宝可梦】日本05超速, 【宝可梦】日本06超速, 【宝可梦】韩国01专线, 【宝可梦】韩国02专线, 【宝可梦】韩国03专线, 【宝可梦】韩国04超速, 【宝可梦】韩国05超速, 【宝可梦】韩国06超速, 【宝可梦】美国01专线, 【宝可梦】美国02专线, 【宝可梦】美国03专线, 【宝可梦】美国04超速, 【宝可梦】美国05超速, 【宝可梦】美国06超速], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 十元自动, type: url-test, proxies: [【十元】美国21, 【十元】美国22, 【十元】美国23, 【十元】美国24, 【十元】美国25, 【十元】香港11, 【十元】香港12, 【十元】香港13, 【十元】香港14, 【十元】香港15, 【十元】新加坡11, 【十元】新加坡12, 【十元】新加坡13, 【十元】新加坡14, 【十元】新加坡15, 【十元】新加坡21, 【十元】新加坡22, 【十元】新加坡23, 【十元】新加坡24, 【十元】新加坡25, 【十元】日本11, 【十元】日本12, 【十元】日本13, 【十元】日本14, 【十元】日本15, 【十元】日本21, 【十元】日本22, 【十元】日本23, 【十元】日本24, 【十元】日本25, 【十元】德国11, 【十元】德国12, 【十元】德国13, 【十元】德国14, 【十元】德国15, 【十元】意大利11, 【十元】意大利12, 【十元】意大利13, 【十元】意大利14, 【十元】意大利15, 【十元】美国1, 【十元】美国2, 【十元】美国3, 【十元】美国4, 【十元】美国5, 【十元】美国6], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 十元2自动, type: url-test, proxies: [【十元2】美国21, 【十元2】美国22, 【十元2】美国23, 【十元2】美国24, 【十元2】美国25, 【十元2】香港11, 【十元2】香港12, 【十元2】香港13, 【十元2】香港14, 【十元2】香港15, 【十元2】新加坡11, 【十元2】新加坡12, 【十元2】新加坡13, 【十元2】新加坡14, 【十元2】新加坡15, 【十元2】新加坡21, 【十元2】新加坡22, 【十元2】新加坡23, 【十元2】新加坡24, 【十元2】新加坡25, 【十元2】日本11, 【十元2】日本12, 【十元2】日本13, 【十元2】日本14, 【十元2】日本15, 【十元2】日本21, 【十元2】日本22, 【十元2】日本23, 【十元2】日本24, 【十元2】日本25, 【十元2】德国11, 【十元2】德国12, 【十元2】德国13, 【十元2】德国14, 【十元2】德国15, 【十元2】意大利11, 【十元2】意大利12, 【十元2】意大利13, 【十元2】意大利14, 【十元2】意大利15, 【十元2】美国1, 【十元2】美国2, 【十元2】美国3, 【十元2】美国4, 【十元2】美国5, 【十元2】美国6], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 香港, type: url-test, proxies: [【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【流量光】HongKong01, 【流量光】HongKong02, 【流量光】HongKong03, 【流量光】HongKong04, 【流量光】HongKong05, 【流量光】HongKong06, 【渔云】香港01, 【渔云】香港02, 【渔云】香港03, 【渔云】香港04, 【渔云】香港IPV6, 【光速机场】香港1, 【宝可梦】香港01直连, 【宝可梦】香港02直连, 【宝可梦】香港03直连, 【十元】香港11, 【十元】香港12, 【十元】香港13, 【十元】香港14, 【十元】香港15], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 台湾, type: url-test, proxies: [【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【流量光】Taiwan01, 【流量光】Taiwan02, 【流量光】Taiwan03, 【流量光】Taiwan04, 【流量光】Taiwan05, 【流量光】Taiwan06, 【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6, 【光速机场】台湾1], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 日本, type: url-test, proxies: [【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6, 【光速机场】日本1, 【宝可梦】日本01直连, 【宝可梦】日本02直连, 【宝可梦】日本03直连, 【宝可梦】日本樱花04, 【宝可梦】日本樱花05, 【宝可梦】日本三网06, 【宝可梦】日本三网07, 【宝可梦】日本三网08, 【宝可梦】日本01专线, 【宝可梦】日本02专线, 【宝可梦】日本03专线, 【宝可梦】日本04超速, 【宝可梦】日本05超速, 【宝可梦】日本06超速, 【十元】日本11, 【十元】日本12, 【十元】日本13, 【十元】日本14, 【十元】日本15, 【十元】日本21, 【十元】日本22, 【十元】日本23, 【十元】日本24, 【十元】日本25], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 新加坡, type: url-test, proxies: [【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6, 【光速机场】新加坡1, 【宝可梦】新加坡01直连, 【宝可梦】新加坡02直连, 【宝可梦】新加坡03直连, 【宝可梦】新加坡01专线, 【宝可梦】新加坡02专线, 【宝可梦】新加坡03专线, 【宝可梦】新加坡04超速, 【宝可梦】新加坡05超速, 【宝可梦】新加坡06超速, 【十元】新加坡11, 【十元】新加坡12, 【十元】新加坡13, 【十元】新加坡14, 【十元】新加坡15, 【十元】新加坡21, 【十元】新加坡22, 【十元】新加坡23, 【十元】新加坡24, 【十元】新加坡25], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 美国, type: url-test, proxies: [【快猫】美国01, 【快猫】美国02, 【快猫】美国03, 【快猫】美国04, 【快猫】美国05, 【快猫】美国06, 【渔云】美国01, 【渔云】美国02, 【渔云】美国01-, 【渔云】美国02-, 【渔云】美国IPV6, 【光速机场】美国A-1, 【光速机场】美国B-1, 【光速机场】美国C-1, 【宝可梦】美国01直连, 【宝可梦】美国02直连, 【宝可梦】美国01专线, 【宝可梦】美国02专线, 【宝可梦】美国03专线, 【宝可梦】美国04超速, 【宝可梦】美国05超速, 【宝可梦】美国06超速, 【十元】美国21, 【十元】美国22, 【十元】美国23, 【十元】美国24, 【十元】美国25, 【十元】美国1, 【十元】美国2, 【十元】美国3, 【十元】美国4, 【十元】美国5, 【十元】美国6], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 韩国, type: url-test, proxies: [【快猫】韩国01, 【快猫】韩国02, 【快猫】韩国03, 【快猫】韩国04, 【快猫】韩国05, 【快猫】韩国06, 【渔云】韩国-首尔01, 【渔云】韩国-春川, 【光速机场】韩国1, 【宝可梦】韩国01专线, 【宝可梦】韩国02专线, 【宝可梦】韩国03专线, 【宝可梦】韩国04超速, 【宝可梦】韩国05超速, 【宝可梦】韩国06超速], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 英国, type: url-test, proxies: [【快猫】英国01, 【快猫】英国02, 【快猫】英国03, 【快猫】英国04, 【快猫】英国05, 【快猫】英国06, 【渔云】英国01, 【宝可梦】英国01直连, 【宝可梦】英国02直连], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 马来西亚, type: url-test, proxies: [【光速机场】马来西亚1], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 印度, type: url-test, proxies: [【快猫】印度01, 【快猫】印度02, 【渔云】印度01], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 土耳其, type: url-test, proxies: [【快猫】土耳其01, 【快猫】土耳其02, 【光速机场】土耳其1], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 其他, type: url-test, proxies: [【渔云】澳大利亚01, 【渔云】墨西哥01, 【渔云】以色列01, 【渔云】南非01, 【渔云】阿联酋01, 【渔云】德国, 【渔云】泰国-原生, 【渔云】加拿大01, 【渔云】法国01, 【渔云】荷兰01, 【渔云】西班牙01, 【渔云】瑞士01, 【渔云】沙特阿拉伯01, 【渔云】巴西01, 【渔云】智利01, 【渔云】哥伦比亚01, 【光速机场】巴西1, 【光速机场】墨西哥1, 【光速机场】冰岛1, 【宝可梦】澳大利亚直连, 【宝可梦】德国直连, 【十元】德国11, 【十元】德国12, 【十元】德国13, 【十元】德国14, 【十元】德国15, 【十元】意大利11, 【十元】意大利12, 【十元】意大利13, 【十元】意大利14, 【十元】意大利15], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+rule-providers:
+    Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
+    Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
+    Spotify: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/spotify.yaml', interval: 86400, path: ./ruleset/spotify.yml }
+    Meoo: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
+    IPAIR: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml', interval: 86400, path: ./ruleset/ipair.yaml }
+    代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
+    TIKTOK: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tiktok.yaml', interval: 86400, path: ./ruleset/tiktok.yaml }
+    YOUTUBE: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/youtube.yaml', interval: 86400, path: ./ruleset/youtube.yaml }
+    Telegram: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/telegram.yaml', interval: 86400, path: ./ruleset/telegram.yaml }
+    Twitter: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/twitter.yaml', interval: 86400, path: ./ruleset/twitter.yaml }
+    bigo代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml', interval: 86400, path: ./ruleset/bigo_proxy.yaml }
+    bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
+    bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
+    bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
+    直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct.yaml }
+    黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
+rules:
+    - 'DOMAIN,dog.ssrdog.com,国外媒体'
+    - 'DOMAIN-KEYWORD,sjtu.edu.cn,国内直连'
+    - 'RULE-SET,Netflix,国外媒体'
+    - 'RULE-SET,Disney,国外媒体'
+    - 'RULE-SET,Spotify,国外媒体'
+    - 'RULE-SET,Meoo,Meoo'
+    - 'RULE-SET,TIKTOK,国外媒体'
+    - 'RULE-SET,YOUTUBE,国外媒体'
+    - 'RULE-SET,Telegram,国外媒体'
+    - 'RULE-SET,Twitter,国外媒体'
+    - 'RULE-SET,bigo代理,BIGOLIVE'
+    - 'RULE-SET,bigo游戏,BIGOLIVE'
+    - 'RULE-SET,bigo登录,BIGOLIVE'
+    - 'RULE-SET,bigo直连,BIGOLIVE直连'
+    - 'RULE-SET,IPAIR,IPAIR'
+    - 'RULE-SET,直连,国内直连'
+    - 'RULE-SET,黑名单,REJECT'
+    - 'RULE-SET,代理,国外媒体'
+    - 'DOMAIN,local.adguard.org,DIRECT'
+    - 'DOMAIN-SUFFIX,local,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,17.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'IP-CIDR,203.0.113.0/24,DIRECT'
+    - 'IP-CIDR,192.0.2.0/24,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'GEOIP,LAN,DIRECT'
+    - 'MATCH,国外媒体'
