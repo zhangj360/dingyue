@@ -241,26 +241,26 @@ proxies:
   - { type: hysteria2, name: 【mitce】US3-HY2, server: us3.dexlos.com, port: 5929, password: 493749C1-9B72-402F-A715-D6FA92A15538, udp: true, sni: us3.dexlos.com }
   - { type: hysteria2, name: 【mitce】US4-HY2, server: us4.dexlos.com, port: 7276, password: 493749C1-9B72-402F-A715-D6FA92A15538, udp: true, sni: us4.dexlos.com }
   - { type: hysteria2, name: 【mitce】US5-HY2, server: us5.dexlos.com, port: 9995, password: 493749C1-9B72-402F-A715-D6FA92A15538, udp: true, sni: us5.dexlos.com }
-  - {name: 【红叶】香港01|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53011, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】香港02|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53012, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】香港03|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53013, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】香港04|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53014, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】台湾01|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53021, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】台湾02|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53022, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】台湾03|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53023, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】台湾04|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53024, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】新加坡01|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53031, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】新加坡02|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53032, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】新加坡03|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53033, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】新加坡04|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53034, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】日本01|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53041, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】日本02|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53042, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】日本03|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53043, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】日本04|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53044, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】美国01|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53051, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】美国02|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53052, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】美国03|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53053, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
-  - {name: 【红叶】美国04|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53054, uuid: c7c6766f-6769-4207-8831-001f8b0217ee, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】香港01|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53011, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】香港02|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53012, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】香港03|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53013, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】香港04|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53014, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】台湾01|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53021, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】台湾02|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53022, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】台湾03|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53023, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】台湾04|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53024, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】新加坡01|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53031, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】新加坡02|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53032, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】新加坡03|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53033, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】新加坡04|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53034, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】日本01|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53041, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】日本02|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53042, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】日本03|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53043, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】日本04|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53044, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】美国01|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53051, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】美国02|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53052, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】美国03|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53053, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
+  - {name: 【红叶】美国04|BGP|EIP, type: vmess, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.blue-bgp.xyz, port: 53054, uuid: 7a9a57e1-84b4-430b-8373-16992c218939, alterId: 0, cipher: auto, udp: true }
 proxy-groups:
   - {name: 自动选择, type: url-test, proxies: [快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 红叶手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 红叶自动, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 马来西亚, 印度, 土耳其, 其他], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 国外媒体, type: select, proxies: [自动选择, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 红叶手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 红叶自动, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 马来西亚, 印度, 土耳其, 其他, DIRECT] }
