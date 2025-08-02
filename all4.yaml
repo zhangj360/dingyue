@@ -295,6 +295,7 @@ proxy-groups:
   - {name: 印度, type: url-test, proxies: [【快猫】印度01, 【快猫】印度02, 【渔云】印度01], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 土耳其, type: url-test, proxies: [【快猫】土耳其01, 【快猫】土耳其02, 【光速机场】土耳其1], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 其他, type: url-test, proxies: [【渔云】澳大利亚01, 【渔云】墨西哥01, 【渔云】以色列01, 【渔云】南非01, 【渔云】阿联酋01, 【渔云】德国, 【渔云】泰国-原生, 【渔云】加拿大01, 【渔云】法国01, 【渔云】荷兰01, 【渔云】西班牙01, 【渔云】瑞士01, 【渔云】沙特阿拉伯01, 【渔云】巴西01, 【渔云】智利01, 【渔云】哥伦比亚01, 【光速机场】巴西1, 【光速机场】墨西哥1, 【光速机场】冰岛1], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 兜底, type: select, proxies: [自动选择, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 红叶手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 红叶自动, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 马来西亚, 印度, 土耳其, 其他, DIRECT] }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
     Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
@@ -345,4 +346,4 @@ rules:
     - 'IP-CIDR6,fe80::/10,DIRECT'
     - 'GEOIP,CN,DIRECT'
     - 'GEOIP,LAN,DIRECT'
-    - 'MATCH,国外媒体'
+    - 'MATCH,兜底'
