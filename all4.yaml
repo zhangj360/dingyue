@@ -37,52 +37,52 @@ proxies:
   - {name: 【流量光】Taiwan04, type: ss, server: qc456987.qeayr.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true}
   - {name: 【流量光】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true}
   - {name: 【流量光】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true}
-  - {name: 【渔云】香港01, type: trojan, server: yuyu-2.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】香港02, type: trojan, server: yuyu-2.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】香港03, type: trojan, server: yuyu-2.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】香港04, type: trojan, server: yuyu-2.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】香港01, type: trojan, server: yuyu-3.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】香港02, type: trojan, server: yuyu-3.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】香港03, type: trojan, server: yuyu-3.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】香港04, type: trojan, server: yuyu-3.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】香港IPV6, type: trojan, server: ipv6.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】台湾01, type: trojan, server: yuyu-2.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】台湾02, type: trojan, server: yuyu-2.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】台湾03, type: trojan, server: yuyu-2.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】台湾04, type: trojan, server: yuyu-2.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】台湾01, type: trojan, server: yuyu-3.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】台湾02, type: trojan, server: yuyu-3.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】台湾03, type: trojan, server: yuyu-3.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】台湾04, type: trojan, server: yuyu-3.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】台湾IPV6, type: trojan, server: ipv6.sffyn.com, port: 48082, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】日本01, type: trojan, server: yuyu-2.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】日本02, type: trojan, server: yuyu-2.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】日本03, type: trojan, server: yuyu-2.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】日本04, type: trojan, server: yuyu-2.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】日本家宽, type: trojan, server: yuyu-2.sffyn.com, port: 12340, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】日本01, type: trojan, server: yuyu-3.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】日本02, type: trojan, server: yuyu-3.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】日本03, type: trojan, server: yuyu-3.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】日本04, type: trojan, server: yuyu-3.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】日本家宽, type: trojan, server: yuyu-3.sffyn.com, port: 12340, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】日本IPV6, type: trojan, server: ipv6.sffyn.com, port: 41507, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】新加坡01, type: trojan, server: yuyu-2.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】新加坡02, type: trojan, server: yuyu-2.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】新加坡03, type: trojan, server: yuyu-2.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】新加坡04, type: trojan, server: yuyu-2.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】新加坡01, type: trojan, server: yuyu-3.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】新加坡02, type: trojan, server: yuyu-3.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】新加坡03, type: trojan, server: yuyu-3.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】新加坡04, type: trojan, server: yuyu-3.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】新加坡IPV6, type: trojan, server: ipv6.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】美国01, type: trojan, server: yuyu-2.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】美国02, type: trojan, server: yuyu-2.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】美国01-家宽, type: trojan, server: yuyu-2.sffyn.com, port: 29525, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】美国02-家宽, type: trojan, server: yuyu-2.sffyn.com, port: 29525, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】美国01, type: trojan, server: yuyu-3.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】美国02, type: trojan, server: yuyu-3.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】美国01-家宽, type: trojan, server: yuyu-3.sffyn.com, port: 29525, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】美国02-家宽, type: trojan, server: yuyu-3.sffyn.com, port: 29525, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】美国IPV6, type: trojan, server: ipv6.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】韩国-首尔01, type: trojan, server: yuyu-2.sffyn.com, port: 42569, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】韩国-春川, type: trojan, server: yuyu-2.sffyn.com, port: 31080, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】澳大利亚01, type: trojan, server: yuyu-2.sffyn.com, port: 48389, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】墨西哥01, type: trojan, server: yuyu-2.sffyn.com, port: 45837, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】以色列01, type: trojan, server: yuyu-2.sffyn.com, port: 27436, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】南非01, type: trojan, server: yuyu-2.sffyn.com, port: 24109, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】阿联酋01, type: trojan, server: yuyu-2.sffyn.com, port: 34281, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】德国, type: trojan, server: yuyu-2.sffyn.com, port: 17107, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】泰国-原生, type: trojan, server: yuyu-2.sffyn.com, port: 23284, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】印度01, type: trojan, server: yuyu-2.sffyn.com, port: 58771, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】加拿大01, type: trojan, server: yuyu-2.sffyn.com, port: 13475, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】法国01, type: trojan, server: yuyu-2.sffyn.com, port: 12286, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】荷兰01, type: trojan, server: yuyu-2.sffyn.com, port: 14119, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】西班牙01, type: trojan, server: yuyu-2.sffyn.com, port: 59719, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】瑞士01, type: trojan, server: yuyu-2.sffyn.com, port: 41717, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】英国01, type: trojan, server: yuyu-2.sffyn.com, port: 57447, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】沙特阿拉伯01, type: trojan, server: yuyu-2.sffyn.com, port: 38492, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】巴西01, type: trojan, server: yuyu-2.sffyn.com, port: 41715, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】智利01, type: trojan, server: yuyu-2.sffyn.com, port: 30293, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】哥伦比亚01, type: trojan, server: yuyu-2.sffyn.com, port: 33081, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】韩国-首尔01, type: trojan, server: yuyu-3.sffyn.com, port: 42569, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】韩国-春川, type: trojan, server: yuyu-3.sffyn.com, port: 31080, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】澳大利亚01, type: trojan, server: yuyu-3.sffyn.com, port: 48389, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】墨西哥01, type: trojan, server: yuyu-3.sffyn.com, port: 45837, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】以色列01, type: trojan, server: yuyu-3.sffyn.com, port: 27436, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】南非01, type: trojan, server: yuyu-3.sffyn.com, port: 24109, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】阿联酋01, type: trojan, server: yuyu-3.sffyn.com, port: 34281, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】德国, type: trojan, server: yuyu-3.sffyn.com, port: 17107, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】泰国-原生, type: trojan, server: yuyu-3.sffyn.com, port: 23284, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】印度01, type: trojan, server: yuyu-3.sffyn.com, port: 58771, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】加拿大01, type: trojan, server: yuyu-3.sffyn.com, port: 13475, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】法国01, type: trojan, server: yuyu-3.sffyn.com, port: 12286, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】荷兰01, type: trojan, server: yuyu-3.sffyn.com, port: 14119, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】西班牙01, type: trojan, server: yuyu-3.sffyn.com, port: 59719, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】瑞士01, type: trojan, server: yuyu-3.sffyn.com, port: 41717, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】英国01, type: trojan, server: yuyu-3.sffyn.com, port: 57447, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】沙特阿拉伯01, type: trojan, server: yuyu-3.sffyn.com, port: 38492, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】巴西01, type: trojan, server: yuyu-3.sffyn.com, port: 41715, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】智利01, type: trojan, server: yuyu-3.sffyn.com, port: 30293, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
+  - {name: 【渔云】哥伦比亚01, type: trojan, server: yuyu-3.sffyn.com, port: 33081, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【快猫】香港01, type: ss, server: hk01.x.kuaimaonodebgp.com, port: 52611, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
   - {name: 【快猫】香港02, type: ss, server: hk02.x.kuaimaonodebgp.com, port: 52612, cipher: chacha20-ietf-poly1305, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
   - {name: 【快猫】香港03, type: ss, server: hk03.x.kuaimaonodebgp.com, port: 52613, cipher: aes-128-gcm, password: 3cc6f542-6103-4595-98df-d78828b7ee62, udp: true }
