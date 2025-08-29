@@ -4,31 +4,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 【流量光】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
-  - {name: 【流量光】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
-  - {name: 【流量光】HongKong03, type: ss, server: qc456987.qeayr.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong04, type: ss, server: qc456987.qeayr.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong05, type: ss, server: s20002625.qeayr.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
-  - {name: 【流量光】HongKong06, type: ss, server: s20002625.qeayr.cn, port: 46815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
-  - {name: 【流量光】Taiwan01, type: ss, server: cyusd123.qeayr.cn, port: 14786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【流量光】Taiwan02, type: ss, server: cyusd123.qeayr.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NDMxMDY3OWMtZjQ1OS00OA==', udp: true }
-  - {name: 【流量光】Taiwan03, type: ss, server: qc456987.qeayr.cn, port: 24789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan04, type: ss, server: qc456987.qeayr.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
-  - {name: 【流量光】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
-  - {name: 【光速机场】香港1, type: ss, server: gy11.gsulink.top, port: 38696, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】台湾1, type: ss, server: gy11.gsulink.top, port: 19713, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】新加坡1, type: ss, server: gy11.gsulink.top, port: 13976, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】日本1, type: ss, server: gy11.gsulink.top, port: 55384, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】美国A-1, type: ss, server: gy11.gsulink.top, port: 48624, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】美国B-1, type: ss, server: gy11.gsulink.top, port: 13026, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】美国C-1, type: ss, server: gy11.gsulink.top, port: 12599, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】巴西1, type: ss, server: gy11.gsulink.top, port: 59341, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】墨西哥1, type: ss, server: gy11.gsulink.top, port: 57327, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】韩国1, type: ss, server: gy11.gsulink.top, port: 40017, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】冰岛1, type: ss, server: gy11.gsulink.top, port: 20612, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】土耳其1, type: ss, server: gy11.gsulink.top, port: 22165, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】马来西亚1, type: ss, server: gy11.gsulink.top, port: 19447, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【流量光】HongKong01, type: ss, server: cyusd123.qeayr.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true}
+  - {name: 【流量光】HongKong02, type: ss, server: cyusd123.qeayr.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true}
+  - {name: 【流量光】HongKong03, type: ss, server: qc456987.qeayr.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true}
+  - {name: 【流量光】HongKong04, type: ss, server: qc456987.qeayr.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true}
+  - {name: 【流量光】HongKong05, type: ss, server: s20002625.qeayr.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true}
+  - {name: 【流量光】HongKong06, type: ss, server: s20002625.qeayr.cn, port: 46815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true}
+  - {name: 【流量光】Taiwan01, type: ss, server: cyusd123.qeayr.cn, port: 14786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true}
+  - {name: 【流量光】Taiwan02, type: ss, server: cyusd123.qeayr.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true}
+  - {name: 【流量光】Taiwan03, type: ss, server: qc456987.qeayr.cn, port: 24789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true}
+  - {name: 【流量光】Taiwan04, type: ss, server: qc456987.qeayr.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true}
+  - {name: 【流量光】Taiwan05, type: ss, server: s20002625.qeayr.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true}
+  - {name: 【流量光】Taiwan06, type: ss, server: s20002625.qeayr.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true}
+  - {name: 【光速机场】香港1, type: ss, server: gsgsu.izenny.com, port: 38696, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】台湾1, type: ss, server: gsgsu.izenny.com, port: 19713, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】新加坡1, type: ss, server: gsgsu.izenny.com, port: 13976, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】日本1, type: ss, server: gsgsu.izenny.com, port: 55384, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】美国A-1, type: ss, server: gsgsu.izenny.com, port: 48624, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】美国B-1, type: ss, server: gsgsu.izenny.com, port: 13026, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】美国C-1, type: ss, server: gsgsu.izenny.com, port: 12599, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】巴西1, type: ss, server: gsgsu.izenny.com, port: 59341, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】墨西哥1, type: ss, server: gsgsu.izenny.com, port: 57327, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】韩国1, type: ss, server: gsgsu.izenny.com, port: 40017, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】冰岛1, type: ss, server: gsgsu.izenny.com, port: 20612, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】土耳其1, type: ss, server: gsgsu.izenny.com, port: 22165, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】马来西亚1, type: ss, server: gsgsu.izenny.com, port: 19447, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
     Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
