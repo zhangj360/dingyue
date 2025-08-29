@@ -16,19 +16,24 @@ proxies:
   - {name: 【流量光】Taiwan04, type: ss, server: qc456987.kxrdy.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
   - {name: 【流量光】Taiwan05, type: ss, server: s20002625.kxrdy.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
   - {name: 【流量光】Taiwan06, type: ss, server: s20002625.kxrdy.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
-  - {name: 【光速机场】香港1, type: ss, server: gsgsu.izenny.com, port: 38696, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】台湾1, type: ss, server: gsgsu.izenny.com, port: 19713, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】新加坡1, type: ss, server: gsgsu.izenny.com, port: 13976, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】日本1, type: ss, server: gsgsu.izenny.com, port: 55384, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】美国A-1, type: ss, server: gsgsu.izenny.com, port: 48624, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】美国B-1, type: ss, server: gsgsu.izenny.com, port: 13026, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】美国C-1, type: ss, server: gsgsu.izenny.com, port: 12599, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】巴西1, type: ss, server: gsgsu.izenny.com, port: 59341, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】墨西哥1, type: ss, server: gsgsu.izenny.com, port: 57327, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】韩国1, type: ss, server: gsgsu.izenny.com, port: 40017, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】冰岛1, type: ss, server: gsgsu.izenny.com, port: 20612, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】土耳其1, type: ss, server: gsgsu.izenny.com, port: 22165, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
-  - {name: 【光速机场】马来西亚1, type: ss, server: gsgsu.izenny.com, port: 19447, cipher: chacha20-ietf-poly1305, password: feeb28b8-fb44-44c9-928b-5be607b0403c, udp: true }
+  - {name: 【光速机场】hy2防失联泰国', server: tghy.ldldfwq.top, port: 35416, sni: 'https://www.microsoft.com/', up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: d39a011d-fb70-4462-80fe-8497a3081401 }
+  - {name: 【光速机场】hy2防失联台湾', server: twhy.ldldfwq.top, port: 25955, sni: 'https://www.microsoft.com/', up: 300, down: 300, skip-cert-verify: true, type: hysteria2, password: d39a011d-fb70-4462-80fe-8497a3081401 }
+  - {name: 【光速机场】香港1, type: ss, server: gsgsu.izenny.com, port: 38696, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】台湾1, type: ss, server: gsgsu.izenny.com, port: 19713, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】新加坡1, type: ss, server: gsgsu.izenny.com, port: 13976, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】日本1, type: ss, server: gsgsu.izenny.com, port: 55384, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】美国A-1, type: ss, server: gsgsu.izenny.com, port: 48624, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】美国B-1, type: ss, server: gsgsu.izenny.com, port: 13026, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】美国C-1, type: ss, server: gsgsu.izenny.com, port: 12599, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】泰国1, type: ss, server: gsgsu.izenny.com, port: 31638, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】巴西1, type: ss, server: gsgsu.izenny.com, port: 59341, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】以色列1, type: ss, server: gsgsu.izenny.com, port: 34680, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】墨西哥1, type: ss, server: gsgsu.izenny.com, port: 57327, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】韩国1, type: ss, server: gsgsu.izenny.com, port: 40017, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】印度1, type: ss, server: gsgsu.izenny.com, port: 32035, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】冰岛1, type: ss, server: gsgsu.izenny.com, port: 20612, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】土耳其1, type: ss, server: gsgsu.izenny.com, port: 22165, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
+  - {name: 【光速机场】马来西亚1, type: ss, server: gsgsu.izenny.com, port: 19447, cipher: chacha20-ietf-poly1305, password: d39a011d-fb70-4462-80fe-8497a3081401, udp: true }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
     Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
