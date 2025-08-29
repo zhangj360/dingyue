@@ -226,6 +226,9 @@ proxy-groups:
   - {name: 直播自动切换, type: fallback , proxies: [mitce自动, 星链自动, 光速机场自动, 快猫自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 流媒体自动切换, type: fallback , proxies: [快猫自动, 星链自动, 光速机场自动, mitce自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 国外媒体, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: 海外影视, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: 海外交友, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: YOUTUBE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: BIGOLIVE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡] }
   - {name: Meoo, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
@@ -268,14 +271,14 @@ rule-providers:
 rules:
     - 'DOMAIN,dog.ssrdog.com,国外媒体'
     - 'DOMAIN-KEYWORD,sjtu.edu.cn,国内直连'
-    - 'RULE-SET,Netflix,国外媒体'
-    - 'RULE-SET,Disney,国外媒体'
-    - 'RULE-SET,Spotify,国外媒体'
+    - 'RULE-SET,Netflix,海外影视'
+    - 'RULE-SET,Disney,海外影视'
+    - 'RULE-SET,Spotify,海外影视'
     - 'RULE-SET,Meoo,Meoo'
-    - 'RULE-SET,TIKTOK,国外媒体'
-    - 'RULE-SET,YOUTUBE,国外媒体'
-    - 'RULE-SET,Telegram,国外媒体'
-    - 'RULE-SET,Twitter,国外媒体'
+    - 'RULE-SET,TIKTOK,海外交友'
+    - 'RULE-SET,YOUTUBE,YOUTUBE'
+    - 'RULE-SET,Telegram,海外交友'
+    - 'RULE-SET,Twitter,海外交友'
     - 'RULE-SET,bigo代理,BIGOLIVE'
     - 'RULE-SET,bigo游戏,BIGOLIVE'
     - 'RULE-SET,bigo登录,BIGOLIVE'
