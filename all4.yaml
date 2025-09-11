@@ -227,18 +227,18 @@ proxies:
   - {name: 【自建节点】vless-reality-cx, server: vps.yebanhua.online, port: 443, type: vless, uuid: 0cf262e5-9199-4251-94a8-69e3f74f2b43, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: wnM32esmR5DAFsRyEBuLC6WvSExLuJegrzOzJgn_ckQ}, servername: www.xilinx.com, client-fingerprint: firefox, network: tcp}
   - {name: 【自建节点】tuic-443-cx, server: "", port: 0, type: tuic, uuid: 0cf262e5-9199-4251-94a8-69e3f74f2b43%3APVyunz06II@vps.yebanhua.online, sni: www.xilinx.com, alpn: [h3%2Ch2%2Chttp%2F1.1], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: native, congestion-controller: bbr}
 proxy-groups:
-  - {name: 自动选择, type: url-test, proxies: [流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 直播自动切换, type: fallback , proxies: [自建节点, mitce自动, 星链自动, 光速机场自动, 快猫自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 流媒体自动切换, type: fallback , proxies: [快猫自动, 星链自动, 光速机场自动, mitce自动, 渔云自动, 流量光自动, 自建节点], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 国外媒体, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: 海外影视, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: 海外交友, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: YOUTUBE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: BIGOLIVE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡] }
-  - {name: Meoo, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: IPAIR, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: 国内直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡] }
+  - {name: 自动选择, type: url-test, proxies: [流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 直播自动切换, type: fallback , proxies: [自建节点自动, mitce自动, 星链自动, 光速机场自动, 快猫自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 流媒体自动切换, type: fallback , proxies: [快猫自动, 星链自动, 光速机场自动, mitce自动, 渔云自动, 流量光自动, 自建节点自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 国外媒体, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: 海外影视, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: 海外交友, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: YOUTUBE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: BIGOLIVE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡] }
+  - {name: Meoo, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: IPAIR, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: 国内直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡] }
   - {name: 自建节点手动, type: select, proxies: [【自建节点】Hysteria2-misaka, 【自建节点】vless-reality, 【自建节点】tuic-443, 【自建节点】vless-reality-cx, 【自建节点】tuic-443-cx]}
   - {name: 快猫手动, type: select, proxies: [【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【快猫】美国01, 【快猫】美国02, 【快猫】美国03, 【快猫】美国04, 【快猫】美国05, 【快猫】美国06, 【快猫】英国01, 【快猫】英国02, 【快猫】英国03, 【快猫】英国04, 【快猫】英国05, 【快猫】英国06, 【快猫】韩国01, 【快猫】韩国02, 【快猫】韩国03, 【快猫】韩国04, 【快猫】韩国05, 【快猫】韩国06, 【快猫】印度01, 【快猫】印度02, 【快猫】土耳其01, 【快猫】土耳其02]}
   - {name: 流量光手动, type: select, proxies: [【流量光】HongKong01, 【流量光】HongKong02, 【流量光】HongKong03, 【流量光】HongKong04, 【流量光】HongKong05, 【流量光】HongKong06, 【流量光】Taiwan01, 【流量光】Taiwan02, 【流量光】Taiwan03, 【流量光】Taiwan04, 【流量光】Taiwan05, 【流量光】Taiwan06]}
@@ -257,7 +257,7 @@ proxy-groups:
   - {name: 台湾, type: fallback, proxies: [【mitce】TW1-HY2, 【mitce】TW2-HY2, 【mitce】TW3-HY2, 【mitce】TW4-HY2, 【mitce】TW5-HY2, 【星链】香港台湾1, 【星链】香港台湾2, 【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6, 【光速机场】台湾1], url: 'http://cp.cloudflare.com/generate_204', interval: 60 }
   - {name: 日本, type: fallback, proxies: [【mitce】JP-1, 【mitce】JP-2, 【mitce】JP1-HY2, 【mitce】JP2-HY2, 【mitce】JP3-HY2, 【mitce】JP4-HY2, 【mitce】JP5-HY2, 【星链】日本东京1, 【星链】日本东京2, 【星链】日本东京3, 【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6, 【光速机场】日本1], url: 'http://cp.cloudflare.com/generate_204', interval: 60 }
   - {name: 新加坡, type: fallback, proxies: [【mitce】SG-1, 【mitce】SG-2, 【mitce】SG-3, 【mitce】SG-4, 【mitce】SG-5, 【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6, 【光速机场】新加坡1], url: 'http://cp.cloudflare.com/generate_204', interval: 60 }
-  - {name: 兜底, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: 兜底, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 自建节点手动, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 自建节点自动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
     Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
