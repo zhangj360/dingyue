@@ -222,7 +222,6 @@ proxies:
   - {name: 【星链】德国3, type: vless, server: deguo2.vosniehcihwocc.cfd, port: 8082, uuid: 347d8937-a640-4230-9c20-ca0e04468786, alterId: 0, cipher: auto, udp: true, flow: null, tls: true, skip-cert-verify: false, servername: python.org, reality-opts: { public-key: zw4RbosyZPl3uHeg9sHxJBGoMh-2MtgHPW3RMEydSHc, short-id: '2e1616' }, client-fingerprint: chrome }
   - {name: 【星链】德国4, type: vless, server: deguo2.vosniehcihwocc.cfd, port: 8083, uuid: 347d8937-a640-4230-9c20-ca0e04468786, alterId: 0, cipher: auto, udp: true, flow: null, tls: true, skip-cert-verify: false, servername: python.org, reality-opts: { public-key: XcgfZNaTa-B0xcqNLeqATeal_AHqumDJvEpqhtn18Ss, short-id: 2f3f }, client-fingerprint: ios }
   - { type: hysteria2, name: 【自建节点】US, server: 107.175.230.87, port: 24622, password: f128ecf6, udp: true, sni: www.bing.com }
-  - {name: 【自建节点】vless-reality, type: vless, server: "vps.yebanhua.online", port: 443, uuid: "2d62a750-0d3f-4ffb-cadb-750a0086a935", network: tcp, tls: true, flow: xtls-rprx-vision, servername: www.xilinx.com, client-fingerprint: firefox, reality-opts: { public-key: wnM32esmR5DAFsRyEBuLC6WvSExLuJegrzOzJgn_ckQ, short-id: ""}}
 proxy-groups:
   - {name: 自动选择, type: url-test, proxies: [流媒体自动切换, 直播自动切换, 自建节点, 快猫手动, 流量光手动, 渔云手动, 光速机场手动, mitce手动, 星链手动, 快猫自动, 流量光自动, 渔云自动, 光速机场自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 直播自动切换, type: fallback , proxies: [自建节点, mitce自动, 星链自动, 光速机场自动, 快猫自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
