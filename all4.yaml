@@ -149,7 +149,7 @@ proxy-groups:
   - {name: 香港, type: fallback, proxies: [【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【渔云】香港01, 【渔云】香港02, 【渔云】香港03, 【渔云】香港04, 【渔云】香港IPV6, 【光速机场】香港1], url: 'http://cp.cloudflare.com/generate_204', interval: 60 }
   - {name: 台湾, type: fallback, proxies: [【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6, 【光速机场】台湾1], url: 'http://cp.cloudflare.com/generate_204', interval: 60 }
   - {name: 日本, type: fallback, proxies: [【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6, 【光速机场】日本1], url: 'http://cp.cloudflare.com/generate_204', interval: 60 }
-  - {name: 新加坡, type: fallback, proxies: [【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6, 【光速机场】新加坡1], url: 'http://cp.cloudflare.com/generate_204', interval: 60 }
+  - {name: 新加坡, type: fallback, proxies: [【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 60 }
   - {name: 兜底, type: select, proxies: [DIRECT, 自动选择, 流媒体自动切换, 直播自动切换, 手动选择, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
