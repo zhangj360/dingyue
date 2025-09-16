@@ -2108,46 +2108,53 @@ rule-providers:
     path: ./ruleset/TikTok-Site.mrs
     proxy: DIRECT
     interval: 86400
-  bigo代理: 
+  bigo_proxy-IP: 
     type: http
-	behavior: classical
-	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml'
-	path: ./ruleset/bigo_proxy.yaml
+	behavior: ipcidr
+	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy-IP.yaml.yaml'
+	path: ./ruleset/bigo_proxy-IP.yaml
 	proxy: DIRECT
 	interval: 86400
-  bigo游戏: 
+  bigo_proxy-site: 
     type: http
-    behavior: classical
-    url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml'
-    path: ./ruleset/bigo_game.yaml
+    behavior: domain
+    url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy-domain.yaml'
+    path: ./ruleset/bigo_proxy-domain.yaml
 	proxy: DIRECT
 	interval: 86400
-  bigo直连: 
+  bigo_direct-site: 
     type: http
-    behavior: classical
-    url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml'
-    path: ./ruleset/bigo_direct.yaml
+    behavior: domain
+    url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct-site.yaml'
+    path: ./ruleset/bigo_direct-site.yaml
 	proxy: DIRECT
 	interval: 86400
-  bigo登录: 
+  bigo_direct-ip: 
     type: http
-    behavior: classical
-    url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml'
-    path: ./ruleset/bigo_login.yaml
+    behavior: domain
+    url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct-ip.yaml'
+    path: ./ruleset/bigo_direct-ip.yaml
 	proxy: DIRECT
 	interval: 86400
-  Meoo: 
+  Meoo-site: 
     type: http
-	behavior: classical
-	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml'
-	interval: 86400, path: ./ruleset/meoo.yaml
+	behavior: domain
+	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo-site.yaml'
+	interval: 86400, path: ./ruleset/meoo-site.yaml
 	proxy: DIRECT
 	interval: 86400
-  IPAIR: 
+  IPAIR-site: 
     type: http
-	behavior: classical
-	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml'
-	path: ./ruleset/ipair.yaml
+	behavior: domain
+	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair-site.yaml'
+	path: ./ruleset/ipair-site.yaml
+	proxy: DIRECT
+	interval: 86400
+  IPAIR-ip: 
+    type: http
+	behavior: ipcidr
+	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair-ip.yaml'
+	path: ./ruleset/ipair-ip.yaml
 	proxy: DIRECT
 	interval: 86400
 rules:
@@ -2158,12 +2165,13 @@ rules:
   - 'DOMAIN-KEYWORD,msftconnecttest.com,主代理'
   - 'DOMAIN-KEYWORD,msftncsi.com,主代理'
   - 'DOMAIN-KEYWORD,googleapis,Google'
-  - 'RULE-SET,bigo代理,BIGOLIVE代理'
-  - 'RULE-SET,bigo游戏,BIGOLIVE代理'
-  - 'RULE-SET,bigo登录,BIGOLIVE代理'
-  - 'RULE-SET,bigo直连,BIGOLIVE直连'
-  - 'RULE-SET,Meoo,Meoo直播'
-  - 'RULE-SET,IPAIR,IPAIR直播'
+  - 'RULE-SET,bigo_proxy-site,BIGOLIVE代理'
+  - 'RULE-SET,bigo_proxy-ip,BIGOLIVE代理'
+  - 'RULE-SET,bigo_direct-site,BIGOLIVE直连'
+  - 'RULE-SET,bigo_direct-ip,BIGOLIVE直连'
+  - 'RULE-SET,Meoo-site,Meoo直播'
+  - 'RULE-SET,IPAIR-site,IPAIR直播'
+  - 'RULE-SET,IPAIR-ip,IPAIR直播'
   - 'RULE-SET,Bahamut-Site,Bahamut'
   - 'RULE-SET,Bilibili-Site,Bilibili'
   - 'RULE-SET,Discord-Site,Discord'
