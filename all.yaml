@@ -2108,28 +2108,28 @@ rule-providers:
     path: ./ruleset/TikTok-Site.mrs
     proxy: DIRECT
     interval: 86400
-  bigo_proxy-IP: 
+  BIGO_proxy-IP: 
     type: http
 	behavior: ipcidr
 	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy-IP.yaml.yaml'
 	path: ./ruleset/bigo_proxy-IP.yaml
 	proxy: DIRECT
 	interval: 86400
-  bigo_proxy-site: 
+  BIGO_proxy-site: 
     type: http
     behavior: domain
     url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy-domain.yaml'
     path: ./ruleset/bigo_proxy-domain.yaml
 	proxy: DIRECT
 	interval: 86400
-  bigo_direct-site: 
+  BIGO_direct-site: 
     type: http
     behavior: domain
     url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct-site.yaml'
     path: ./ruleset/bigo_direct-site.yaml
 	proxy: DIRECT
 	interval: 86400
-  bigo_direct-ip: 
+  BIGO_direct-ip: 
     type: http
     behavior: domain
     url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct-ip.yaml'
@@ -2165,10 +2165,10 @@ rules:
   - 'DOMAIN-KEYWORD,msftconnecttest.com,主代理'
   - 'DOMAIN-KEYWORD,msftncsi.com,主代理'
   - 'DOMAIN-KEYWORD,googleapis,Google'
-  - 'RULE-SET,bigo_proxy-site,BIGOLIVE代理'
-  - 'RULE-SET,bigo_proxy-ip,BIGOLIVE代理'
-  - 'RULE-SET,bigo_direct-site,BIGOLIVE直连'
-  - 'RULE-SET,bigo_direct-ip,BIGOLIVE直连'
+  - 'RULE-SET,BIGO_proxy-site,BIGOLIVE代理'
+  - 'RULE-SET,BIGO_proxy-ip,BIGOLIVE代理'
+  - 'RULE-SET,BIGO_direct-site,BIGOLIVE直连'
+  - 'RULE-SET,BIGO_direct-ip,BIGOLIVE直连'
   - 'RULE-SET,Meoo-site,Meoo直播'
   - 'RULE-SET,IPAIR-site,IPAIR直播'
   - 'RULE-SET,IPAIR-ip,IPAIR直播'
