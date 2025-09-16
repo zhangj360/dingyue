@@ -2112,37 +2112,44 @@ rule-providers:
     type: http
 	behavior: classical
 	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml'
-	interval: 86400
 	path: ./ruleset/bigo_proxy.yaml
+	proxy: DIRECT
+	interval: 86400
   bigo游戏: 
     type: http
     behavior: classical
     url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml'
-    interval: 86400
     path: ./ruleset/bigo_game.yaml
+	proxy: DIRECT
+	interval: 86400
   bigo直连: 
     type: http
     behavior: classical
     url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml'
-    interval: 86400
     path: ./ruleset/bigo_direct.yaml
+	proxy: DIRECT
+	interval: 86400
   bigo登录: 
     type: http
     behavior: classical
     url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml'
-    interval: 86400
     path: ./ruleset/bigo_login.yaml
+	proxy: DIRECT
+	interval: 86400
   Meoo: 
     type: http
 	behavior: classical
 	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml'
 	interval: 86400, path: ./ruleset/meoo.yaml
+	proxy: DIRECT
+	interval: 86400
   IPAIR: 
     type: http
 	behavior: classical
 	url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml'
-	interval: 86400
 	path: ./ruleset/ipair.yaml
+	proxy: DIRECT
+	interval: 86400
 rules:
   - 'AND,((DST-PORT,443),(NETWORK,UDP)),REJECT'
   - 'DOMAIN,ntp.aliyun.com,DIRECT'
