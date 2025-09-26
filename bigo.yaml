@@ -230,6 +230,7 @@ rule-providers:
     bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
     bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
     黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
+    代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
 rules:
     - 'DOMAIN,dog.ssrdog.com,自动选择'
     - 'RULE-SET,bigo代理,BIGOLIVE'
@@ -237,6 +238,7 @@ rules:
     - 'RULE-SET,bigo登录,BIGOLIVE'
     - 'RULE-SET,bigo直连,BIGOLIVE直连'
     - 'RULE-SET,黑名单,REJECT'
+    - 'RULE-SET,代理,手动选择'
     - 'DOMAIN,local.adguard.org,DIRECT'
     - 'DOMAIN-SUFFIX,local,DIRECT'
     - 'IP-CIDR,127.0.0.0/8,DIRECT'
