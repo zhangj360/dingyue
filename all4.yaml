@@ -222,7 +222,7 @@ proxies:
 proxy-groups:
   - {name: 自动选择, type: url-test, proxies: [流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 直播自动切换, type: fallback , proxies: [racknerd自动, ACCK自动, mitce自动, 星链自动, 快猫自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 流媒体自动切换, type: fallback , proxies: [快猫自动, 星链自动, mitce自动, 渔云自动, 流量光自动, 自建节点自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 流媒体自动切换, type: fallback , proxies: [快猫自动, 星链自动, mitce自动, 渔云自动, 流量光自动, racknerd自动, ACCK自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 国外媒体, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: 海外影视, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: 海外交友, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
