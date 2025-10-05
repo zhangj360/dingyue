@@ -226,6 +226,7 @@ proxy-groups:
   - {name: 国外媒体, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: 海外影视, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: 海外交友, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: Github, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: YOUTUBE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: BIGOLIVE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡] }
@@ -252,6 +253,7 @@ rule-providers:
     IPAIR: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml', interval: 86400, path: ./ruleset/ipair.yaml }
     代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
     TIKTOK: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tiktok.yaml', interval: 86400, path: ./ruleset/tiktok.yaml }
+    Github: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/Github.yaml', interval: 86400, path: ./ruleset/Github.yaml }
     YOUTUBE: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/youtube.yaml', interval: 86400, path: ./ruleset/youtube.yaml }
     Telegram: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/telegram.yaml', interval: 86400, path: ./ruleset/telegram.yaml }
     Twitter: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/twitter.yaml', interval: 86400, path: ./ruleset/twitter.yaml }
@@ -271,6 +273,7 @@ rules:
     - 'RULE-SET,TIKTOK,海外交友'
     - 'RULE-SET,YOUTUBE,YOUTUBE'
     - 'RULE-SET,Telegram,海外交友'
+    - 'RULE-SET,Github,Github'
     - 'RULE-SET,Twitter,海外交友'
     - 'RULE-SET,bigo代理,BIGOLIVE'
     - 'RULE-SET,bigo游戏,BIGOLIVE'
