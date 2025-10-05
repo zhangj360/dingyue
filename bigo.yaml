@@ -241,7 +241,7 @@ rule-providers:
     bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
     bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
     bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
-    Github: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/Github.yaml', interval: 86400, path: ./ruleset/Github.yaml }
+    Github: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/github.yaml', interval: 86400, path: ./ruleset/github.yaml }
     黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
     代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
 rules:
