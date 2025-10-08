@@ -220,7 +220,7 @@ proxies:
   - {name: 【ACCK】台湾28030B, server: acck.yebanhua.online, port: 443, type: vless, uuid: 77957279-4faf-47bb-d7d5-f7944d04610e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BcXDTM9fyqd5TAFZmdC94Nlp2Ral1EfRAsrq8WuoQRc}, servername: www.xilinx.com, client-fingerprint: chrome, network: tcp}
   - {name: 【ACCK】台湾28030C, server: vps2.yebanhua.online, port: 443, type: vless, uuid: 77957279-4faf-47bb-d7d5-f7944d04610e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BcXDTM9fyqd5TAFZmdC94Nlp2Ral1EfRAsrq8WuoQRc}, servername: www.xilinx.com, client-fingerprint: chrome, network: tcp}
 proxy-groups:
-  - {name: 手动选择, type: select, proxies: [自动选择, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡]}
+  - {name: 手动选择, type: select, proxies: [自动选择, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT]}
   - {name: 自动选择, type: fallback, proxies: [香港, 台湾, 日本, 新加坡], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: BIGOLIVE, type: select, proxies: [自动选择, 手动选择, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: BIGOLIVE直连, type: select, proxies: [DIRECT,  手动选择, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 星链自动, 香港, 台湾, 日本, 新加坡] }
