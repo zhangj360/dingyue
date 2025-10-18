@@ -236,10 +236,10 @@ rule-providers:
     代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
 rules:
     - 'DOMAIN,dog.ssrdog.com,自动选择'
+    - 'RULE-SET,bigo直连,BIGOLIVE直连'
     - 'RULE-SET,bigo代理,BIGOLIVE'
     - 'RULE-SET,bigo游戏,BIGOLIVE'
     - 'RULE-SET,bigo登录,BIGOLIVE'
-    - 'RULE-SET,bigo直连,BIGOLIVE直连'
     - 'RULE-SET,黑名单,REJECT'
     - 'RULE-SET,Github,手动选择'
     - 'RULE-SET,代理,手动选择'
