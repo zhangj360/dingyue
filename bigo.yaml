@@ -235,7 +235,7 @@ rule-providers:
     黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
     代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
 rules:
-    - 'DOMAIN,dog.ssrdog.com,自动选择'
+    - 'DOMAIN,dog.ssrdog.com,手动选择'
     - 'RULE-SET,bigo直连,BIGOLIVE直连'
     - 'RULE-SET,bigo代理,BIGOLIVE'
     - 'RULE-SET,bigo游戏,BIGOLIVE'
