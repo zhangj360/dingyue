@@ -258,6 +258,7 @@ rule-providers:
 rules:
     - 'DOMAIN,dog.ssrdog.com,手动选择'
     - 'DOMAIN-KEYWORD,sjtu.edu.cn,国内直连'
+    - 'RULE-SET,bigo直连,BIGOLIVE直连'
     - 'RULE-SET,Netflix,海外影视'
     - 'RULE-SET,Disney,海外影视'
     - 'RULE-SET,Spotify,海外影视'
@@ -270,7 +271,6 @@ rules:
     - 'RULE-SET,bigo代理,BIGOLIVE'
     - 'RULE-SET,bigo游戏,BIGOLIVE'
     - 'RULE-SET,bigo登录,BIGOLIVE'
-    - 'RULE-SET,bigo直连,BIGOLIVE直连'
     - 'RULE-SET,IPAIR,IPAIR'
     - 'RULE-SET,直连,国内直连'
     - 'RULE-SET,黑名单,REJECT'
