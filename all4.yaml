@@ -239,6 +239,7 @@ proxy-groups:
   - {name: Github, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: YOUTUBE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: BIGOLIVE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: BIGOLIVE登录, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡] }
   - {name: Meoo, type: select, proxies: [DIRECT, 自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡] }
   - {name: IPAIR, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
@@ -287,7 +288,7 @@ rules:
     - 'RULE-SET,Twitter,Twitter'
     - 'RULE-SET,bigo代理,BIGOLIVE'
     - 'RULE-SET,bigo游戏,BIGOLIVE'
-    - 'RULE-SET,bigo登录,BIGOLIVE'
+    - 'RULE-SET,bigo登录,BIGOLIVE登录'
     - 'RULE-SET,IPAIR,IPAIR'
     - 'RULE-SET,直连,国内直连'
     - 'RULE-SET,黑名单,REJECT'
