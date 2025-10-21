@@ -231,6 +231,7 @@ proxy-groups:
   - {name: 手动选择, type: select, proxies: [自动选择, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡, DIRECT]}
   - {name: 自动选择, type: fallback, proxies: [香港, 台湾, 日本, 新加坡], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: BIGOLIVE, type: select, proxies: [自动选择, 手动选择, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: BIGOLIVE登录, type: select, proxies: [自动选择, 手动选择, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
   - {name: BIGOLIVE直连, type: select, proxies: [DIRECT,  手动选择, racknerd自动, ACCK自动, 快猫自动, 流量光自动, 渔云自动, mitce自动, 香港, 台湾, 日本, 新加坡] }
   - {name: 快猫自动, type: url-test, proxies: [【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【快猫】美国01, 【快猫】美国02, 【快猫】美国03, 【快猫】美国04, 【快猫】美国05, 【快猫】美国06, 【快猫】英国01, 【快猫】英国02, 【快猫】英国03, 【快猫】英国04, 【快猫】英国05, 【快猫】英国06, 【快猫】韩国01, 【快猫】韩国02, 【快猫】韩国03, 【快猫】韩国04, 【快猫】韩国05, 【快猫】韩国06, 【快猫】印度01, 【快猫】印度02, 【快猫】土耳其01, 【快猫】土耳其02], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 流量光自动, type: url-test, proxies: [【流量光】HongKong01, 【流量光】HongKong02, 【流量光】HongKong03, 【流量光】HongKong04, 【流量光】HongKong05, 【流量光】HongKong06, 【流量光】Taiwan01, 【流量光】Taiwan02, 【流量光】Taiwan03, 【流量光】Taiwan04, 【流量光】Taiwan05, 【流量光】Taiwan06], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
@@ -256,7 +257,7 @@ rules:
     - 'RULE-SET,bigo直连,BIGOLIVE直连'
     - 'RULE-SET,bigo代理,BIGOLIVE'
     - 'RULE-SET,bigo游戏,BIGOLIVE'
-    - 'RULE-SET,bigo登录,BIGOLIVE'
+    - 'RULE-SET,bigo登录,BIGOLIVE登录'
     - 'RULE-SET,黑名单,REJECT'
     - 'RULE-SET,Github,手动选择'
     - 'RULE-SET,代理,手动选择'
