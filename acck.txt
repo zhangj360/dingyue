@@ -1,5 +1,0 @@
-trojan://747XkVN4lC@45.196.239.135:80?security=tls&sni=go.microsoft.com&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&type=ws&host=go.microsoft.com&path=%2Fvjhuhaih#trojan
-vless://77957279-4faf-47bb-d7d5-f7944d04610e@45.196.239.135:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=go.microsoft.com&fp=chrome&pbk=BcXDTM9fyqd5TAFZmdC94Nlp2Ral1EfRAsrq8WuoQRc&type=tcp&headerType=none#Reality
-hysteria2://747XkVN4lC@45.196.239.135:443?sni=go.microsoft.com&insecure=1#hysteria2
-tuic://77957279-4faf-47bb-d7d5-f7944d04610e%3A747XkVN4lC@45.196.239.135:80?sni=go.microsoft.com&alpn=h3%2Ch2%2Chttp%2F1.1&congestion_control=bbr#tuic
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpFbzlFTDUzUUgzcE5xakd0clBvdGZobHQrSjRwVHJBT2NheVp3ekowMDM4PQ%3D%3D@45.196.239.135:27518#shadowsocks
