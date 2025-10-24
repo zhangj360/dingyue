@@ -137,22 +137,22 @@ proxies:
   - {name: 【ACCK】hysteria2, server: 45.196.239.135, port: 443, type: hysteria2, password: 747XkVN4lC, auth: 747XkVN4lC, sni: go.microsoft.com, skip-cert-verify: true}
   - {name: 【ACCK】shadowsocks, type: ss, server: 45.196.239.135, port: 27518, cipher: chacha20-ietf-poly1305, password: Eo9EL53QH3pNqjGtrPotfhlt+J4pTrAOcayZwzJ0038=, udp: true }
 proxy-groups:
-  - {name: 手动选择, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: 自动选择, type: url-test, proxies: [流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 直播自动切换, type: fallback , proxies: [racknerd自动, 快猫自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 流媒体自动切换, type: fallback , proxies: [快猫自动, 渔云自动, 流量光自动, racknerd自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 海外影视, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: Telegram, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: TIKTOK, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: Twitter, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: Github, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: YOUTUBE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: BIGOLIVE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: BIGOLIVE登录, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
-  - {name: Meoo, type: select, proxies: [DIRECT, 自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
-  - {name: IPAIR, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: 国内直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
+  - {name: 手动选择, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: 自动选择, type: url-test, proxies: [流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 直播自动切换, type: fallback , proxies: [高速节点, racknerd自动, 快猫自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 流媒体自动切换, type: fallback , proxies: [快猫自动, 高速节点, 渔云自动, 流量光自动, racknerd自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 海外影视, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: Telegram, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: TIKTOK, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: Twitter, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: Github, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: YOUTUBE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: BIGOLIVE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: BIGOLIVE登录, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
+  - {name: Meoo, type: select, proxies: [DIRECT, 自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
+  - {name: IPAIR, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: 国内直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
   - {name: racknerd自动, type: url-test, proxies: [【racknerd】trojan, 【racknerd】hysteria2, 【racknerd】Reality], url: 'http://cp.cloudflare.com/generate_204', interval: 300 } 
   - {name: 快猫自动, type: url-test, proxies: [【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【快猫】美国01, 【快猫】美国02, 【快猫】美国03, 【快猫】美国04, 【快猫】美国05, 【快猫】美国06, 【快猫】英国01, 【快猫】英国02, 【快猫】英国03, 【快猫】英国04, 【快猫】英国05, 【快猫】英国06, 【快猫】韩国01, 【快猫】韩国02, 【快猫】韩国03, 【快猫】韩国04, 【快猫】韩国05, 【快猫】韩国06, 【快猫】印度01, 【快猫】印度02, 【快猫】土耳其01, 【快猫】土耳其02], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 流量光自动, type: url-test, proxies: [【流量光】HongKong01, 【流量光】HongKong02, 【流量光】HongKong03, 【流量光】HongKong04, 【流量光】HongKong05, 【流量光】HongKong06, 【流量光】Taiwan01, 【流量光】Taiwan02, 【流量光】Taiwan03, 【流量光】Taiwan04, 【流量光】Taiwan05, 【流量光】Taiwan06], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
@@ -161,7 +161,8 @@ proxy-groups:
   - {name: 台湾, type: load-balance, proxies: [【ACCK】trojan, 【ACCK】Reality, 【ACCK】hysteria2, 【ACCK】shadowsocks, 【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
   - {name: 日本, type: load-balance, proxies: [【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
   - {name: 新加坡, type: load-balance, proxies: [【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
-  - {name: 兜底, type: select, proxies: [DIRECT, 自动选择, 流媒体自动切换, 直播自动切换, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
+  - {name: 高速节点, type: load-balance, proxies: [【racknerd】trojan, 【racknerd】hysteria2, 【racknerd】Reality, 【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
+  - {name: 兜底, type: select, proxies: [DIRECT, 自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
     Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
