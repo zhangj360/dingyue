@@ -27,14 +27,14 @@ dns:
 proxies:
   - {name: 【流量光】HongKong01, type: ss, server: zsdrhgbet.4waf46.cn, port: 14784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
   - {name: 【流量光】HongKong02, type: ss, server: zsdrhgbet.4waf46.cn, port: 14785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong03, type: ss, server: azyeupwww.4waf46.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
-  - {name: 【流量光】HongKong04, type: ss, server: azyeupwww.4waf46.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】HongKong03, type: ss, server: azyeupwww.4waf46.cn, port: 24787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
+  - {name: 【流量光】HongKong04, type: ss, server: azyeupwww.4waf46.cn, port: 24788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
   - {name: 【流量光】HongKong05, type: ss, server: idsosuo.4waf46.cn, port: 46814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
   - {name: 【流量光】HongKong06, type: ss, server: idsosuo.4waf46.cn, port: 46815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
   - {name: 【流量光】Taiwan01, type: ss, server: zsdrhgbet.4waf46.cn, port: 14786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
   - {name: 【流量光】Taiwan02, type: ss, server: zsdrhgbet.4waf46.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan03, type: ss, server: azyeupwww.4waf46.cn, port: 24789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
-  - {name: 【流量光】Taiwan04, type: ss, server: azyeupwww.4waf46.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:M2Y5ZGZlNWEtYTlmMi00YQ==', udp: true }
+  - {name: 【流量光】Taiwan03, type: ss, server: azyeupwww.4waf46.cn, port: 24789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
+  - {name: 【流量光】Taiwan04, type: ss, server: azyeupwww.4waf46.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
   - {name: 【流量光】Taiwan05, type: ss, server: idsosuo.4waf46.cn, port: 46816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
   - {name: 【流量光】Taiwan06, type: ss, server: idsosuo.4waf46.cn, port: 46817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:NmIwY2ExMzctMzE0YS00Ng==', udp: true }
   - {name: 【渔云】香港01, type: trojan, server: yuyu-3.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
