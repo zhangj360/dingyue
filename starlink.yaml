@@ -1,0 +1,100 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['https://doh-pure.onedns.net/dns-query', 'https://ada.openbld.net/dns-query', 'https://223.5.5.5/dns-query', 'https://223.6.6.6/dns-query']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+proxies:
+    - { name: 美国纽约1, type: vmess, server: deepseek.usdone.one, port: 443, uuid: 347d8937-a640-4230-9c20-ca0e04468786, alterId: 0, cipher: auto, udp: true, tls: true, skip-cert-verify: true, servername: deepseek.usdone.one, network: ws, ws-opts: { path: /ssies } }
+    - { name: 美国纽约2, type: vmess, server: csdn.usdone.one, port: 443, uuid: 347d8937-a640-4230-9c20-ca0e04468786, alterId: 0, cipher: auto, udp: true, tls: true, skip-cert-verify: true, servername: csdn.usdone.one, network: ws, ws-opts: { path: /ddedddedddd } }
+    - { name: 美国西雅图11, type: vmess, server: starlinkseattle.usdone.one, port: 443, uuid: 347d8937-a640-4230-9c20-ca0e04468786, alterId: 0, cipher: auto, udp: true, tls: true, skip-cert-verify: true, servername: starlinkseattle.usdone.one, network: ws, ws-opts: { path: /ueococuehttps } }
+    - { name: 美国休斯敦3, server: 166.0.192.239, port: 31532, sni: apple.com, up: null, down: null, skip-cert-verify: true, type: hysteria2, password: 347d8937-a640-4230-9c20-ca0e04468786, obfs: salamander, obfs-password: IGIanRJXA7UdAsad }
+    - { name: 美国洛杉矶1, server: losangeles.vosniehcihwocc.cfd, port: 31890, sni: apple.com, up: null, down: null, skip-cert-verify: true, type: hysteria2, password: 347d8937-a640-4230-9c20-ca0e04468786, obfs: salamander, obfs-password: u8ORyk51cvrLeAgy }
+    - { name: 美國達拉斯1, server: dallas.vosniehcihwocc.cfd, port: 443, sni: dallas.vosniehcihwocc.cfd, up: null, down: null, skip-cert-verify: true, type: hysteria2, password: 347d8937-a640-4230-9c20-ca0e04468786, obfs: salamander, obfs-password: cNAi9uHky4ypFofV }
+    - { name: 美国德州5, server: texas.vosniehcihwocc.cfd, port: 32115, sni: apple.com, up: null, down: null, skip-cert-verify: true, type: hysteria2, password: 347d8937-a640-4230-9c20-ca0e04468786, obfs: salamander, obfs-password: 7buYbeSOivQaYCXZ }
+    - { name: 香港3, server: hk2.vosniehcihwocc.cfd, port: 15725, sni: apple.com, up: null, down: null, skip-cert-verify: true, type: hysteria2, password: 347d8937-a640-4230-9c20-ca0e04468786, obfs: salamander, obfs-password: AzDFw4MVqgx1X7Bx }
+    - { name: 香港4, type: vless, server: hk2.vosniehcihwocc.cfd, port: 35904, uuid: 347d8937-a640-4230-9c20-ca0e04468786, alterId: 0, cipher: auto, udp: true, flow: null, tls: true, skip-cert-verify: false, servername: python.org, reality-opts: { public-key: uWKj4uyxYW8Ag432IiImIknK64EI30mVGyjqjsF-RlA, short-id: bc }, client-fingerprint: firefox }
+    - { name: 香港6, server: hk2.vosniehcihwocc.cfd, port: 12463, sni: apple.com, up: null, down: null, skip-cert-verify: true, type: hysteria2, password: 347d8937-a640-4230-9c20-ca0e04468786, obfs: salamander, obfs-password: uWVgk38y7LDF2qMU }
+    - { name: 新加坡12, server: 38.247.64.210, port: 45171, sni: www.apple.com, up: null, down: null, skip-cert-verify: true, type: hysteria2, password: 347d8937-a640-4230-9c20-ca0e04468786, obfs: salamander, obfs-password: Us1D6sMDVWAGkJFl }
+    - { name: 新加坡11, server: 38.247.64.210, port: 26457, sni: www.apple.com, up: null, down: null, skip-cert-verify: true, type: hysteria2, password: 347d8937-a640-4230-9c20-ca0e04468786, obfs: salamander, obfs-password: aVmRSRbUVjxf4o9O }
+    - { name: 荷兰4, type: trojan, server: amsterdam.xn--mes995ajya725k.com, port: 49264, password: 347d8937-a640-4230-9c20-ca0e04468786, udp: true, skip-cert-verify: true, sni: amsterdam.xn--mes995ajya725k.com, network: tcp }
+    - { name: 荷兰5, type: trojan, server: amsterdam.xn--mes995ajya725k.com, port: 34264, password: 347d8937-a640-4230-9c20-ca0e04468786, udp: true, skip-cert-verify: true, sni: amsterdam.xn--mes995ajya725k.com, network: tcp }
+proxy-groups:
+  - {name: 手动选择, type: select, proxies: [自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5, DIRECT] }
+  - {name: 自动选择, type: url-test, proxies: [美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 海外影视, type: select, proxies: [自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5, DIRECT] }
+  - {name: Telegram, type: select, proxies: [自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5, DIRECT] }
+  - {name: TIKTOK, type: select, proxies: [自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5, DIRECT] }
+  - {name: Twitter, type: select, proxies: [自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5, DIRECT] }
+  - {name: Github, type: select, proxies: [自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5, DIRECT] }
+  - {name: YOUTUBE, type: select, proxies: [自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5, DIRECT] }
+  - {name: BIGOLIVE, type: select, proxies: [自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5, DIRECT] }
+  - {name: BIGOLIVE登录, type: select, proxies: [自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5, DIRECT] }
+  - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5] }
+  - {name: Meoo, type: select, proxies: [DIRECT, 自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5] }
+  - {name: IPAIR, type: select, proxies: [自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5, DIRECT] }
+  - {name: 国内直连, type: select, proxies: [DIRECT, 自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5] }
+  - {name: 兜底, type: select, proxies: [DIRECT, 自动选择, 美国纽约1, 美国纽约2, 美国西雅图11, 美国休斯敦3, 美国洛杉矶1, 美國達拉斯1, 美国德州5, 香港3, 香港4, 香港6, 新加坡12, 新加坡11, 荷兰4, 荷兰5] }
+rule-providers:
+    Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
+    Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
+    Spotify: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/spotify.yaml', interval: 86400, path: ./ruleset/spotify.yml }
+    Meoo: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
+    IPAIR: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml', interval: 86400, path: ./ruleset/ipair.yaml }
+    代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
+    TIKTOK: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/tiktok.yaml', interval: 86400, path: ./ruleset/tiktok.yaml }
+    Github: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/github.yaml', interval: 86400, path: ./ruleset/github.yaml }
+    YOUTUBE: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/youtube.yaml', interval: 86400, path: ./ruleset/youtube.yaml }
+    Telegram: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/telegram.yaml', interval: 86400, path: ./ruleset/telegram.yaml }
+    Twitter: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/twitter.yaml', interval: 86400, path: ./ruleset/twitter.yaml }
+    bigo代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml', interval: 86400, path: ./ruleset/bigo_proxy.yaml }
+    bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
+    bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
+    bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
+    直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/direct.yaml }
+    黑名单: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
+rules:
+    - 'DOMAIN,dog.ssrdog.com,手动选择'
+    - 'DOMAIN-KEYWORD,sjtu.edu.cn,国内直连'
+    - 'RULE-SET,bigo直连,BIGOLIVE直连'
+    - 'RULE-SET,Netflix,海外影视'
+    - 'RULE-SET,Disney,海外影视'
+    - 'RULE-SET,Spotify,海外影视'
+    - 'RULE-SET,Meoo,Meoo'
+    - 'RULE-SET,TIKTOK,TIKTOK'
+    - 'RULE-SET,YOUTUBE,YOUTUBE'
+    - 'RULE-SET,Telegram,Telegram'
+    - 'RULE-SET,Github,Github'
+    - 'RULE-SET,Twitter,Twitter'
+    - 'RULE-SET,bigo代理,BIGOLIVE'
+    - 'RULE-SET,bigo游戏,BIGOLIVE'
+    - 'RULE-SET,bigo登录,BIGOLIVE登录'
+    - 'RULE-SET,IPAIR,IPAIR'
+    - 'RULE-SET,直连,国内直连'
+    - 'RULE-SET,黑名单,REJECT'
+    - 'RULE-SET,代理,手动选择'
+    - 'DOMAIN,local.adguard.org,DIRECT'
+    - 'DOMAIN-SUFFIX,local,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,17.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'IP-CIDR,203.0.113.0/24,DIRECT'
+    - 'IP-CIDR,192.0.2.0/24,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'GEOIP,LAN,DIRECT'
+    - 'MATCH,兜底'
