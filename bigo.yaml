@@ -83,52 +83,52 @@ proxies:
   - {name: 【渔云】巴西01, type: trojan, server: yuyu-3.sffyn.com, port: 41715, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】智利01, type: trojan, server: yuyu-3.sffyn.com, port: 30293, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】哥伦比亚01, type: trojan, server: yuyu-3.sffyn.com, port: 33081, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【快猫】香港01, type: ss, server: hk01.x.kuaimaonodebgp.com, port: 52611, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】香港02, type: ss, server: hk02.x.kuaimaonodebgp.com, port: 52612, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】香港03, type: ss, server: hk03.x.kuaimaonodebgp.com, port: 52613, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】香港04, type: ss, server: hk04.x.kuaimaonodebgp.com, port: 52614, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】香港05, type: ss, server: hk05.x.kuaimaonodebgp.com, port: 52615, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】香港06, type: ss, server: hk06.x.kuaimaonodebgp.com, port: 52616, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾01, type: ss, server: tw01.x.kuaimaonodebgp.com, port: 52661, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾02, type: ss, server: tw02.x.kuaimaonodebgp.com, port: 52662, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾03, type: ss, server: tw03.x.kuaimaonodebgp.com, port: 52663, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾04, type: ss, server: tw04.x.kuaimaonodebgp.com, port: 52664, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾05, type: ss, server: tw05.x.kuaimaonodebgp.com, port: 52665, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾06, type: ss, server: tw06.x.kuaimaonodebgp.com, port: 52666, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本02, type: ss, server: jp02.x.kuaimaonodebgp.com, port: 52622, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本01, type: ss, server: jp01.x.kuaimaonodebgp.com, port: 52621, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本03, type: ss, server: jp03.x.kuaimaonodebgp.com, port: 52623, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本04, type: ss, server: jp04.x.kuaimaonodebgp.com, port: 52624, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本05, type: ss, server: jp05.x.kuaimaonodebgp.com, port: 52625, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本06, type: ss, server: jp06.x.kuaimaonodebgp.com, port: 52626, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡01, type: ss, server: sg01.x.kuaimaonodebgp.com, port: 52631, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡02, type: ss, server: sg02.x.kuaimaonodebgp.com, port: 52632, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡03, type: ss, server: sg03.x.kuaimaonodebgp.com, port: 52633, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡04, type: ss, server: sg04.x.kuaimaonodebgp.com, port: 52634, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡05, type: ss, server: sg05.x.kuaimaonodebgp.com, port: 52635, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡06, type: ss, server: sg06.x.kuaimaonodebgp.com, port: 52636, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国01, type: ss, server: kr01.x.kuaimaonodebgp.com, port: 52601, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国02, type: ss, server: kr02.x.kuaimaonodebgp.com, port: 52602, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国03, type: ss, server: kr03.x.kuaimaonodebgp.com, port: 52603, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国04, type: ss, server: kr04.x.kuaimaonodebgp.com, port: 52604, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国05, type: ss, server: kr05.x.kuaimaonodebgp.com, port: 52605, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国06, type: ss, server: kr06.x.kuaimaonodebgp.com, port: 52604, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】印度01, type: ss, server: in01.x.kuaimaonodebgp.com, port: 52651, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】印度02, type: ss, server: in02.x.kuaimaonodebgp.com, port: 52652, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】土耳其01, type: ss, server: tur01.x.kuaimaonodebgp.com, port: 52655, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】土耳其02, type: ss, server: tur02.x.kuaimaonodebgp.com, port: 52657, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国01, type: ss, server: uk01.x.kuaimaonodebgp.com, port: 52641, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国02, type: ss, server: uk02.x.kuaimaonodebgp.com, port: 52642, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国03, type: ss, server: uk03.x.kuaimaonodebgp.com, port: 52643, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国04, type: ss, server: uk04.x.kuaimaonodebgp.com, port: 52644, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国05, type: ss, server: uk05.x.kuaimaonodebgp.com, port: 52645, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国06, type: ss, server: uk06.x.kuaimaonodebgp.com, port: 52646, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国01, type: ss, server: us01.x.kuaimaonodebgp.com, port: 52671, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国02, type: ss, server: us02.x.kuaimaonodebgp.com, port: 52672, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国03, type: ss, server: us03.x.kuaimaonodebgp.com, port: 52673, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国04, type: ss, server: us04.x.kuaimaonodebgp.com, port: 52674, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国05, type: ss, server: us05.x.kuaimaonodebgp.com, port: 52675, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国06, type: ss, server: us06.x.kuaimaonodebgp.com, port: 52676, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
+  - {name: 【快猫】香港01, server: hk01.x.kuaimaonodebgp.com, port: 52611, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】香港02, server: hk02.x.kuaimaonodebgp.com, port: 52612, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】香港03, server: hk03.x.kuaimaonodebgp.com, port: 52613, type: ss, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】香港04, server: hk04.x.kuaimaonodebgp.com, port: 52614, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】香港05, server: hk05.x.kuaimaonodebgp.com, port: 52615, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】香港06, server: hk06.x.kuaimaonodebgp.com, port: 52616, type: ss, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】台湾01, server: tw01.x.kuaimaonodebgp.com, port: 52661, type: ss, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】台湾02, server: tw02.x.kuaimaonodebgp.com, port: 52662, type: ss, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】台湾03, server: tw03.x.kuaimaonodebgp.com, port: 52663, type: ss, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】台湾04, server: tw04.x.kuaimaonodebgp.com, port: 52664, type: ss, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】台湾05, server: tw05.x.kuaimaonodebgp.com, port: 52665, type: ss, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】台湾06, server: tw06.x.kuaimaonodebgp.com, port: 52666, type: ss, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】日本01, server: jp01.x.kuaimaonodebgp.com, port: 52621, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】日本02, server: jp02.x.kuaimaonodebgp.com, port: 52622, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】日本03, server: jp03.x.kuaimaonodebgp.com, port: 52623, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】日本04, server: jp04.x.kuaimaonodebgp.com, port: 52624, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】日本05, server: jp05.x.kuaimaonodebgp.com, port: 52625, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】日本06, server: jp06.x.kuaimaonodebgp.com, port: 52626, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】新加坡01, server: sg01.x.kuaimaonodebgp.com, port: 52631, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】新加坡02, server: sg02.x.kuaimaonodebgp.com, port: 52632, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】新加坡03, server: sg03.x.kuaimaonodebgp.com, port: 52633, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】新加坡04, server: sg04.x.kuaimaonodebgp.com, port: 52634, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】新加坡05, server: sg05.x.kuaimaonodebgp.com, port: 52635, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】新加坡06, server: sg06.x.kuaimaonodebgp.com, port: 52636, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】韩国01, server: kr01.x.kuaimaonodebgp.com, port: 52601, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】韩国02, server: kr02.x.kuaimaonodebgp.com, port: 52602, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】韩国03, server: kr03.x.kuaimaonodebgp.com, port: 52603, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】韩国04, server: kr04.x.kuaimaonodebgp.com, port: 52604, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】韩国05, server: kr05.x.kuaimaonodebgp.com, port: 52605, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】韩国06, server: kr06.x.kuaimaonodebgp.com, port: 52604, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】印度01, server: in01.x.kuaimaonodebgp.com, port: 52651, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】印度02, server: in02.x.kuaimaonodebgp.com, port: 52652, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】土耳其01, server: tur01.x.kuaimaonodebgp.com, port: 52655, type: ss, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】土耳其02, server: tur02.x.kuaimaonodebgp.com, port: 52657, type: ss, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】英国01, server: uk01.x.kuaimaonodebgp.com, port: 52641, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】英国02, server: uk02.x.kuaimaonodebgp.com, port: 52642, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】英国03, server: uk03.x.kuaimaonodebgp.com, port: 52643, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】英国04, server: uk04.x.kuaimaonodebgp.com, port: 52644, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】英国05, server: uk05.x.kuaimaonodebgp.com, port: 52645, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】英国06, server: uk06.x.kuaimaonodebgp.com, port: 52646, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】美国01, server: us01.x.kuaimaonodebgp.com, port: 52671, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】美国02, server: us02.x.kuaimaonodebgp.com, port: 52672, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】美国03, server: us03.x.kuaimaonodebgp.com, port: 52673, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】美国04, server: us04.x.kuaimaonodebgp.com, port: 52674, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】美国05, server: us05.x.kuaimaonodebgp.com, port: 52675, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
+  - {name: 【快猫】美国06, server: us06.x.kuaimaonodebgp.com, port: 52676, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
   - {name: 【racknerd】trojan, server: 107.175.230.87, port: 500, type: trojan, password: lr9H9XZAtK, sni: www.xilinx.com, alpn: [h3%2Ch2%2Chttp%2F1.1], skip-cert-verify: true, network: ws, ws-opts: {path: /aa, headers: {Host: www.xilinx.com}}}
   - {name: 【racknerd】hysteria2, server: 107.175.230.87, port: 443, type: hysteria2, password: lr9H9XZAtK, auth: lr9H9XZAtK, sni: www.xilinx.com, skip-cert-verify: true}
   - {name: 【racknerd】Reality, server: 107.175.230.87, port: 443, type: vless, uuid: 2d62a750-0d3f-4ffb-cadb-750a0086a935, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: wnM32esmR5DAFsRyEBuLC6WvSExLuJegrzOzJgn_ckQ}, servername: www.xilinx.com, client-fingerprint: firefox, network: tcp}
