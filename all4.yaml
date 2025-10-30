@@ -168,9 +168,9 @@ proxies:
   - {name: 【快猫】美国04, server: us04.x.kuaimaonodebgp.com, port: 52674, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
   - {name: 【快猫】美国05, server: us05.x.kuaimaonodebgp.com, port: 52675, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
   - {name: 【快猫】美国06, server: us06.x.kuaimaonodebgp.com, port: 52676, type: ss, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05}
-  - {name: 【racknerd】trojan, server: 107.175.230.87, port: 500, type: trojan, password: lr9H9XZAtK, sni: www.xilinx.com, alpn: [h3%2Ch2%2Chttp%2F1.1], skip-cert-verify: true, network: ws, ws-opts: {path: /aa, headers: {Host: www.xilinx.com}}}
-  - {name: 【racknerd】hysteria2, server: 107.175.230.87, port: 443, type: hysteria2, password: lr9H9XZAtK, auth: lr9H9XZAtK, sni: www.xilinx.com, skip-cert-verify: true}
-  - {name: 【racknerd】Reality, server: 107.175.230.87, port: 443, type: vless, uuid: 2d62a750-0d3f-4ffb-cadb-750a0086a935, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: wnM32esmR5DAFsRyEBuLC6WvSExLuJegrzOzJgn_ckQ}, servername: www.xilinx.com, client-fingerprint: firefox, network: tcp}
+  - {name: 【racknerd】trojan, server: 107.175.230.87, port: 500, type: trojan, password: tcsPl0zAcQ, sni: www.xilinx.com, alpn: [h3%2Ch2%2Chttp%2F1.1], skip-cert-verify: true, network: ws, ws-opts: {path: /aa, headers: {Host: www.xilinx.com}}}
+  - {name: 【racknerd】hysteria2, server: 107.175.230.87, port: 443, type: hysteria2, password: tcsPl0zAcQ, auth: tcsPl0zAcQ, sni: www.xilinx.com, skip-cert-verify: true}
+  - {name: 【racknerd】Reality, server: 107.175.230.87, port: 443, type: vless, uuid: b2a02c49-58ec-427d-9191-fcc95549ffb6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: wnM32esmR5DAFsRyEBuLC6WvSExLuJegrzOzJgn_ckQ}, servername: www.xilinx.com, client-fingerprint: firefox, network: tcp}
   - {name: 【racknerd】vless, server: 107.175.230.87, port: 24231, type: vless, uuid: e2cf7c0f-7c9a-472f-8f88-ab82733af153, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Cf69vnWx_ebNsOs_eNPjN6lfnPBcqgRpX3APVUAEB2M}, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp}
 proxy-groups:
   - {name: 手动选择, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, mitce自动, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
