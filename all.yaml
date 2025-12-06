@@ -16,7 +16,6 @@ dns:
     enable: true
     ipv6: false
     listen: '0.0.0.0:1053'
-    enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
     default-nameserver: [223.5.5.5]
@@ -25,18 +24,18 @@ dns:
     fallback: [1.1.1.1, 8.8.8.8]
     fallback-filter: { geoip: true, geoip-code: CN, ipcidr: [240.0.0.0/4] }
 proxies:
-  - {name: 【流量光】HongKong01, type: ss, server: azyeupwww.swmixx.cn, port: 24784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong02, type: ss, server: azyeupwww.swmixx.cn, port: 24785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong03, type: ss, server: sbida.swmixx.cn, port: 14787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong04, type: ss, server: sbida.swmixx.cn, port: 14788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong05, type: ss, server: idsosuo.4waf46.cn, port: 36814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】HongKong06, type: ss, server: idsosuo.4waf46.cn, port: 36815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan01, type: ss, server: azyeupwww.swmixx.cn, port: 24786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan02, type: ss, server: azyeupwww.swmixx.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan03, type: ss, server: sbida.swmixx.cn, port: 14789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan04, type: ss, server: sbida.swmixx.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan05, type: ss, server: idsosuo.4waf46.cn, port: 36816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
-  - {name: 【流量光】Taiwan06, type: ss, server: idsosuo.4waf46.cn, port: 36817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:OTI0ODBhODYtYjJiMi00Yg==', udp: true }
+  - {name: 【流量光】HongKong01, type: ss, server: azyeupwww.swmixx.cn, port: 24784, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】HongKong02, type: ss, server: azyeupwww.swmixx.cn, port: 24785, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】HongKong03, type: ss, server: sbida.swmixx.cn, port: 14787, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】HongKong04, type: ss, server: sbida.swmixx.cn, port: 14788, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】HongKong05, type: ss, server: idsosuo.4waf46.cn, port: 36814, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】HongKong06, type: ss, server: idsosuo.4waf46.cn, port: 36815, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】Taiwan01, type: ss, server: azyeupwww.swmixx.cn, port: 24786, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】Taiwan02, type: ss, server: azyeupwww.swmixx.cn, port: 24790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】Taiwan03, type: ss, server: sbida.swmixx.cn, port: 14789, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】Taiwan04, type: ss, server: sbida.swmixx.cn, port: 14790, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】Taiwan05, type: ss, server: idsosuo.4waf46.cn, port: 36816, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
+  - {name: 【流量光】Taiwan06, type: ss, server: idsosuo.4waf46.cn, port: 36817, cipher: 2022-blake3-aes-128-gcm, password: 'MjdlZmY4YWIyZDU0OGNkNw==:YzViNTA3MGEtMTJlOS00MQ==', udp: true }
   - {name: 【渔云】香港01, type: trojan, server: yuyu-3.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】香港02, type: trojan, server: yuyu-3.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】香港03, type: trojan, server: yuyu-3.sffyn.com, port: 33579, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
@@ -58,111 +57,45 @@ proxies:
   - {name: 【渔云】新加坡03, type: trojan, server: yuyu-3.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】新加坡04, type: trojan, server: yuyu-3.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
   - {name: 【渔云】新加坡IPV6, type: trojan, server: ipv6.sffyn.com, port: 27663, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】美国01, type: trojan, server: yuyu-3.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】美国02, type: trojan, server: yuyu-3.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】美国01-家宽, type: trojan, server: yuyu-3.sffyn.com, port: 29525, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】美国02-家宽, type: trojan, server: yuyu-3.sffyn.com, port: 29525, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】美国IPV6, type: trojan, server: ipv6.sffyn.com, port: 53397, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】韩国-首尔01, type: trojan, server: yuyu-3.sffyn.com, port: 42569, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】韩国-春川, type: trojan, server: yuyu-3.sffyn.com, port: 31080, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】澳大利亚01, type: trojan, server: yuyu-3.sffyn.com, port: 48389, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】墨西哥01, type: trojan, server: yuyu-3.sffyn.com, port: 45837, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】以色列01, type: trojan, server: yuyu-3.sffyn.com, port: 27436, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】南非01, type: trojan, server: yuyu-3.sffyn.com, port: 24109, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】阿联酋01, type: trojan, server: yuyu-3.sffyn.com, port: 34281, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】德国, type: trojan, server: yuyu-3.sffyn.com, port: 17107, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】泰国-原生, type: trojan, server: yuyu-3.sffyn.com, port: 23284, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】印度01, type: trojan, server: yuyu-3.sffyn.com, port: 58771, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】加拿大01, type: trojan, server: yuyu-3.sffyn.com, port: 13475, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】法国01, type: trojan, server: yuyu-3.sffyn.com, port: 12286, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】荷兰01, type: trojan, server: yuyu-3.sffyn.com, port: 14119, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】西班牙01, type: trojan, server: yuyu-3.sffyn.com, port: 59719, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】瑞士01, type: trojan, server: yuyu-3.sffyn.com, port: 41717, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】英国01, type: trojan, server: yuyu-3.sffyn.com, port: 57447, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】沙特阿拉伯01, type: trojan, server: yuyu-3.sffyn.com, port: 38492, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】巴西01, type: trojan, server: yuyu-3.sffyn.com, port: 41715, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】智利01, type: trojan, server: yuyu-3.sffyn.com, port: 30293, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【渔云】哥伦比亚01, type: trojan, server: yuyu-3.sffyn.com, port: 33081, password: 11857cfc-c149-4f94-ad6c-502c9202b45b, udp: true, skip-cert-verify: true, sni: v1-dy.ixigua.com, network: tcp }
-  - {name: 【快猫】香港01, type: ss, server: hk01.x.kuaimaonodebgp.com, port: 52611, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】香港02, type: ss, server: hk02.x.kuaimaonodebgp.com, port: 52612, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】香港03, type: ss, server: hk03.x.kuaimaonodebgp.com, port: 52613, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】香港04, type: ss, server: hk04.x.kuaimaonodebgp.com, port: 52614, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】香港05, type: ss, server: hk05.x.kuaimaonodebgp.com, port: 52615, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】香港06, type: ss, server: hk06.x.kuaimaonodebgp.com, port: 52616, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾01, type: ss, server: tw01.x.kuaimaonodebgp.com, port: 52661, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾02, type: ss, server: tw02.x.kuaimaonodebgp.com, port: 52662, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾03, type: ss, server: tw03.x.kuaimaonodebgp.com, port: 52663, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾04, type: ss, server: tw04.x.kuaimaonodebgp.com, port: 52664, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾05, type: ss, server: tw05.x.kuaimaonodebgp.com, port: 52665, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】台湾06, type: ss, server: tw06.x.kuaimaonodebgp.com, port: 52666, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本02, type: ss, server: jp02.x.kuaimaonodebgp.com, port: 52622, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本01, type: ss, server: jp01.x.kuaimaonodebgp.com, port: 52621, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本03, type: ss, server: jp03.x.kuaimaonodebgp.com, port: 52623, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本04, type: ss, server: jp04.x.kuaimaonodebgp.com, port: 52624, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本05, type: ss, server: jp05.x.kuaimaonodebgp.com, port: 52625, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】日本06, type: ss, server: jp06.x.kuaimaonodebgp.com, port: 52626, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡01, type: ss, server: sg01.x.kuaimaonodebgp.com, port: 52631, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡02, type: ss, server: sg02.x.kuaimaonodebgp.com, port: 52632, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡03, type: ss, server: sg03.x.kuaimaonodebgp.com, port: 52633, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡04, type: ss, server: sg04.x.kuaimaonodebgp.com, port: 52634, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡05, type: ss, server: sg05.x.kuaimaonodebgp.com, port: 52635, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】新加坡06, type: ss, server: sg06.x.kuaimaonodebgp.com, port: 52636, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国01, type: ss, server: kr01.x.kuaimaonodebgp.com, port: 52601, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国02, type: ss, server: kr02.x.kuaimaonodebgp.com, port: 52602, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国03, type: ss, server: kr03.x.kuaimaonodebgp.com, port: 52603, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国04, type: ss, server: kr04.x.kuaimaonodebgp.com, port: 52604, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国05, type: ss, server: kr05.x.kuaimaonodebgp.com, port: 52605, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】韩国06, type: ss, server: kr06.x.kuaimaonodebgp.com, port: 52604, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】印度01, type: ss, server: in01.x.kuaimaonodebgp.com, port: 52651, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】印度02, type: ss, server: in02.x.kuaimaonodebgp.com, port: 52652, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】土耳其01, type: ss, server: tur01.x.kuaimaonodebgp.com, port: 52655, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】土耳其02, type: ss, server: tur02.x.kuaimaonodebgp.com, port: 52657, cipher: aes-128-gcm, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国01, type: ss, server: uk01.x.kuaimaonodebgp.com, port: 52641, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国02, type: ss, server: uk02.x.kuaimaonodebgp.com, port: 52642, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国03, type: ss, server: uk03.x.kuaimaonodebgp.com, port: 52643, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国04, type: ss, server: uk04.x.kuaimaonodebgp.com, port: 52644, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国05, type: ss, server: uk05.x.kuaimaonodebgp.com, port: 52645, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】英国06, type: ss, server: uk06.x.kuaimaonodebgp.com, port: 52646, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国01, type: ss, server: us01.x.kuaimaonodebgp.com, port: 52671, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国02, type: ss, server: us02.x.kuaimaonodebgp.com, port: 52672, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国03, type: ss, server: us03.x.kuaimaonodebgp.com, port: 52673, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国04, type: ss, server: us04.x.kuaimaonodebgp.com, port: 52674, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国05, type: ss, server: us05.x.kuaimaonodebgp.com, port: 52675, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【快猫】美国06, type: ss, server: us06.x.kuaimaonodebgp.com, port: 52676, cipher: chacha20-ietf-poly1305, password: 11659aea-9acb-4940-abf3-fad42dbd2d05, udp: true }
-  - {name: 【racknerd】trojan, server: 107.175.230.87, port: 500, type: trojan, password: lr9H9XZAtK, sni: www.xilinx.com, alpn: [h3%2Ch2%2Chttp%2F1.1], skip-cert-verify: true, network: ws, ws-opts: {path: /aa, headers: {Host: www.xilinx.com}}}
-  - {name: 【racknerd】hysteria2, server: 107.175.230.87, port: 443, type: hysteria2, password: lr9H9XZAtK, auth: lr9H9XZAtK, sni: www.xilinx.com, skip-cert-verify: true}
-  - {name: 【racknerd】Reality, server: 107.175.230.87, port: 443, type: vless, uuid: 2d62a750-0d3f-4ffb-cadb-750a0086a935, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: wnM32esmR5DAFsRyEBuLC6WvSExLuJegrzOzJgn_ckQ}, servername: www.xilinx.com, client-fingerprint: firefox, network: tcp}
-  - {name: 【ACCK】trojan, server: 45.196.239.135, port: 80, type: trojan, password: 747XkVN4lC, sni: go.microsoft.com, alpn: [h3%2Ch2%2Chttp%2F1.1], skip-cert-verify: true, network: ws, ws-opts: {path: /vjhuhaih, headers: {Host: go.microsoft.com}}}
-  - {name: 【ACCK】Reality, server: 45.196.239.135, port: 443, type: vless, uuid: 77957279-4faf-47bb-d7d5-f7944d04610e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BcXDTM9fyqd5TAFZmdC94Nlp2Ral1EfRAsrq8WuoQRc}, servername: go.microsoft.com, client-fingerprint: chrome, network: tcp}
-  - {name: 【ACCK】hysteria2, server: 45.196.239.135, port: 443, type: hysteria2, password: 747XkVN4lC, auth: 747XkVN4lC, sni: go.microsoft.com, skip-cert-verify: true}
-  - {name: 【ACCK】shadowsocks, type: ss, server: 45.196.239.135, port: 27518, cipher: chacha20-ietf-poly1305, password: Eo9EL53QH3pNqjGtrPotfhlt+J4pTrAOcayZwzJ0038=, udp: true }
+  - {name: 【快猫】香港01, type: ss, server: hk01.x.kuaimaonodebgp.com, port: 52611, cipher: chacha20-ietf-poly1305, password: 8c81607e-a261-4277-9240-0ac2923f887d, udp: true }
+  - {name: 【快猫】香港02, type: ss, server: hk02.x.kuaimaonodebgp.com, port: 52612, cipher: chacha20-ietf-poly1305, password: 8c81607e-a261-4277-9240-0ac2923f887d, udp: true }
+  - {name: 【SSRDOG】HongKong01, type: ss, server: 34eJxXpukDf9UJFF.userdog.sbs, port: 16001, cipher: aes-256-gcm, password: b59cc0d5-4bf6-4641-b913-2596f0d6a0c5, udp: true }
+  - {name: 【SSRDOG】HongKong02, type: ss, server: 34eJxXpukDf9UJFF.userdog.sbs, port: 16002, cipher: aes-256-gcm, password: b59cc0d5-4bf6-4641-b913-2596f0d6a0c5, udp: true }
+  - {name: 【SSRDOG】HongKong03, type: ss, server: 34eJxXpukDf9UJFF.userdog.sbs, port: 16003, cipher: aes-256-gcm, password: b59cc0d5-4bf6-4641-b913-2596f0d6a0c5, udp: true }
+  - {name: 【SSRDOG】HongKong04, type: ss, server: 34eJxXpukDf9UJFF.userdog.sbs, port: 16004, cipher: aes-256-gcm, password: b59cc0d5-4bf6-4641-b913-2596f0d6a0c5, udp: true }
+  - {name: 【SSRDOG】HongKong05, type: ss, server: 34eJxXpukDf9UJFF.userdog.sbs, port: 16005, cipher: aes-256-gcm, password: b59cc0d5-4bf6-4641-b913-2596f0d6a0c5, udp: true }
+  - {name: 【SSRDOG】HongKong06, type: ss, server: 34eJxXpukDf9UJFF.userdog.sbs, port: 16006, cipher: aes-256-gcm, password: b59cc0d5-4bf6-4641-b913-2596f0d6a0c5, udp: true }
 proxy-groups:
-  - {name: 手动选择, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: 自动选择, type: url-test, proxies: [流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 直播自动切换, type: fallback , proxies: [高速节点, racknerd自动, 快猫自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 流媒体自动切换, type: fallback , proxies: [快猫自动, 高速节点, 渔云自动, 流量光自动, racknerd自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 海外影视, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: Telegram, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: TIKTOK, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: Twitter, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: Github, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: YOUTUBE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: BIGOLIVE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: BIGOLIVE登录, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
-  - {name: Meoo, type: select, proxies: [DIRECT, 自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
-  - {name: IPAIR, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
-  - {name: 国内直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
-  - {name: racknerd自动, type: url-test, proxies: [【racknerd】trojan, 【racknerd】hysteria2, 【racknerd】Reality], url: 'http://cp.cloudflare.com/generate_204', interval: 300 } 
-  - {name: 快猫自动, type: url-test, proxies: [【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【快猫】美国01, 【快猫】美国02, 【快猫】美国03, 【快猫】美国04, 【快猫】美国05, 【快猫】美国06, 【快猫】英国01, 【快猫】英国02, 【快猫】英国03, 【快猫】英国04, 【快猫】英国05, 【快猫】英国06, 【快猫】韩国01, 【快猫】韩国02, 【快猫】韩国03, 【快猫】韩国04, 【快猫】韩国05, 【快猫】韩国06, 【快猫】印度01, 【快猫】印度02, 【快猫】土耳其01, 【快猫】土耳其02], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 手动选择, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: 自动选择, type: url-test, proxies: [流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 直播自动切换, type: fallback , proxies: [高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 流媒体自动切换, type: fallback , proxies: [快猫自动, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 渔云自动, 流量光自动], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: 海外影视, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: Telegram, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: TIKTOK, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: Twitter, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: Github, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: YOUTUBE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: BIGOLIVE, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: BIGOLIVE登录, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: BIGOLIVE直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
+  - {name: Meoo, type: select, proxies: [DIRECT, 自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
+  - {name: IPAIR, type: select, proxies: [自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡, DIRECT] }
+  - {name: 国内直连, type: select, proxies: [DIRECT, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
+  - {name: SSRDOG自动, type: url-test, proxies: [【SSRDOG】HongKong01, 【SSRDOG】HongKong02, 【SSRDOG】HongKong03, 【SSRDOG】HongKong04, 【SSRDOG】HongKong05, 【SSRDOG】HongKong06], url: 'http://cp.cloudflare.com/generate_204', interval: 300 } 
+  - {name: 快猫自动, type: url-test, proxies: [【快猫】香港01, 【快猫】香港02], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
   - {name: 流量光自动, type: url-test, proxies: [【流量光】HongKong01, 【流量光】HongKong02, 【流量光】HongKong03, 【流量光】HongKong04, 【流量光】HongKong05, 【流量光】HongKong06, 【流量光】Taiwan01, 【流量光】Taiwan02, 【流量光】Taiwan03, 【流量光】Taiwan04, 【流量光】Taiwan05, 【流量光】Taiwan06], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 渔云自动, type: url-test, proxies: [【渔云】香港01, 【渔云】香港02, 【渔云】香港03, 【渔云】香港04, 【渔云】香港IPV6, 【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6, 【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6, 【渔云】美国01, 【渔云】美国02, 【渔云】美国01-家宽, 【渔云】美国02-家宽, 【渔云】美国IPV6, 【渔云】韩国-首尔01, 【渔云】韩国-春川, 【渔云】澳大利亚01, 【渔云】墨西哥01, 【渔云】以色列01, 【渔云】南非01, 【渔云】阿联酋01, 【渔云】德国, 【渔云】泰国-原生, 【渔云】印度01, 【渔云】加拿大01, 【渔云】法国01, 【渔云】荷兰01, 【渔云】西班牙01, 【渔云】瑞士01, 【渔云】英国01, 【渔云】沙特阿拉伯01, 【渔云】巴西01, 【渔云】智利01, 【渔云】哥伦比亚01], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
-  - {name: 香港, type: load-balance, proxies: [【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【渔云】香港01, 【渔云】香港02, 【渔云】香港03, 【渔云】香港04, 【渔云】香港IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
-  - {name: 台湾, type: load-balance, proxies: [【ACCK】trojan, 【ACCK】Reality, 【ACCK】hysteria2, 【ACCK】shadowsocks, 【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
-  - {name: 日本, type: load-balance, proxies: [【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
-  - {name: 新加坡, type: load-balance, proxies: [【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
-  - {name: 高速节点, type: load-balance, proxies: [【racknerd】trojan, 【racknerd】hysteria2, 【racknerd】Reality, 【快猫】台湾01, 【快猫】台湾02, 【快猫】台湾03, 【快猫】台湾04, 【快猫】台湾05, 【快猫】台湾06, 【快猫】香港01, 【快猫】香港02, 【快猫】香港03, 【快猫】香港04, 【快猫】香港05, 【快猫】香港06, 【快猫】日本02, 【快猫】日本01, 【快猫】日本03, 【快猫】日本04, 【快猫】日本05, 【快猫】日本06, 【快猫】新加坡01, 【快猫】新加坡02, 【快猫】新加坡03, 【快猫】新加坡04, 【快猫】新加坡05, 【快猫】新加坡06], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
-  - {name: 兜底, type: select, proxies: [DIRECT, 自动选择, 流媒体自动切换, 直播自动切换, 高速节点, racknerd自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
+  - {name: 渔云自动, type: url-test, proxies: [【渔云】香港01, 【渔云】香港02, 【渔云】香港03, 【渔云】香港04, 【渔云】香港IPV6, 【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6, 【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300 }
+  - {name: SSRDOG手动, type: select, proxies: [【SSRDOG】HongKong01, 【SSRDOG】HongKong02, 【SSRDOG】HongKong03, 【SSRDOG】HongKong04, 【SSRDOG】HongKong05, 【SSRDOG】HongKong06]} 
+  - {name: 快猫手动, type: select, proxies: [【快猫】香港01, 【快猫】香港02]}
+  - {name: 流量光手动, type: select, proxies: [【流量光】HongKong01, 【流量光】HongKong02, 【流量光】HongKong03, 【流量光】HongKong04, 【流量光】HongKong05, 【流量光】HongKong06, 【流量光】Taiwan01, 【流量光】Taiwan02, 【流量光】Taiwan03, 【流量光】Taiwan04, 【流量光】Taiwan05, 【流量光】Taiwan06]}
+  - {name: 渔云手动, type: select, proxies: [【渔云】香港01, 【渔云】香港02, 【渔云】香港03, 【渔云】香港04, 【渔云】香港IPV6, 【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6, 【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6, 【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6]}
+  - {name: 香港, type: load-balance, proxies: [【快猫】香港01, 【快猫】香港02, 【渔云】香港01, 【渔云】香港02, 【渔云】香港03, 【渔云】香港04, 【渔云】香港IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
+  - {name: 台湾, type: load-balance, proxies: [【渔云】台湾01, 【渔云】台湾02, 【渔云】台湾03, 【渔云】台湾04, 【渔云】台湾IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
+  - {name: 日本, type: load-balance, proxies: [【渔云】日本01, 【渔云】日本02, 【渔云】日本03, 【渔云】日本04, 【渔云】日本IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
+  - {name: 新加坡, type: load-balance, proxies: [【渔云】新加坡01, 【渔云】新加坡02, 【渔云】新加坡03, 【渔云】新加坡04, 【渔云】新加坡IPV6], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
+  - {name: 高速节点, type: load-balance, proxies: [【快猫】香港01, 【快猫】香港02], url: 'http://cp.cloudflare.com/generate_204', interval: 300, tolerance: 50, strategy: consistent-hashing}
+  - {name: 兜底, type: select, proxies: [DIRECT, 自动选择, 流媒体自动切换, 直播自动切换, 高速节点, SSRDOG手动, 快猫手动, 流量光手动, 渔云手动, SSRDOG自动, 快猫自动, 流量光自动, 渔云自动, 香港, 台湾, 日本, 新加坡] }
 rule-providers:
     Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/netflix.yaml', interval: 86400, path: ./ruleset/netflix.yml }
     Disney: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/disney.yaml', interval: 86400, path: ./ruleset/disney.yml }
