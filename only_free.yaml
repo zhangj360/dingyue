@@ -1,0 +1,172 @@
+secret: dongtaiwang.com
+mixed-port: 7890
+allow-lan: false
+log-level: info
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+proxies:                    
+  - name: dongtaiwang.com_1                     
+    server: 5.178.101.117
+    port: 30006
+    type: tuic
+    uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+    password: dongtaiwang.com
+    sni: www.microsoft.com
+    alpn: [h3]
+    request-timeout: 8000
+    udp-relay-mode: native
+    skip-cert-verify: true
+    congestion-controller: bbr
+  - name: dongtaiwang.com_2                     
+    server: 157.254.223.48
+    port: 11540
+    type: tuic
+    uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+    password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+    sni: www.microsoft.com
+    alpn: [h3]
+    request-timeout: 8000
+    udp-relay-mode: native
+    skip-cert-verify: true
+    congestion-controller: bbr
+  - name: dongtaiwang.com_3                     
+    type: anytls
+    server: 151.242.183.75
+    port: 33333
+    password: dongtaiwang.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - name: dongtaiwang.com_4                     
+    type: hysteria
+    server: 2a14:7584:d097::a
+    port: 54177
+    auth-str: dongtaiwang.com
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: "11 Mbps"
+    down: "55 Mbps"
+  - name: dongtaiwang.com_5                     
+    type: anytls
+    server: fan2.856098.xyz
+    port: 8443
+    password: dongtaiwang.com
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true 
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - dongtaiwang.com_1
+	  - dongtaiwang.com_2
+      - dongtaiwang.com_3
+	  - dongtaiwang.com_4
+      - dongtaiwang.com_5
+  - name: ♻️ 自动选择
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - dongtaiwang.com_1
+	  - dongtaiwang.com_2
+      - dongtaiwang.com_3
+	  - dongtaiwang.com_4
+      - dongtaiwang.com_5
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - dongtaiwang.com_1
+	  - dongtaiwang.com_2
+      - dongtaiwang.com_3
+	  - dongtaiwang.com_4
+      - dongtaiwang.com_5
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - dongtaiwang.com_1
+	  - dongtaiwang.com_2
+      - dongtaiwang.com_3
+	  - dongtaiwang.com_4
+      - dongtaiwang.com_5
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - dongtaiwang.com_1
+	  - dongtaiwang.com_2
+      - dongtaiwang.com_3
+	  - dongtaiwang.com_4
+      - dongtaiwang.com_5
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - dongtaiwang.com_1
+	  - dongtaiwang.com_2
+      - dongtaiwang.com_3
+	  - dongtaiwang.com_4
+      - dongtaiwang.com_5
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - dongtaiwang.com_1
+	  - dongtaiwang.com_2
+      - dongtaiwang.com_3
+	  - dongtaiwang.com_4
+      - dongtaiwang.com_5
+rules:
+  - MATCH,🚀 节点选择
+
