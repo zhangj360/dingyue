@@ -22,7 +22,7 @@ proxies:
     - { name: free4,server: 83.243.86.109,port: 27947,type: tuic,uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2,password: 261d95d4-73c0-4c33-957a-04b6d407bea2,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
     - { name: free5,type: anytls,server: fan2.856098.xyz,port: 8443,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
 proxy-groups:
-    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, MEOO直播, 故障转移, DIRECT]}
+    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, DIRECT]}
     - { name: MEOO直播, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
     - { name: 免费机场, type: url-test, proxies: [free1, free2, free3, free4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
     - { name: 自动选择, type: url-test, proxies: [free1, free2, free3, free4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
