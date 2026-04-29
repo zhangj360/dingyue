@@ -566,4 +566,6 @@ rules:
     - 'DOMAIN-SUFFIX,cn,DIRECT'
     - 'DOMAIN-KEYWORD,-cn,DIRECT'
     - 'GEOIP,CN,DIRECT'
+    - 'GEOSITE,google,节点选择'
+    - 'GEOSITE,youtube,节点选择'
     - 'MATCH,兜底'
