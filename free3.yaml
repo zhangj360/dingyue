@@ -22,9 +22,11 @@ proxies:
     - { name: free4,server: 83.243.86.109,port: 27947,type: tuic,uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2,password: 261d95d4-73c0-4c33-957a-04b6d407bea2,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
     - { name: free5,type: anytls,server: fan2.856098.xyz,port: 8443,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
 proxy-groups:
-    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, MEOO直播, 故障转移, DIRECT]}
-    - { name: MEOO直播, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
-    - { name: 免费机场, type: url-test, proxies: [free1, free2, free3, free4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, free1, free2, free3, free4, DIRECT]}
+    - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
+    - { name: MOMO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
+    - { name: IPAIR直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
+    - { name: MEOO直播, type: select, proxies: [DIRECT, 节点选择, 自动选择, 手动选择]}
     - { name: 自动选择, type: url-test, proxies: [free1, free2, free3, free4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
     - { name: 手动选择, type: select, proxies: [free1, free2, free3, free4]}
     - { name: 故障转移, type: fallback, proxies: [free1, free2, free3, free4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
@@ -40,6 +42,7 @@ rule-providers:
     bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
     bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
     momolive: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/momo_live.yaml', interval: 86400, path: ./ruleset/momo_live.yaml }
+    IPAIR: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml', interval: 86400, path: ./ruleset/ipair.yaml }
     国内直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/cn_direct.yaml }
 rules:
     - 'IP-CIDR,1.1.1.1/32,节点选择,no-resolve'
@@ -54,7 +57,8 @@ rules:
     - 'RULE-SET,YOUTUBE,节点选择'
     - 'RULE-SET,Telegram,节点选择'
     - 'RULE-SET,Github,节点选择'
-    - 'RULE-SET,momolive,节点选择'   
+    - 'RULE-SET,momolive,MOMO直播'   
+    - 'RULE-SET,IPAIR,IPAIR直播'
     - 'RULE-SET,bigo代理,节点选择'
     - 'RULE-SET,bigo游戏,节点选择'
     - 'RULE-SET,bigo登录,节点选择'
