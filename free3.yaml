@@ -56,7 +56,6 @@ rules:
     - 'RULE-SET,Telegram,节点选择'
     - 'RULE-SET,Github,节点选择'
     - 'RULE-SET,海外直播,海外直播'   
-    - 'RULE-SET,IPAIR,IPAIR直播'
     - 'RULE-SET,bigo代理,BIGO直播'
     - 'RULE-SET,代理,节点选择'
     - 'RULE-SET,广告拦截,广告拦截'
