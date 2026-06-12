@@ -16,20 +16,20 @@ dns:
     fallback: [1.1.1.1, 8.8.8.8]
     fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
-    - { name: free1,type: anytls,server: 156.225.88.93,port: 23778,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
-    - { name: free2,server: 62.210.24.143,port: 33888,type: tuic,uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87,password: dongtaiwang.com,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
-    - { name: free3,server: 83.243.86.109,port: 27947,type: tuic,uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2,password: 261d95d4-73c0-4c33-957a-04b6d407bea2,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
-    - { name: free4,type: anytls,server: fan2.856098.xyz,port: 8443,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
+    - { name: free1-HK,type: anytls,server: 156.225.88.93,port: 23778,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
+    - { name: free2-FR,server: 62.210.24.143,port: 33888,type: tuic,uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87,password: dongtaiwang.com,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
+    - { name: free3-DE,server: 83.243.86.109,port: 27947,type: tuic,uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2,password: 261d95d4-73c0-4c33-957a-04b6d407bea2,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
+    - { name: free4-TW,type: anytls,server: fan2.856098.xyz,port: 8443,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
 proxy-groups:
-    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, free1, free2, free3, free4, DIRECT]}
-    - { name: 自动选择, type: url-test, proxies: [free1, free2, free3, free4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 手动选择, type: select, proxies: [free1, free2, free3, free4]}
+    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, free1-HK, free2-FR, free3-DE, free4-TW, DIRECT]}
+    - { name: 自动选择, type: url-test, proxies: [free1-HK, free2-FR, free3-DE, free4-TW], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 手动选择, type: select, proxies: [free1-HK, free2-FR, free3-DE, free4-TW]}
     - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
     - { name: MOMO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
     - { name: IPAIR直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
     - { name: MEOO直播, type: select, proxies: [DIRECT, 节点选择, 自动选择, 手动选择]}
     - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
-    - { name: 故障转移, type: fallback, proxies: [free1, free2, free3, free4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 故障转移, type: fallback, proxies: [free1-HK, free2-FR, free3-DE, free4-TW], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
     - { name: 兜底, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
 rule-providers:
     Meoo直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
