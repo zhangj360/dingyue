@@ -25,8 +25,7 @@ proxy-groups:
     - { name: 自动选择, type: url-test, proxies: [free1-HK, free2-FR, free3-DE, free4-TW], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
     - { name: 手动选择, type: select, proxies: [free1-HK, free2-FR, free3-DE, free4-TW]}
     - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
-    - { name: MOMO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
-    - { name: IPAIR直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
+    - { name: 海外直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
     - { name: MEOO直播, type: select, proxies: [DIRECT, 节点选择, 自动选择, 手动选择]}
     - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
     - { name: 故障转移, type: fallback, proxies: [free1-HK, free2-FR, free3-DE, free4-TW], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
@@ -41,8 +40,7 @@ rule-providers:
     bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
     bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
     bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
-    momolive: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/momo_live.yaml', interval: 86400, path: ./ruleset/momo_live.yaml }
-    IPAIR: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml', interval: 86400, path: ./ruleset/ipair.yaml }
+    海外直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/other_live.yaml', interval: 86400, path: ./ruleset/other_live.yaml }    
     国内直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/cn_direct.yaml }
     广告拦截: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
 rules:
@@ -58,8 +56,7 @@ rules:
     - 'RULE-SET,YOUTUBE,节点选择'
     - 'RULE-SET,Telegram,节点选择'
     - 'RULE-SET,Github,节点选择'
-    - 'RULE-SET,momolive,MOMO直播'   
-    - 'RULE-SET,IPAIR,IPAIR直播'
+    - 'RULE-SET,海外直播,海外直播'
     - 'RULE-SET,bigo代理,BIGO直播'
     - 'RULE-SET,bigo游戏,BIGO直播'
     - 'RULE-SET,bigo登录,BIGO直播'
