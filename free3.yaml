@@ -16,17 +16,17 @@ dns:
     fallback: [1.1.1.1, 8.8.8.8]
     fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
-    - { name: free1,type: anytls,server: 45.221.98.11,port: 11777,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
-    - { name: free2,server: 5.178.101.117,port: 30006,type: tuic,uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92,password: dongtaiwang.com,sni: www.microsoft.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
-    - { name: free3,server: 62.210.24.143,port: 33888,type: tuic,uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87,password: dongtaiwang.com,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
-    - { name: free4,server: 83.243.86.109,port: 27947,type: tuic,uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2,password: 261d95d4-73c0-4c33-957a-04b6d407bea2,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
-    - { name: free5,type: anytls,server: fan2.856098.xyz,port: 8443,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
+    - { name: free1,type: anytls,server: 156.225.88.93,port: 23778,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
+    - { name: free2,server: 62.210.24.143,port: 33888,type: tuic,uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87,password: dongtaiwang.com,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
+    - { name: free3,server: 83.243.86.109,port: 27947,type: tuic,uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2,password: 261d95d4-73c0-4c33-957a-04b6d407bea2,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
+    - { name: free4,type: anytls,server: fan2.856098.xyz,port: 8443,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
 proxy-groups:
     - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, free1, free2, free3, free4, DIRECT]}
     - { name: 自动选择, type: url-test, proxies: [free1, free2, free3, free4], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
     - { name: 手动选择, type: select, proxies: [free1, free2, free3, free4]}
     - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
-    - { name: 海外直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
+    - { name: MOMO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
+    - { name: IPAIR直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
     - { name: MEOO直播, type: select, proxies: [DIRECT, 节点选择, 自动选择, 手动选择]}
     - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
     - { name: 故障转移, type: fallback, proxies: [free1, free2, free3, free4], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
@@ -38,8 +38,11 @@ rule-providers:
     YOUTUBE: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/youtube.yaml', interval: 86400, path: ./ruleset/youtube.yaml }
     Telegram: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/telegram.yaml', interval: 86400, path: ./ruleset/telegram.yaml }
     bigo代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml', interval: 86400, path: ./ruleset/bigo_proxy.yaml }
+    bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
     bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
-    海外直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/live_other.yaml', interval: 86400, path: ./ruleset/live_other.yaml }
+    bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
+    momolive: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/momo_live.yaml', interval: 86400, path: ./ruleset/momo_live.yaml }
+    IPAIR: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/ipair.yaml', interval: 86400, path: ./ruleset/ipair.yaml }
     国内直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/cn_direct.yaml }
     广告拦截: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
 rules:
@@ -55,8 +58,11 @@ rules:
     - 'RULE-SET,YOUTUBE,节点选择'
     - 'RULE-SET,Telegram,节点选择'
     - 'RULE-SET,Github,节点选择'
-    - 'RULE-SET,海外直播,海外直播'   
+    - 'RULE-SET,momolive,MOMO直播'   
+    - 'RULE-SET,IPAIR,IPAIR直播'
     - 'RULE-SET,bigo代理,BIGO直播'
+    - 'RULE-SET,bigo游戏,BIGO直播'
+    - 'RULE-SET,bigo登录,BIGO直播'
     - 'RULE-SET,代理,节点选择'
     - 'RULE-SET,广告拦截,广告拦截'
     - 'DOMAIN-KEYWORD,admarvel,REJECT'
