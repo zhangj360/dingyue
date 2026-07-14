@@ -16,17 +16,19 @@ dns:
     fallback: [1.1.1.1, 8.8.8.8]
     fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
-    - { name: free3-DE,server: 83.243.86.109,port: 27947,type: tuic,uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2,password: 261d95d4-73c0-4c33-957a-04b6d407bea2,sni: bing.com,alpn: [h3],request-timeout: 8000,udp-relay-mode: native,skip-cert-verify: true,congestion-controller: bbr}
-    - { name: free4-TW,type: anytls,server: fan2.856098.xyz,port: 8443,password: dongtaiwang.com,client-fingerprint: chrome,udp: true,idle-session-check-interval: 30,idle-session-timeout: 30,min-idle-session: 0,alpn: [h2, http/1.1],skip-cert-verify: true}
+    - { name: free1-HK ,type: anytls ,server: anytls.864106.xyz ,port: 18001 ,password: fanvpn.net ,sni: anytls.864106.xyz} 
+    - { name: free2-US ,type: hysteria2 ,server: hy2.561891.xyz ,port: 44356 ,password: dongtaiwang.com ,up: 11 Mbps ,down: 55 Mbps ,skip-cert-verify: false ,sni: hy2.561891.xyz}
+    - { name: free3-DE ,server: 83.243.86.109 ,port: 27947 ,type: tuic ,uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2 ,password: 261d95d4-73c0-4c33-957a-04b6d407bea2 ,sni: bing.com ,alpn: [h3] ,request-timeout: 8000 ,udp-relay-mode: native ,skip-cert-verify: true,    congestion-controller: bbr}
+    - { name: free4-TW ,type: anytls ,server: fan2.856098.xyz ,port: 8443 ,password: dongtaiwang.com ,client-fingerprint: chrome ,udp: true ,idle-session-check-interval: 30 ,idle-session-timeout: 30 ,min-idle-session: 0 ,alpn: [h2, http/1.1] ,skip-cert-verify: true}
 proxy-groups:
-    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, free3-DE, free4-TW, DIRECT]}
-    - { name: 自动选择, type: url-test, proxies: [free3-DE, free4-TW], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 手动选择, type: select, proxies: [free3-DE, free4-TW]}
+    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移,free1-HK, free2-US, free3-DE, free4-TW, DIRECT]}
+    - { name: 自动选择, type: url-test, proxies: [free1-HK, free2-US, free3-DE, free4-TW], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 手动选择, type: select, proxies: [free1-HK, free2-US, free3-DE, free4-TW]}
     - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
     - { name: 海外直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
     - { name: MEOO直播, type: select, proxies: [DIRECT, 节点选择, 自动选择, 手动选择]}
     - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
-    - { name: 故障转移, type: fallback, proxies: [free3-DE, free4-TW], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 故障转移, type: fallback, proxies: [free1-HK, free2-US, free3-DE, free4-TW], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
     - { name: 兜底, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
 rule-providers:
     Meoo直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
