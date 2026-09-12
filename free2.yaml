@@ -16,7 +16,7 @@ dns:
     fallback: [1.1.1.1, 8.8.8.8]
     fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
-    - { name: free1-HK, type: anytls, server: anytls.864106.xyz, port: 18001, password: "fanvpn.net", sni: anytls.864106.xyz}  
+    - { name: free1-HK, type: anytls, server: anytls2.864106.xyz, port: 19000, password: "github.com/Alvin9999-newpac/fanqiang", sni: anytls2.864106.xyz}  
     - { name: free2-US, type: hysteria, server: 198.200.57.142, port: 22335, auth-str: github.com/Alvin9999-newpac/fanqiang, sni: bing.com, skip-cert-verify: true, alpn: [h3], protocol: udp, up: "11 Mbps", down: "55 Mbps"} 
     - { name: free3-DE, type: mieru, server: 198.200.57.142, port: 33556, transport: TCP, username: "Alvin9999-newpac", password: "github.com/Alvin9999-newpac/fanqiang", udp: true, multiplexing: MULTIPLEXING_LOW} 
     - { name: free4-TW, type: anytls, server: fan2.856098.xyz, port: 8443, password: dongtaiwang.com, client-fingerprint: chrome, udp: true, idle-session-check-interval: 30, idle-session-timeout: 30, min-idle-session: 0, alpn: [h2, http/1.1], skip-cert-verify: true} 
