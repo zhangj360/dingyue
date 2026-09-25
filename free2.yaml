@@ -19,7 +19,7 @@ proxies:
     - { name: free1-HK, type: anytls, server: anytls2.864106.xyz, port: 19000, password: "github.com/Alvin9999-newpac/fanqiang", sni: anytls2.864106.xyz}  
     - { name: free2-US, type: hysteria, server: 198.200.57.142, port: 22335, auth-str: github.com/Alvin9999-newpac/fanqiang, sni: bing.com, skip-cert-verify: true, alpn: [h3], protocol: udp, up: "11 Mbps", down: "55 Mbps"} 
     - { name: free3-DE, type: mieru, server: 198.200.57.142, port: 33556, transport: TCP, username: "Alvin9999-newpac", password: "github.com/Alvin9999-newpac/fanqiang", udp: true, multiplexing: MULTIPLEXING_LOW} 
-    - { name: free4-TW, type: anytls, server: fan2.856098.xyz, port: 8443, password: dongtaiwang.com, client-fingerprint: chrome, udp: true, idle-session-check-interval: 30, idle-session-timeout: 30, min-idle-session: 0, alpn: [h2, http/1.1], skip-cert-verify: true} 
+    - {name: free4-TW, server: tw-25.497489.xyz, port: 10099, type: hysteria, protocol: udp, up: 20 Mbps, up-speed: 1, down: 20 Mbps, down-speed: 334148096, auth-str: github.com/Alvin9999-newpac/fanqiang, auth: Z2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5n, sni: tw-25.497489.xyz, skip-cert-verify: false, alpn: [h3]}
 proxy-groups:
     - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移,free1-HK, free2-US, free3-DE, free4-TW, DIRECT]}
     - { name: 自动选择, type: url-test, proxies: [free1-HK, free2-US, free3-DE, free4-TW], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
