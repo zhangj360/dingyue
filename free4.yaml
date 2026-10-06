@@ -1,0 +1,214 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    respect-rules: true
+    proxy-server-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
+    nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
+    fallback: [1.1.1.1, 8.8.8.8]
+    fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
+proxies:
+  - cipher: aes-256-cfb
+    name: AA
+    password: amazonskr05
+    port: 443
+    server: 15.237.255.137
+    type: ss
+    udp: true
+    delay: 830
+  - name: BB
+    server: 84.17.47.148
+    port: 9002
+    type: http
+    password: None
+    tls: true
+    skip-cert-verify: true
+    delay: 2208
+  - name: CC
+    server: 84.17.47.146
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 1712
+  - name: DD
+    server: 193.176.84.17
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 1800
+  - name: EE
+    server: 193.176.84.20
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 1720
+  - name: FF
+    server: 193.176.84.31
+    port: 9002
+    type: http
+    password: None
+    tls: true
+    skip-cert-verify: true
+    delay: 1324
+  - name: GG
+    server: 193.176.84.27
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 2161
+  - name: HH
+    server: 193.176.84.39
+    port: 9002
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 2455
+  - name: II
+    server: 138.199.35.216
+    port: 9002
+    type: http
+    username: 'null'
+    password: 'null'
+    tls: true
+    skip-cert-verify: true
+    delay: 2937
+  - name: JJ
+    server: 38.28.193.188
+    port: 443
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 1113
+  - name: KK
+    server: fan.365747.xyz
+    port: 443
+    type: http
+    tls: true
+    skip-cert-verify: true
+    delay: 1192
+  - name: LL
+    server: voteshirleysew.club
+    port: 443
+    type: http
+    tls: true
+    delay: 1979
+  - cipher: aes-256-cfb
+    name: MM
+    password: amazonskr05
+    port: 443
+    server: 98.89.22.134
+    type: ss
+    udp: true
+    delay: 701
+  - cipher: aes-256-cfb
+    name: NN
+    password: amazonskr05
+    port: 443
+    server: 98.88.75.157
+    type: ss
+    udp: true
+    delay: 1094
+  - name: OO
+    network: ws
+    port: 80
+    server: 5.223.19.211
+    type: vless
+    udp: true
+    uuid: 4b8a0930-1c36-4efe-b4fe-21f9ad97905c
+    delay: 1214
+proxy-groups:
+    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移,free1-HK, free2-US, free3-DE, free4-TW, DIRECT]}
+    - { name: 自动选择, type: url-test, proxies: [AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 手动选择, type: select, proxies: [AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO]}
+    - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
+    - { name: 海外直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
+    - { name: MEOO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, DIRECT]}
+    - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
+    - { name: 故障转移, type: fallback, proxies: [AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 兜底, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
+rule-providers:
+    Meoo直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
+    代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
+    Github: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/github.yaml', interval: 86400, path: ./ruleset/github.yaml }
+    YOUTUBE: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/youtube.yaml', interval: 86400, path: ./ruleset/youtube.yaml }
+    Telegram: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/telegram.yaml', interval: 86400, path: ./ruleset/telegram.yaml }
+    bigo代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml', interval: 86400, path: ./ruleset/bigo_proxy.yaml }
+    bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
+    bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
+    bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
+    海外直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/live_other.yaml', interval: 86400, path: ./ruleset/live_other.yaml }    
+    国内直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/cn_direct.yaml }
+    广告拦截: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
+rules:
+    - 'IP-CIDR,1.1.1.1/32,节点选择,no-resolve'
+    - 'IP-CIDR,8.8.8.8/32,节点选择,no-resolve'
+    - 'DOMAIN-SUFFIX,services.googleapis.cn,节点选择'
+    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择'
+    - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
+    - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
+    - 'RULE-SET,bigo直连,DIRECT'
+    - 'RULE-SET,国内直连,DIRECT'
+    - 'RULE-SET,Meoo直播,MEOO直播'
+    - 'RULE-SET,YOUTUBE,节点选择'
+    - 'RULE-SET,Telegram,节点选择'
+    - 'RULE-SET,Github,节点选择'
+    - 'RULE-SET,海外直播,海外直播'
+    - 'RULE-SET,bigo代理,BIGO直播'
+    - 'RULE-SET,bigo游戏,BIGO直播'
+    - 'RULE-SET,bigo登录,BIGO直播'
+    - 'RULE-SET,代理,节点选择'
+    - 'RULE-SET,广告拦截,广告拦截'
+    - 'DOMAIN-KEYWORD,admarvel,REJECT'
+    - 'DOMAIN-KEYWORD,admaster,REJECT'
+    - 'DOMAIN-KEYWORD,adsage,REJECT'
+    - 'DOMAIN-KEYWORD,adsmogo,REJECT'
+    - 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
+    - 'DOMAIN-KEYWORD,adwords,REJECT'
+    - 'DOMAIN-KEYWORD,adservice,REJECT'
+    - 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
+    - 'DOMAIN-KEYWORD,domob,REJECT'
+    - 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
+    - 'DOMAIN-KEYWORD,duomeng,REJECT'
+    - 'DOMAIN-KEYWORD,dwtrack,REJECT'
+    - 'DOMAIN-KEYWORD,guanggao,REJECT'
+    - 'DOMAIN-KEYWORD,lianmeng,REJECT'
+    - 'DOMAIN-SUFFIX,mmstat.com,REJECT'
+    - 'DOMAIN-KEYWORD,mopub,REJECT'
+    - 'DOMAIN-KEYWORD,omgmta,REJECT'
+    - 'DOMAIN-KEYWORD,openx,REJECT'
+    - 'DOMAIN-KEYWORD,partnerad,REJECT'
+    - 'DOMAIN-KEYWORD,pingfore,REJECT'
+    - 'DOMAIN-KEYWORD,supersonicads,REJECT'
+    - 'DOMAIN-KEYWORD,uedas,REJECT'
+    - 'DOMAIN-KEYWORD,umeng,REJECT'
+    - 'DOMAIN-KEYWORD,usage,REJECT'
+    - 'DOMAIN-SUFFIX,vungle.com,REJECT'
+    - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
+    - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
+    - 'DOMAIN,injections.adguard.org,DIRECT'
+    - 'DOMAIN,local.adguard.org,DIRECT'
+    - 'DOMAIN-SUFFIX,local,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,17.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'DOMAIN-SUFFIX,cn,DIRECT'
+    - 'DOMAIN-KEYWORD,-cn,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,兜底'
