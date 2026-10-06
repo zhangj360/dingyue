@@ -168,7 +168,7 @@ proxies:
     uuid: 4b8a0930-1c36-4efe-b4fe-21f9ad97905c
     delay: 1214
 proxy-groups:
-    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移,free1-HK, free2-US, free3-DE, free4-TW, DIRECT]}
+    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, HK, US, DE, TW, AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO, DIRECT]}
     - { name: 自动选择, type: url-test, proxies: [HK, US, DE, TW, AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
     - { name: 手动选择, type: select, proxies: [HK, US, DE, TW, AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO]}
     - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
