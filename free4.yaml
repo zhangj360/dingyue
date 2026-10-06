@@ -16,6 +16,45 @@ dns:
     fallback: [1.1.1.1, 8.8.8.8]
     fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
+  - name: HK
+    type: anytls
+    server: anytls2.864106.xyz
+    port: 19000
+    password: "github.com/Alvin9999-newpac/fanqiang"
+    sni: anytls2.864106.xyz
+  - name: US              
+    type: hysteria
+    server: 198.200.57.142
+    port: 22335
+    auth-str: github.com/Alvin9999-newpac/fanqiang
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: "11 Mbps"
+    down: "55 Mbps"
+  - name: DE                     
+    type: mieru
+    server: 198.200.57.152
+    port: 33556
+    transport: TCP
+    username: "Alvin9999-newpac"
+    password: "github.com/Alvin9999-newpac/fanqiang"
+    udp: true
+    multiplexing: MULTIPLEXING_LOW
+  - name: TW                   
+    type: hysteria
+    server: tw-25.497489.xyz
+    port: 10099
+    auth-str: github.com/Alvin9999-newpac/fanqiang
+    sni: tw-25.497489.xyz
+    skip-cert-verify: false
+    alpn:
+      - h3
+    protocol: udp
+    up: "20 Mbps"
+    down: "20 Mbps"
   - cipher: aes-256-cfb
     name: AA
     password: amazonskr05
@@ -130,13 +169,13 @@ proxies:
     delay: 1214
 proxy-groups:
     - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移,free1-HK, free2-US, free3-DE, free4-TW, DIRECT]}
-    - { name: 自动选择, type: url-test, proxies: [AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 手动选择, type: select, proxies: [AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO]}
+    - { name: 自动选择, type: url-test, proxies: [HK, US, DE, TW, AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 手动选择, type: select, proxies: [HK, US, DE, TW, AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO]}
     - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
     - { name: 海外直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
     - { name: MEOO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, DIRECT]}
     - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
-    - { name: 故障转移, type: fallback, proxies: [AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 故障转移, type: fallback, proxies: [HK, US, DE, TW, AA, BB, CC, DD, EE, FF, GG, HH, II, JJ, KK, LL, MM, NN, OO], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
     - { name: 兜底, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
 rule-providers:
     Meoo直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
