@@ -20,24 +20,17 @@ proxies:
     - { name: 香港02境外中转, server: a6.mhlnf.cn, port: 41391, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 16f9644c-8b50-41e3-a926-74c119dd3dd3 }
     - { name: 台湾01境外中转, server: a6.mhlnf.cn, port: 19418, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 16f9644c-8b50-41e3-a926-74c119dd3dd3 }
     - { name: 台湾02境外中转, server: a6.mhlnf.cn, port: 19418, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 16f9644c-8b50-41e3-a926-74c119dd3dd3 }
-    - { name: 新加坡直连, server: 141.11.43.220, port: 443, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 16f9644c-8b50-41e3-a926-74c119dd3dd3 }
     - { name: 新加坡01境外中转, server: a6.mhlnf.cn, port: 65472, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 16f9644c-8b50-41e3-a926-74c119dd3dd3 }
     - { name: 新加坡02境外中转, server: a6.mhlnf.cn, port: 65472, sni: www.bing.com, up: 10000, down: 10000, skip-cert-verify: true, type: hysteria2, password: 16f9644c-8b50-41e3-a926-74c119dd3dd3 }
-    - { name: 香港01, type: vless, server: 13.212.30.43, port: 50284, uuid: 16f9644c-8b50-41e3-a926-74c119dd3dd3, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, encryption: none, tls: true, skip-cert-verify: true, servername: www.tue.nl, reality-opts: { public-key: cv23j5RQKJBa72H9O_Ui-yWvKJ5TeSf08gmqIYJ2JG0, short-id: 35e0273c5d256abb }, client-fingerprint: chrome, network: tcp }
-    - { name: 香港02, type: vless, server: 13.212.102.197, port: 50284, uuid: 16f9644c-8b50-41e3-a926-74c119dd3dd3, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, encryption: none, tls: true, skip-cert-verify: true, servername: www.tue.nl, reality-opts: { public-key: cv23j5RQKJBa72H9O_Ui-yWvKJ5TeSf08gmqIYJ2JG0, short-id: 35e0273c5d256abb }, client-fingerprint: chrome, network: tcp }
-    - { name: 台湾01, type: vless, server: 13.212.30.43, port: 26389, uuid: 16f9644c-8b50-41e3-a926-74c119dd3dd3, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, encryption: none, tls: true, skip-cert-verify: true, servername: www.tue.nl, reality-opts: { public-key: cv23j5RQKJBa72H9O_Ui-yWvKJ5TeSf08gmqIYJ2JG0, short-id: 35e0273c5d256abb }, client-fingerprint: chrome, network: tcp }
-    - { name: 台湾02, type: vless, server: 13.212.102.197, port: 26389, uuid: 16f9644c-8b50-41e3-a926-74c119dd3dd3, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, encryption: none, tls: true, skip-cert-verify: true, servername: www.tue.nl, reality-opts: { public-key: cv23j5RQKJBa72H9O_Ui-yWvKJ5TeSf08gmqIYJ2JG0, short-id: 35e0273c5d256abb }, client-fingerprint: chrome, network: tcp }
-    - { name: 新加坡01, type: vless, server: 13.212.30.43, port: 48312, uuid: 16f9644c-8b50-41e3-a926-74c119dd3dd3, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, encryption: none, tls: true, skip-cert-verify: true, servername: www.tue.nl, reality-opts: { public-key: cv23j5RQKJBa72H9O_Ui-yWvKJ5TeSf08gmqIYJ2JG0, short-id: 35e0273c5d256abb }, client-fingerprint: chrome, network: tcp }
-    - { name: 新加坡02, type: vless, server: 13.212.102.197, port: 48312, uuid: 16f9644c-8b50-41e3-a926-74c119dd3dd3, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, encryption: none, tls: true, skip-cert-verify: true, servername: www.tue.nl, reality-opts: { public-key: cv23j5RQKJBa72H9O_Ui-yWvKJ5TeSf08gmqIYJ2JG0, short-id: 35e0273c5d256abb }, client-fingerprint: chrome, network: tcp }
 proxy-groups:
-    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, 香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡直连, 新加坡01境外中转, 新加坡02境外中转, 香港01, 香港02, 台湾01, 台湾02, 新加坡01, 新加坡02, DIRECT]}
-    - { name: 自动选择, type: url-test, proxies: [香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡直连, 新加坡01境外中转, 新加坡02境外中转, 香港01, 香港02, 台湾01, 台湾02, 新加坡01, 新加坡02], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 手动选择, type: select, proxies: [香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡直连, 新加坡01境外中转, 新加坡02境外中转, 香港01, 香港02, 台湾01, 台湾02, 新加坡01, 新加坡02]}
+    - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, 香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转, DIRECT]}
+    - { name: 自动选择, type: url-test, proxies: [香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 手动选择, type: select, proxies: [香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转]}
     - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
     - { name: 海外直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
     - { name: MEOO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, DIRECT]}
     - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
-    - { name: 故障转移, type: fallback, proxies: [香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡直连, 新加坡01境外中转, 新加坡02境外中转, 香港01, 香港02, 台湾01, 台湾02, 新加坡01, 新加坡02], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 故障转移, type: fallback, proxies: [香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
     - { name: 兜底, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
 rule-providers:
     Meoo直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
