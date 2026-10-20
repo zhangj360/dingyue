@@ -31,7 +31,7 @@ proxy-groups:
     - { name: MEOO直播, type: select, proxies: [节点选择, 自动选择, 手动选择,  香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转, DIRECT]}
     - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
     - { name: 故障转移, type: fallback, proxies: [香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
-    - { name: 兜底, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
+    - { name: 兜底, type: select, proxies: [DIRECT, 自动选择, 手动选择,  香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转]}
 rule-providers:
     Meoo直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
     代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
