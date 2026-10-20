@@ -26,9 +26,9 @@ proxy-groups:
     - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, 香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转, DIRECT]}
     - { name: 自动选择, type: url-test, proxies: [香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
     - { name: 手动选择, type: select, proxies: [香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转]}
-    - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
-    - { name: 海外直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
-    - { name: MEOO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, DIRECT]}
+    - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移,  香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转, DIRECT]}
+    - { name: 海外直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移,  香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转, DIRECT]}    
+    - { name: MEOO直播, type: select, proxies: [节点选择, 自动选择, 手动选择,  香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转, DIRECT]}
     - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
     - { name: 故障转移, type: fallback, proxies: [香港01境外中转, 香港02境外中转, 台湾01境外中转, 台湾02境外中转, 新加坡01境外中转, 新加坡02境外中转], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
     - { name: 兜底, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
