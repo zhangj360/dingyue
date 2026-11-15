@@ -59,9 +59,7 @@ proxy-groups:
     - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, HK, US, DE, TW, DIRECT]}
     - { name: 自动选择, type: url-test, proxies: [HK, US, DE, TW], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
     - { name: 手动选择, type: select, proxies: [US, HK, DE, TW]}
-    - { name: BIGO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}
     - { name: 海外直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
-    - { name: MEOO直播, type: select, proxies: [节点选择, 自动选择, 手动选择, DIRECT]}
     - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
     - { name: 故障转移, type: fallback, proxies: [HK, US, DE, TW], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
     - { name: 兜底, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
