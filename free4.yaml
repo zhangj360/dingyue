@@ -66,16 +66,12 @@ proxy-groups:
     - { name: 故障转移, type: fallback, proxies: [HK, US, DE, TW], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
     - { name: 兜底, type: select, proxies: [DIRECT, 自动选择, 手动选择]}
 rule-providers:
-    Meoo直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/meoo.yaml', interval: 86400, path: ./ruleset/meoo.yaml }
     代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/proxy.yaml', interval: 86400, path: ./ruleset/proxy1.yaml }
     Github: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/github.yaml', interval: 86400, path: ./ruleset/github.yaml }
     YOUTUBE: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/youtube.yaml', interval: 86400, path: ./ruleset/youtube.yaml }
     Telegram: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/telegram.yaml', interval: 86400, path: ./ruleset/telegram.yaml }
-    bigo代理: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_proxy.yaml', interval: 86400, path: ./ruleset/bigo_proxy.yaml }
-    bigo游戏: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_game.yaml', interval: 86400, path: ./ruleset/bigo_game.yaml }
-    bigo直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_direct.yaml', interval: 86400, path: ./ruleset/bigo_direct.yaml }
-    bigo登录: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/bigo_login.yaml', interval: 86400, path: ./ruleset/bigo_login.yaml }
-    海外直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/live_other.yaml', interval: 86400, path: ./ruleset/live_other.yaml }    
+    国内直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/live_direct.yaml', interval: 86400, path: ./ruleset/live_direct.yaml }
+    海外直播: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/live_proxy.yaml', interval: 86400, path: ./ruleset/live_proxy.yaml }    
     国内直连: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/direct.yaml', interval: 86400, path: ./ruleset/cn_direct.yaml }
     广告拦截: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/zhangj360/rules/refs/heads/main/reject.yaml', interval: 86400, path: ./ruleset/reject.yaml }
 rules:
@@ -85,16 +81,12 @@ rules:
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择'
     - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
     - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
-    - 'RULE-SET,bigo直连,DIRECT'
     - 'RULE-SET,国内直连,DIRECT'
-    - 'RULE-SET,Meoo直播,MEOO直播'
+    - 'RULE-SET,国内直播,DIRECT'
+    - 'RULE-SET,海外直播,海外直播'
     - 'RULE-SET,YOUTUBE,节点选择'
     - 'RULE-SET,Telegram,节点选择'
     - 'RULE-SET,Github,节点选择'
-    - 'RULE-SET,海外直播,海外直播'
-    - 'RULE-SET,bigo代理,BIGO直播'
-    - 'RULE-SET,bigo游戏,BIGO直播'
-    - 'RULE-SET,bigo登录,BIGO直播'
     - 'RULE-SET,代理,节点选择'
     - 'RULE-SET,广告拦截,广告拦截'
     - 'DOMAIN-KEYWORD,admarvel,REJECT'
