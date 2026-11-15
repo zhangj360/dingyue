@@ -59,6 +59,7 @@ proxy-groups:
     - { name: 节点选择, type: select, proxies: [自动选择, 手动选择, 故障转移, HK, US, DE, TW, DIRECT]}
     - { name: 自动选择, type: url-test, proxies: [HK, US, DE, TW], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
     - { name: 手动选择, type: select, proxies: [US, HK, DE, TW]}
+    - { name: 国内直播, type: select, proxies: [DIRECT, 节点选择, 自动选择, 手动选择, 故障转移]}  
     - { name: 海外直播, type: select, proxies: [节点选择, 自动选择, 手动选择, 故障转移, DIRECT]}    
     - { name: 广告拦截, type: select, proxies: [REJECT, DIRECT]}
     - { name: 故障转移, type: fallback, proxies: [HK, US, DE, TW], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
@@ -80,7 +81,7 @@ rules:
     - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
     - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
     - 'RULE-SET,国内直连,DIRECT'
-    - 'RULE-SET,国内直播,DIRECT'
+    - 'RULE-SET,国内直播,国内直播'
     - 'RULE-SET,海外直播,海外直播'
     - 'RULE-SET,YOUTUBE,节点选择'
     - 'RULE-SET,Telegram,节点选择'
