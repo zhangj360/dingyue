@@ -17,16 +17,22 @@ dns:
     fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
   - name: HK
-    type: anytls
-    server: anytls2.864106.xyz
-    port: 19000
-    password: "github.com/Alvin9999-newpac/fanqiang"
-    sni: anytls2.864106.xyz
+    type: hysteria
+    server: 38.6.222.130
+    port: 11008
+    auth-str: dongtaiwang.com
+    sni: bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: "11 Mbps"
+    down: "55 Mbps"
   - name: US              
     type: hysteria
-    server: 198.200.57.142
-    port: 22335
-    auth-str: github.com/Alvin9999-newpac/fanqiang
+    server: 38.6.222.130
+    port: 11008
+    auth-str: dongtaiwang.com
     sni: bing.com
     skip-cert-verify: true
     alpn:
